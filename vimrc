@@ -390,7 +390,7 @@ command -bang -nargs=? NumTog call NumToggle()
 "or Tabbar
 map <C-f> :Tbbn <CR>
 map <C-a> :Tbbp <CR>
-map <C-d> :TbStop <CR>
+map <C-d> :Tbbd <CR>
 map <C-c> :TbToggle <CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -398,7 +398,13 @@ map <C-c> :TbToggle <CR>
 "Tagbar toggle and Taglist Toggles
 nnoremap <silent> <leader>ğ :TagbarToggle<CR>
 nnoremap <silent> <leader>ü :TlistToggle<CR>
+:let g:Tlist_WinWidth=20
+:let g:tagbar_width = 20
+"https://github.com/majutsushi/tagbar/blob/master/doc/tagbar.txt
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-n> :NERDTreeToggle <CR>
+:let g:NERDTreeWinSize=10
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "TComment
 map <C-t> :TComment<CR>
@@ -408,8 +414,6 @@ map <c-p> m`vip:TComment<cr>``
 nmap <silent> <leader>l :QFix<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"Toggle NerdTree
-"map <C-n> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”? Use this:
@@ -425,13 +429,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"inoremap <C-e> <Esc>A
-"inoremap <C-a> <Esc>I
-"map <C-n> :NERDTreeMirrorToggle <CR>
-map <C-n> :NERDTreeToggle <CR>
-
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "works only with vim-gtk version. so turned it off
 " map <C-Up>   : LargerFont <CR>
@@ -456,21 +453,12 @@ command! -nargs=1 Find :call Find("find . -iname '*'" . shellescape('<args>') . 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command! -nargs=* -complete=file Rg Grepper -tool rg -query <args>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"ctrp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
