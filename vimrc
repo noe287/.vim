@@ -243,6 +243,7 @@ if has("cscope")
 "set csverb
 "set cspc=5
 
+
 endif
 
 
@@ -350,7 +351,11 @@ vnoremap <S-Tab> <
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map <F11> :!cscope -b<CR>:cs reset<CR><CR>                                      
 "  nmap <C-F12> <Plug>CscopeDBInit <bar> :!rm cscope.out <CR>
-nmap <C-F11> <Plug>CscopeDBInit <bar><CR>
+"nmap <C-F11> <Plug>CscopeDBInit <bar><CR>
+
+nmap <F11> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.hpp' > cscope.files<CR>
+  \:!cscope -b -i cscope.files -f cscope.out<CR>
+  \:cs reset<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Easily GREP current word in current file.
@@ -403,7 +408,7 @@ nnoremap <silent> <leader>ü :TlistToggle<CR>
 "https://github.com/majutsushi/tagbar/blob/master/doc/tagbar.txt
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle <CR>
-:let g:NERDTreeWinSize=10
+:let g:NERDTreeWinSize=20
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "TComment
