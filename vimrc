@@ -110,8 +110,8 @@ if has("cscope")
     set cscopequickfix=s-,c-,d-,i-,t-,e-,g-,f-
 
     " add any cscope database in current directory
-    if filereadable("cscope.out")
-        cs add cscope.out  
+    if filereadable("./cscope/cscope.out")
+        cs add ./cscope/cscope.out  
     " else add the database pointed to by environment variable 
     elseif $CSCOPE_DB != ""
         cs add $CSCOPE_DB
@@ -267,7 +267,6 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set nobackup
 set noswapfile
-        
 "Custom Editor Environment from yavide
 set sessionoptions=blank,buffers,folds,help,resize,tabpages,winpos,winsize  " Set session persistence options 
 set enc=utf-8                                                               " Set UTF-8 encoding              
@@ -348,6 +347,11 @@ vnoremap > >gv
 vnoremap < <gv
 vnoremap <Tab> > 
 vnoremap <S-Tab> <
+
+
+" copy paste to out
+map <leader>y "+y
+map <leader>p "+p
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map <F11> :!cscope -b<CR>:cs reset<CR><CR>                                      
 "  nmap <C-F12> <Plug>CscopeDBInit <bar> :!rm cscope.out <CR>
@@ -369,8 +373,8 @@ map <F5> :execute "vimgrep /" . expand("<cword>") . "/ **" <Bar>botright cwindow
 "Resizing windows
 nnoremap <silent> <Leader>0 :exe "vertical resize +150"<CR>
 nnoremap <silent> <Leader>9 :exe "vertical resize -150"<CR>
-nnoremap <silent> <Leader>- :exe "vertical resize +25"<CR>
-nnoremap <silent> <Leader>* :exe "vertical resize -25"<CR>
+nnoremap <silent> <Leader>- :exe "vertical resize +5"<CR>
+nnoremap <silent> <Leader>* :exe "vertical resize -5"<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <silent> <Leader>6 :exe "resize -5"<CR>
@@ -387,17 +391,21 @@ command -bang -nargs=? NumTog call NumToggle()
 
 
 "minibufferexplorer
-" map <C-f> :MBEbn <CR>
-" map <C-a> :MBEbp <CR>
-" map <C-d> :MBEbd <CR>
-" map <C-c> :MBEToggle <CR>
+map <C-f> :MBEbn <CR>
+map <C-a> :MBEbp <CR>
+map <C-d> :MBEbd <CR>
+map <C-c> :MBEToggle <CR>
 
 "or Tabbar
-map <C-f> :Tbbn <CR>
-map <C-a> :Tbbp <CR>
-map <C-d> :Tbbd <CR>
-map <C-c> :TbToggle <CR>
+" map <C-f> :Tbbn <CR>
+" map <C-a> :Tbbp <CR>
+" map <C-d> :Tbbd <CR>
+" map <C-c> :TbToggle <CR>
 
+"Powerline
+:let g:Powerline_symbols = 'fancy'
+"vim-tabber
+set tabline=%!tabber#TabLine()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Tagbar toggle and Taglist Toggles
@@ -422,7 +430,7 @@ nmap <silent> <leader>l :QFix<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Tired of clearing highlighted searches by searching for “ldsfhjkhgakjks”? Use this:
-nmap <silent> <leader>p :nohlsearch<CR>
+nmap <silent> <leader>" :nohlsearch<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Finally, a trick by Steve Losh for when you forgot to sudo before editing a file that requires root privileges (typically /etc/hosts). This lets you use w!! to do that after you opened the file already:
 cmap w!! w !sudo tee % >/dev/null
@@ -496,7 +504,8 @@ function! QFixToggle(forced)
     cclose
     unlet g:qfix_win
   else
-    copen 10
+    :copen 10 | :botright cwindow
+    " copen 10
     let g:qfix_win = bufnr("$")
   endif
 endfunction
@@ -508,7 +517,8 @@ function! QFixToggle2(forced)
 "    cclose
 "    unlet g:qfix_win
 "  else
-    copen 10
+    :copen 10 | :botright cwindow
+    " copen 10
     let g:qfix_win = bufnr("$")
 "  endif
 endfunction
@@ -666,7 +676,12 @@ let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto = 1
 let g:clang_complete_copen = 1
 
-
+" let g:rg_command = '
+"   \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
+"   \ -g "*.{js,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf}"
+"   \ -g "!{.git,node_modules,vendor,release,qcm_plc_firmware,tools,zlib,openssl,profiles,openssl,open-plc-utils,libxml2,libstrophe,json,expat,airwpa,air_led,configs}/*" '
+"
+" command! -bang -nargs=* Z call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
 
 "FZF
 " command! -bang -nargs=? -complete=dir Files

@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/F11
+~MSle0~/ssid
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,1657 +20,444 @@
 $\rparent 
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1531325457,,"q!"
 :wq!
-|2,0,1531325363,,"wq!"
+|2,0,1534337052,,"wq!"
 :w
-|2,0,1531324940,,"w"
-:wqa!
-|2,0,1531321598,,"wqa!"
-:537
-|2,0,1531321540,,"537"
-:Rg "Can't read from config store"
-|2,0,1531321201,,"Rg \"Can't read from config store\""
-:Rg "platform_get_pathvalue"
-|2,0,1531317381,,"Rg \"platform_get_pathvalue\""
-:Rg get_data_cdf
-|2,0,1531306448,,"Rg get_data_cdf"
-:s
-|2,0,1531305161,,"s"
-:wq1
-|2,0,1531305049,,"wq1"
-:y
-|2,0,1531304911,,"y"
-:q1
-|2,0,1531304090,,"q1"
-:Rg MNGR_DIR
-|2,0,1531238449,,"Rg MNGR_DIR"
+|2,0,1534337045,,"w"
+:90
+|2,0,1534337007,,"90"
 :qa!
-|2,0,1531238740,,"qa!"
-:Rg CONFIG_manager
-|2,0,1531238098,,"Rg CONFIG_manager"
-:pwd
-|2,0,1531238039,,"pwd"
-:Rg WlCommonProcessIfaceBridgeInteraction
-|2,0,1531232437,,"Rg WlCommonProcessIfaceBridgeInteraction"
-:Rg verify_result
-|2,0,1531224447,,"Rg verify_result"
-:Rg "Certificate verification FAILED"
-|2,0,1531224150,,"Rg \"Certificate verification FAILED\""
-:Rg "Can't get peer certificate"
-|2,0,1531223918,,"Rg \"Can't get peer certificate\""
-:Rg cloud-agent
-|2,0,1531220798,,"Rg cloud-agent"
-:
-|2,0,1529573056,,""
-:Rg ignoring
-|2,0,1529510494,,"Rg ignoring"
-:!pwd
-|2,0,1529508589,,"!pwd"
-:Rg ignored
-|2,0,1529503844,,"Rg ignored"
-:!PWD
-|2,0,1529503324,,"!PWD"
-:PWD
-|2,0,1529503318,,"PWD"
-:Rg "RNOT for"
-|2,0,1529406511,,"Rg \"RNOT for\""
-:waq!
-|2,0,1531212101,,"waq!"
-:Rg trim
-|2,0,1531209229,,"Rg trim"
-:333
-|2,0,1531207130,,"333"
-:33
-|2,0,1531207127,,"33"
-:W
-|2,0,1531204340,,"W"
-:350
-|2,0,1531153519,,"350"
-:319
-|2,0,1531153329,,"319"
-:321
-|2,0,1531153327,,"321"
-:341
-|2,0,1531153129,,"341"
-:339
-|2,0,1531153051,,"339"
-:Rg trim_nl
-|2,0,1531210317,,"Rg trim_nl"
-:Rg __get
-|2,0,1531150692,,"Rg __get"
-:Rg wireless_get_bss_mac
-|2,0,1531150616,,"Rg wireless_get_bss_mac"
-:Wq!
-|2,0,1531149520,,"Wq!"
-:Rg "libaca event thread is started"
-|2,0,1531119012,,"Rg \"libaca event thread is started\""
-:311
-|2,0,1531117866,,"311"
-:260
-|2,0,1531117748,,"260"
-:82
-|2,0,1531139520,,"82"
-:68
-|2,0,1531139403,,"68"
-:Rg SIOCATHAIRTIES
-|2,0,1531077728,,"Rg SIOCATHAIRTIES"
-:wq!,
-|2,0,1531076802,,"wq!,"
-:wq!!
-|2,0,1531076632,,"wq!!"
-:1166
-<static int fetch_serial_number(char *serial_number){        int error = 0 , ret = 0;         char* line;        char buf[128];        FILE* fds = NULL;        fds = fopen(NVRAM_FILE, "r");        libairlog_debugf("exiting apply transaction thread with error=%d", error);        libairlog_errorf("apply transaction thread error: %s", strerror(error));        if (fds == NULL) {                libairlog_errorf("Cannot open nvram.txt file error: %s", strerror(error));                ret = -1;                goto out;         }            while ((line = fgets(buf, sizeof(buf), fds)) != NULL) {                if (strstr(line, "SERIAL_NUMBER") == NULL) {                        continue;                } else {                        printf("%s\n", line);                        strncpy(serial_number, line + 14, sizeof(line));                        printf("%s\n", serial_number);                        break;                }        }out:        if (fds != NULL) {                fclose(fds);        }                                                                                                                              
-|2,0,1531076046,,>1181
-|<"static int fetch_serial_number(char *serial_number){        int error = 0 , ret = 0;         char* line;        char buf[128];        FILE* fds = NULL;        fds = fopen(NVRAM_FILE, \"r\");        libairlog_debugf(\"exiting apply transaction thread with error=%d\", error);        libairlog_errorf(\"apply transaction thread error: %s\", strerror(error));        if (fds == NULL) {                libairlog_errorf(\"Cannot open nvram.txt file error: %s\", strerror(error));  
-|<              ret = -1;                goto out;         }            while ((line = fgets(buf, sizeof(buf), fds)) != NULL) {                if (strstr(line, \"SERIAL_NUMBER\") == NULL) {                        continue;                } else {                        printf(\"%s\\n\", line);                        strncpy(serial_number, line + 14, sizeof(line));                        printf(\"%s\\n\", serial_number);                        break;                }        }
-|<out:        if (fds != NULL) {                fclose(fds);        }                                                                                                                              "
-:<F12>
-|2,0,1530890990,,"<F12>"
-:w2
-|2,0,1530890862,,"w2"
-:Rg check_transaction
-|2,0,1530890303,,"Rg check_transaction"
-:Rg PEER_MAC_FILE
-|2,0,1530888646,,"Rg PEER_MAC_FILE"
-:Rg PEER_LIST
-|2,0,1530888594,,"Rg PEER_LIST"
-:wq
-|2,0,1530888326,,"wq"
-:Rg LIBACA_INCDIRS
-|2,0,1530883858,,"Rg LIBACA_INCDIRS"
-:F libairlog.h
-|2,0,1530883767,,"F libairlog.h"
-:F uifx.h
-|2,0,1530884126,,"F uifx.h"
-:Rg system_get_serial_number
-|2,0,1530882258,,"Rg system_get_serial_number"
-:Q!
-|2,0,1530879133,,"Q!"
-:F mngrs.c
-|2,0,1530868629,,"F mngrs.c"
-:Rg sky_airbus_listener_deinit
-|2,0,1530862902,,"Rg sky_airbus_listener_deinit"
-:Rg data_adapter_deinit
-|2,0,1530862841,,"Rg data_adapter_deinit"
-:Rg "air-wall transactions"
-|2,0,1530862754,,"Rg \"air-wall transactions\""
-:193
-|2,0,1530861635,,"193"
-:F cloud_agent_mngr.c
-|2,0,1530860433,,"F cloud_agent_mngr.c"
-:F meshest_mngr.c
-|2,0,1530860347,,"F meshest_mngr.c"
-:Rg licensing_airbus_listener
-|2,0,1530806703,,"Rg licensing_airbus_listener"
-:342
-|2,0,1530806514,,"342"
-:301
-|2,0,1530869788,,"301"
-:!
-|2,0,1530805773,,"!"
-:206
-|2,0,1530803490,,"206"
-:228
-|2,0,1530801603,,"228"
-:252
-|2,0,1530801303,,"252"
-:477
-|2,0,1530800410,,"477"
-:247
-|2,0,1530800369,,"247"
-:205
-|2,0,1530800101,,"205"
-:F my.c
-|2,0,1530799128,,"F my.c"
-:217
-|2,0,1530795368,,"217"
-:447
-|2,0,1530795276,,"447"
-:153
-|2,0,1530795236,,"153"
-:Gblame
-|2,0,1530804948,,"Gblame"
-:gblame
-|2,0,1530804881,,"gblame"
-:g
-|2,0,1530804870,,"g"
-:Rg dhcpcap
-|2,0,1530804845,,"Rg dhcpcap"
-:Gstatus
-|2,0,1530804806,,"Gstatus"
-:GitFiles
-|2,0,1530804760,,"GitFiles"
-:F cloud_mngr.c
-|2,0,1530771222,,"F cloud_mngr.c"
-:213
-|2,0,1530792034,,"213"
-:207
-|2,0,1530791645,,"207"
-:238
-|2,0,1530779061,,"238"
-::w
-|2,0,1530719998,,":w"
-:468
-|2,0,1530719603,,"468"
-:209
-|2,0,1530719312,,"209"
-:Rg UNUSED
-|2,0,1530200415,,"Rg UNUSED"
-:397
-|2,0,1530718157,,"397"
-:qqa!
-|2,0,1530717889,,"qqa!"
-:Rg cdf_client_server_status
-|2,0,1530712422,,"Rg cdf_client_server_status"
-:Rg -tc lair-cdf
-|2,0,1530696258,,"Rg -tc lair-cdf"
-:417
-|2,0,1530693632,,"417"
-:176
-|2,0,1530693612,,"176"
-:466
-|2,0,1530692636,,"466"
-:448
-|2,0,1530691335,,"448"
-:Rg -tc MODULE_MESHEST
-|2,0,1530687161,,"Rg -tc MODULE_MESHEST"
-:Rg meshest
-|2,0,1530687110,,"Rg meshest"
-:Rg CreateCloudAgentMngr
-|2,0,1530686951,,"Rg CreateCloudAgentMngr"
-:Rg EXEC_CMD
-|2,0,1530685877,,"Rg EXEC_CMD"
-:Rg EXEC_COMMAND
-|2,0,1530685871,,"Rg EXEC_COMMAND"
-:408
-|2,0,1530635237,,"408"
-:Rg -tc check_child
-|2,0,1530635026,,"Rg -tc check_child"
-:216
-|2,0,1530634751,,"216"
-:e 
-|2,0,1530631259,,"e "
-:Rg common_apply
-|2,0,1530630344,,"Rg common_apply"
-:Rg -tc bcm_set_bw
-|2,0,1530630311,,"Rg -tc bcm_set_bw"
-:Rg -tc SMARTSCAN_ANNOUNCE_CONN_CHANGE
-|2,0,1530629707,,"Rg -tc SMARTSCAN_ANNOUNCE_CONN_CHANGE"
-:Rg ANNOUNCE_CONN_CHANGE
-|2,0,1530629692,,"Rg ANNOUNCE_CONN_CHANGE"
-:Rg  fetch_and_validate_rssi
-|2,0,1530629662,,"Rg  fetch_and_validate_rssi"
-:Rg -tc fetch_and_validate_rssi
-|2,0,1530629654,,"Rg -tc fetch_and_validate_rssi"
-:wwq!
-|2,0,1530628936,,"wwq!"
-:F broadcom_wllib.c
-|2,0,1530624026,,"F broadcom_wllib.c"
-:q!<F12><F11>
-|2,0,1530617597,,"q!<F12><F11>"
-:Rg CreateCloudAgent
-|2,0,1530283780,,"Rg CreateCloudAgent"
-:Rg RESTART_IN_PREREG
-|2,0,1530282743,,"Rg RESTART_IN_PREREG"
-:148
-|2,0,1530282504,,"148"
-:405
-|2,0,1530281999,,"405"
+|2,0,1534336992,,"qa!"
+:Z
+|2,0,1534336857,,"Z"
+:q!
+|2,0,1534336849,,"q!"
+:Rg -tc routing_get_mesh_peers
+|2,0,1534336762,,"Rg -tc routing_get_mesh_peers"
 :F wireless_mngr.c
-|2,0,1530281637,,"F wireless_mngr.c"
-:1
-|2,0,1530280663,,"1"
-:390
-|2,0,1530280569,,"390"
-:210
-|2,0,1530280467,,"210"
-:Rg -tc BOOL
-|2,0,1530279862,,"Rg -tc BOOL"
-:204
-|2,0,1530279649,,"204"
-:395
-|2,0,1530279569,,"395"
-:181
-|2,0,1530279494,,"181"
-:211
-|2,0,1530278600,,"211"
-:121
-|2,0,1530278594,,"121"
-:188
-|2,0,1530278066,,"188"
+|2,0,1534325914,,"F wireless_mngr.c"
+:Rg -tc wireless_get_cur_ssid
+|2,0,1534325097,,"Rg -tc wireless_get_cur_ssid"
 :q
-|2,0,1530276605,,"q"
-:Rg -tc ")?"
-|2,0,1530276533,,"Rg -tc \")?\""
-:Rg -tc "?"
-|2,0,1530276528,,"Rg -tc \"?\""
-:Rg "?"
-|2,0,1530276524,,"Rg \"?\""
-:Rg ?
-|2,0,1530276520,,"Rg ?"
-:130
-|2,0,1530273763,,"130"
-:Rg awf_driver_common.h
-|2,0,1530273715,,"Rg awf_driver_common.h"
-:Rg awf_types.h
-|2,0,1530273691,,"Rg awf_types.h"
-:Rg awf.h
-|2,0,1530273656,,"Rg awf.h"
-:F wireless_common.c
-|2,0,1530273590,,"F wireless_common.c"
-:Rg awf-ng
-|2,0,1530256768,,"Rg awf-ng"
-:F error_codes.h
-|2,0,1530200960,,"F error_codes.h"
-:118
-|2,0,1530200025,,"118"
-:Rg CLOUD
-|2,0,1530198761,,"Rg CLOUD"
-:Rg "-l"
-|2,0,1530197982,,"Rg \"-l\""
-:Rg -l
-|2,0,1530197974,,"Rg -l"
-:Rg .so
-|2,0,1530197963,,"Rg .so"
-:Rg "*.so"
-|2,0,1530197958,,"Rg \"*.so\""
-:Rg *.so
-|2,0,1530197953,,"Rg *.so"
-:grep -rn *.so
-|2,0,1530197941,,"grep -rn *.so"
-:39
-|2,0,1530192152,,"39"
-:233
-|2,0,1530547173,,"233"
-:Rg cdf_client_get
-|2,0,1530192550,,"Rg cdf_client_get"
-:Rg device_serial_number
-|2,0,1530192366,,"Rg device_serial_number"
-:Rg device_serial_numder
-|2,0,1530192364,,"Rg device_serial_numder"
-:334
-|2,0,1530192131,,"334"
-:.,.+112321
-|2,0,1530526208,,".,.+112321"
-:cs find g cdf_client_get
-|2,0,1530526191,,"cs find g cdf_client_get"
-:cs reset
-|2,0,1530526170,,"cs reset"
-:cd cdf-master/
-|2,0,1530526162,,"cd cdf-master/"
-:cs find g cdf_client_Get
-|2,0,1530526115,,"cs find g cdf_client_Get"
-:!pw
-|2,0,1530525951,,"!pw"
-:Rg MAX_SERIAL_NUMBER_LEN
-|2,0,1530114600,,"Rg MAX_SERIAL_NUMBER_LEN"
-:981
-|2,0,1530288255,,"981"
-:e /home/noe/.vimrc
-|2,0,1530525628,,"e /home/noe/.vimrc"
-:e /home/noe/
-|2,0,1530525570,,"e /home/noe/"
-:vimrc
-|2,0,1530525543,,"vimrc"
-:e .
-|2,0,1530525532,,"e ."
-:cd
-|2,0,1530525384,,"cd"
-:Rg "can not open dev"
-|2,0,1530523900,,"Rg \"can not open dev\""
-:Rg true
-|2,0,1530278644,,"Rg true"
-:Rg bEnable
-|2,0,1530274636,,"Rg bEnable"
-:Rg cdf_clien_get
-|2,0,1530282080,,"Rg cdf_clien_get"
-:Rg DHOSBool
-|2,0,1530201015,,"Rg DHOSBool"
-:Rg ERR_CFG_GET
-|2,0,1530200930,,"Rg ERR_CFG_GET"
-:Rg ether_addr
-|2,0,1530187544,,"Rg ether_addr"
-:ğwd
-|2,0,1530198294,,"ğwd"
-:808
-|2,0,1530188031,,"808"
-:284
-|2,0,1530187930,,"284"
-:FZF get_mac_by_ifname
-|2,0,1530186504,,"FZF get_mac_by_ifname"
-:fzf 
-|2,0,1530186493,,"fzf "
-:FZF 
-|2,0,1530186476,,"FZF "
-:FZF ether_addr
-|2,0,1530186473,,"FZF ether_addr"
-:FZF ether
-|2,0,1530186467,,"FZF ether"
-:FZY ether_addr
-|2,0,1530186460,,"FZY ether_addr"
+|2,0,1534253290,,"q"
+:Rg -tc get_current_channel
+|2,0,1534169234,,"Rg -tc get_current_channel"
+:Rg mesh_links
+|2,0,1533823235,,"Rg mesh_links"
+:Rg -tc mycca
+|2,0,1533914338,,"Rg -tc mycca"
+:Rg -tc cca2g
+|2,0,1533914299,,"Rg -tc cca2g"
+:232
+|2,0,1533734036,,"232"
+:224
+|2,0,1533734031,,"224"
+:863
+|2,0,1533720182,,"863"
+:505
+|2,0,1533720075,,"505"
+:F air-wall.c
+|2,0,1533720073,,"F air-wall.c"
+:F airwall.c
+|2,0,1533720070,,"F airwall.c"
+:Rg routing_get_mesh_peers
+|2,0,1533718660,,"Rg routing_get_mesh_peers"
+:qa
+|2,0,1533821512,,"qa"
+:Rg routin_get_mesh_peers
+|2,0,1533821177,,"Rg routin_get_mesh_peers"
+:Rg platform_get_mesh_peers
+|2,0,1533738906,,"Rg platform_get_mesh_peers"
+:Rg brMac
+|2,0,1533742316,,"Rg brMac"
+:Rg stats_mngr
+|2,0,1533740374,,"Rg stats_mngr"
+:Rg stats_manager
+|2,0,1533740371,,"Rg stats_manager"
+:Rg stats-manager
+|2,0,1533740367,,"Rg stats-manager"
+:Rg -tc primary_
+|2,0,1533739407,,"Rg -tc primary_"
+:Rg -tc primary_mac_address
+|2,0,1533739403,,"Rg -tc primary_mac_address"
+:Rg -tc primary_mac_addres
+|2,0,1533739401,,"Rg -tc primary_mac_addres"
+:Rg TOPOGEN_AIRWALL
+|2,0,1533815891,,"Rg TOPOGEN_AIRWALL"
+:Rg ownaddr
+|2,0,1533815756,,"Rg ownaddr"
+:Rg ownaddress
+|2,0,1533815736,,"Rg ownaddress"
+:Rg -tc ownaddress
+|2,0,1533815715,,"Rg -tc ownaddress"
+:Rg -tc cca
+|2,0,1533815695,,"Rg -tc cca"
+:Rg -tc TOPOLOGY_FILE
+|2,0,1533815658,,"Rg -tc TOPOLOGY_FILE"
+:Rg -tc topology.txt
+|2,0,1533815633,,"Rg -tc topology.txt"
+:31
+|2,0,1533809009,,"31"
+:F stats_mngr.c
+|2,0,1533802416,,"F stats_mngr.c"
+:Rg stats_mngr.c
+|2,0,1533802384,,"Rg stats_mngr.c"
+:Rt -tc brMac
+|2,0,1533742614,,"Rt -tc brMac"
+:Rt -tc brMAc
+|2,0,1533742608,,"Rt -tc brMAc"
+:Rg air_mal_interface_get_stats
+|2,0,1533739076,,"Rg air_mal_interface_get_stats"
+:Rg -tc air_mal_interface_get_stats
+|2,0,1533739070,,"Rg -tc air_mal_interface_get_stats"
+:G air_mal_interface_get_stats
+|2,0,1533739065,,"G air_mal_interface_get_stats"
+:Rg -tc get_mesh_peers
+|2,0,1533738769,,"Rg -tc get_mesh_peers"
+:Rg -tc get_mesh_peer
+|2,0,1533738681,,"Rg -tc get_mesh_peer"
+:qa1
+|2,0,1533733910,,"qa1"
+:R data_model.json
+|2,0,1533546297,,"R data_model.json"
+:W
+|2,0,1533543042,,"W"
+:1631
+|2,0,1533543011,,"1631"
+:1449
+|2,0,1533542999,,"1449"
+:1388
+|2,0,1533542987,,"1388"
+:871
+|2,0,1533542969,,"871"
+:F data_adapter.c
+|2,0,1533542953,,"F data_adapter.c"
+:F genetlink.c
+|2,0,1533473173,,"F genetlink.c"
+:F diag.c
+|2,0,1533473160,,"F diag.c"
+:F af_netlink.h
+|2,0,1533473150,,"F af_netlink.h"
+:F af_netlink.c
+|2,0,1533473062,,"F af_netlink.c"
+:F, af_netlink.c
+|2,0,1533473021,,"F, af_netlink.c"
+:Rg -tc af_netlink.c
+|2,0,1533473016,,"Rg -tc af_netlink.c"
+:Rg -tc dev_alloc_skb
+|2,0,1533468905,,"Rg -tc dev_alloc_skb"
+:!Cscope -d
+|2,0,1533467968,,"!Cscope -d"
+:Cscope -d
+|2,0,1533467964,,"Cscope -d"
+:Cscope
+|2,0,1533467962,,"Cscope"
+:Csope
+|2,0,1533467959,,"Csope"
+:Rg -tc netdev_alloc_skb
+|2,0,1533467867,,"Rg -tc netdev_alloc_skb"
+:Rg -tc netdev_alloc
+|2,0,1533467850,,"Rg -tc netdev_alloc"
+:Rg -tc alloc_skb
+|2,0,1533468834,,"Rg -tc alloc_skb"
+:Faf_netlink.c
+|2,0,1533472891,,"Faf_netlink.c"
+:wqa!
+|2,0,1533468161,,"wqa!"
+:Rg -c netdev_alloc
+|2,0,1533467163,,"Rg -c netdev_alloc"
+:Rg netdev_alloc
+|2,0,1533467154,,"Rg netdev_alloc"
+:w!
+|2,0,1533306753,,"w!"
+:876
+|2,0,1533137982,,"876"
+:Rg -rn productId
+|2,0,1533137866,,"Rg -rn productId"
+:Rg -rn producId
+|2,0,1533137861,,"Rg -rn producId"
+::w
+|2,0,1533047174,,":w"
+:Rg gw_ip
+|2,0,1533046871,,"Rg gw_ip"
+:Rg topology_message
+|2,0,1533111429,,"Rg topology_message"
+:Rg dhcpcap
+|2,0,1533111379,,"Rg dhcpcap"
+:wq
+|2,0,1533303387,,"wq"
+:s
+|2,0,1533217590,,"s"
+:Rg platform_get_routes
+|2,0,1533217236,,"Rg platform_get_routes"
+:F routes.c
+|2,0,1533217216,,"F routes.c"
+:F routes-c
+|2,0,1533217213,,"F routes-c"
+:z
+|2,0,1533216805,,"z"
+:f
+|2,0,1533216801,,"f"
 :F
-|2,0,1530186449,,"F"
-:BTags
-|2,0,1530186438,,"BTags"
-:697
-|2,0,1530186229,,"697"
-:Rg get_device_primary_mac
-|2,0,1530185930,,"Rg get_device_primary_mac"
-:308
-|2,0,1530179297,,"308"
-:295
-|2,0,1530178935,,"295"
-:636
-|2,0,1530178784,,"636"
-:686
-|2,0,1530178766,,"686"
-:307
-|2,0,1530178720,,"307"
-:222
-|2,0,1530178704,,"222"
-:183
-|2,0,1530178680,,"183"
-:985
-|2,0,1530178636,,"985"
-:522
-|2,0,1530178622,,"522"
-:Rg PRIMARY_INTERFACE_NAME
-|2,0,1530178243,,"Rg PRIMARY_INTERFACE_NAME"
-:Rg -tc PRIMARY_INTERFACE_NAME
-|2,0,1530178235,,"Rg -tc PRIMARY_INTERFACE_NAME"
-:e
-|2,0,1530178087,,"e"
-:424
-|2,0,1530177856,,"424"
-:413
-|2,0,1530177815,,"413"
-:Rg -tc get_pathvalue
-|2,0,1530174065,,"Rg -tc get_pathvalue"
-:Rg -tc get_pathvalues
-|2,0,1530173515,,"Rg -tc get_pathvalues"
-:Rg cdf_client_options
-|2,0,1530170054,,"Rg cdf_client_options"
-:Rg get_config
-|2,0,1530115972,,"Rg get_config"
-:Rg licencing
-|2,0,1530115271,,"Rg licencing"
-:501
-|2,0,1530115234,,"501"
-:499
-|2,0,1530114693,,"499"
-:973
-|2,0,1530114175,,"973"
-:821
-|2,0,1530114098,,"821"
-:244
-|2,0,1530114006,,"244"
-:69
-|2,0,1530113946,,"69"
-:27
-|2,0,1530113850,,"27"
-:Rg NOT_IMPLEMENTED
-|2,0,1530112240,,"Rg NOT_IMPLEMENTED"
-:Rg platform.h
-|2,0,1530110612,,"Rg platform.h"
-:Rg show_config
-|2,0,1530110206,,"Rg show_config"
-:Rg airca_config_t
-|2,0,1530109565,,"Rg airca_config_t"
-:Rg read
-|2,0,1530109222,,"Rg read"
-:Rg inflate
-|2,0,1530088072,,"Rg inflate"
-:Rg inflateInit
-|2,0,1530088066,,"Rg inflateInit"
-:Rg ETHER_ADDR
-|2,0,1530114448,,"Rg ETHER_ADDR"
-::q!
-|2,0,1530085613,,":q!"
-:'<,'>q!
-|2,0,1530085229,,"'<,'>q!"
-:Rg scanStatus
-|2,0,1530023649,,"Rg scanStatus"
-:F aci-cli.c
-|2,0,1530023383,,"F aci-cli.c"
-:Rg -tc  aci_wifi_command_scan_start
-|2,0,1530023276,,"Rg -tc  aci_wifi_command_scan_start"
-:Rg -tc aci_wifi_command_scan_start
-|2,0,1530022915,,"Rg -tc aci_wifi_command_scan_start"
-:,l
-|2,0,1530022910,,",l"
-:Rg common_get_
-|2,0,1530019500,,"Rg common_get_"
-:Rg common_get_scan_results
-|2,0,1530019468,,"Rg common_get_scan_results"
-:Rg -tc awf_get_scan_results
-|2,0,1530019374,,"Rg -tc awf_get_scan_results"
-:R
-|2,0,1528383575,,"R"
-:Rg -tc 7679
-|2,0,1528381635,,"Rg -tc 7679"
-:F netfilter.c
-|2,0,1528380934,,"F netfilter.c"
-:Rg -tc br_dev_xmit
-|2,0,1528470252,,"Rg -tc br_dev_xmit"
-:Rg -tc br_dex_xmit
-|2,0,1528470247,,"Rg -tc br_dex_xmit"
-:344
-|2,0,1528455827,,"344"
-:3623
-|2,0,1528386557,,"3623"
-:3550
-|2,0,1528386549,,"3550"
-:3456
-|2,0,1528386540,,"3456"
-::W
-|2,0,1528384979,,":W"
-:www
-|2,0,1528384969,,"www"
-:F dev.c
-|2,0,1528376829,,"F dev.c"
-:F br_input.c
-|2,0,1528376826,,"F br_input.c"
-:F routing.c
-|2,0,1529573162,,"F routing.c"
-:Rg MESHEST
-|2,0,1529509278,,"Rg MESHEST"
-:Rg -tc alloc_
-|2,0,1529420820,,"Rg -tc alloc_"
-:Rg -tc alloc_wldev
-|2,0,1529420811,,"Rg -tc alloc_wldev"
-:Rg -tc alloc_etherdev
-|2,0,1529420798,,"Rg -tc alloc_etherdev"
-:Rg -tc alloc_netdev
-|2,0,1529420634,,"Rg -tc alloc_netdev"
-:Rg packet_type
-|2,0,1529408035,,"Rg packet_type"
-:3682
-|2,0,1529407778,,"3682"
-:Rg -tc wps_trustedpin
-|2,0,1528473016,,"Rg -tc wps_trustedpin"
-:Rg -tc SetPassword
-|2,0,1528472927,,"Rg -tc SetPassword"
-:Rg -tc SetPassowrd
-|2,0,1528472924,,"Rg -tc SetPassowrd"
-:Rg -tc RestartDaemons
-|2,0,1528472907,,"Rg -tc RestartDaemons"
-:F plc_mngr.c
-|2,0,1528472828,,"F plc_mngr.c"
-:Rg -tc tpin
-|2,0,1528472670,,"Rg -tc tpin"
-:Rg -tc "Got event"
-|2,0,1528467494,,"Rg -tc \"Got event\""
-:Rg -tc TPIN
-|2,0,1528467442,,"Rg -tc TPIN"
-:Rg -t TPIN
-|2,0,1528467436,,"Rg -t TPIN"
-:Rg -tc "they have a lower"
-|2,0,1528386113,,"Rg -tc \"they have a lower\""
-:Rg -tc "Recv foreign"
-|2,0,1528385994,,"Rg -tc \"Recv foreign\""
-:Rg -tc Recv
-|2,0,1528385985,,"Rg -tc Recv"
-:Rg -tc RESP_WAIT
-|2,0,1528385916,,"Rg -tc RESP_WAIT"
-:Rg -tc "Didn't receive response in time"
-|2,0,1528385750,,"Rg -tc \"Didn't receive response in time\""
-:837
-|2,0,1528384282,,"837"
-:Rg -tc " Didn't receive response in time"
-|2,0,1528383923,,"Rg -tc \" Didn't receive response in time\""
-:NERDTreeMirrorOpen,
-|2,0,1528383354,,"NERDTreeMirrorOpen,"
-:NERDTreeMirrorOpen
-|2,0,1528383329,,"NERDTreeMirrorOpen"
-:?
-|2,0,1528383280,,"?"
-:a
-|2,0,1528383257,,"a"
-:Rg -tc P_ARP
-|2,0,1528377545,,"Rg -tc P_ARP"
-:Rg -tc 
-|2,0,1528377462,,"Rg -tc "
-:Rg -tc nmap <F11> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.hpp' > cscope.files<CR>  \:!cscope -b -i cscope.files -f cscope.out<CR>  \:cs reset<CR>
-|2,0,1528377442,,"Rg -tc nmap <F11> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.hpp' > cscope.files<CR>  \\:!cscope -b -i cscope.files -f cscope.out<CR>  \\:cs reset<CR>"
-:Rg -tc rt_receive_skb
-|2,0,1528377199,,"Rg -tc rt_receive_skb"
-:F wps_attr_process.c
-|2,0,1528376802,,"F wps_attr_process.c"
-:Rg -tc uifx_get
-|2,0,1528363275,,"Rg -tc uifx_get"
-:Rg -tc password
-|2,0,1528363229,,"Rg -tc password"
-:Rg -tc wps_taken_config
-|2,0,1528297060,,"Rg -tc wps_taken_config"
-:Rg -tc awf_wps_config_t
-|2,0,1528290546,,"Rg -tc awf_wps_config_t"
-:Rg -tc "Override destination mac address"
-|2,0,1528301182,,"Rg -tc \"Override destination mac address\""
-:Rg -tc "RX EAPOL SUPPLICANT"
-|2,0,1528300964,,"Rg -tc \"RX EAPOL SUPPLICANT\""
-:Rg -tc wired
-|2,0,1528300915,,"Rg -tc wired"
-:F wps_attr_process.c
-|2,0,1528300898,,"F wps_attr_process.c"
-:Rg -tc Br
-|2,0,1528300481,,"Rg -tc Br"
-:6151
-<! # & * < = > @ Ag AirlineRefresh AirlineTheme AirlineToggle AirlineToggleWhitespace BCommits BLines BTags BufExplorer BufExplorerHorizontalSplit BufExplorerVerticalSplit Buffers CTAGS ClearAllCtrlPCaches ClearCtrlPCache Colors Commands Commits CtrlP CtrlPBookmarkDir CtrlPBookmarkDirAdd CtrlPBufTag CtrlPBufTagAll CtrlPBuffer CtrlPChange CtrlPChangeAll CtrlPClearAllCaches CtrlPClearCache CtrlPCurFile CtrlPCurWD CtrlPDir CtrlPLastMode CtrlPLine CtrlPMRUFiles CtrlPMixed CtrlPQuickfix CtrlPRTS CtrlPRoot CtrlPTag CtrlPUndo DoMatchParen Errors Explore F FZF Files Filetypes Find GFiles GLVS GREP Gblame Gbrowse Gcd Gcommit Gdelete Gdiff Ge Gedit GetLatestVimScripts GetScripts Gfetch Ggrep Git GitFiles Glcd Glgrep Gllog Glog Gmerge Gmove Gpedit Gpull Gpush Gread Grebase Gremove Grename Gsdiff Gsplit Gstatus Gtabedit Gvdiff Gvsplit Gw Gwq Gwrite Helptags Hexplore History LP LPE LPF LPR Lexplore Lines Locate LogiPat LogiPatFlags MANPAGER Maps Marks MatchDebug MkVimball NERDTree NERDTreeCWD NERDTreeClose NERDTreeFind NERDTreeFocus NERDTreeFocusToggle NERDTreeFromBookmark NERDTreeMirror NERDTreeMirrorOpen NERDTreeMirrorToggle NERDTreeSteppedClose NERDTreeSteppedOpen NERDTreeTabsClose NERDTreeTabsFind NERDTreeTabsOpen NERDTreeTabsToggle NERDTreeToggle NetUserPass NetrwClean NetrwSettings Nexplore Next NoMatchParen Nread Nsource Ntree NumTog Nwrite Pexplore Print QFix QFix2 Rg RgRoot RmVimball Sexplore Snippets SyntasticCheck SyntasticInfo SyntasticReset SyntasticSetLoclist SyntasticToggleMode TComment TCommentAs TCommentBlock TCommentInline TCommentMaybeInline TCommentRight TOhtml TabVis Tagbar TagbarClose TagbarCurrentTag TagbarDebug TagbarDebugEnd TagbarGetTypeConfig TagbarOpen TagbarOpenAutoClose TagbarSetFoldlevel TagbarShowTag TagbarToggle TagbarTogglePause Tags TbAup TbStart TbStop TbToggle Tbbn Tbbp Texplore Tlist TlistAddFiles TlistAddFilesRecursive TlistClose TlistDebug TlistHighlightTag TlistLock TlistMessages TlistOpen TlistSessionLoad TlistSessionSave TlistShowPrototype TlistShowTag TlistSync TlistToggle TlistUndebug TlistUnlock TlistUpdate UseVimball Vexplore VimballList Vimuntar Windows X abbreviate abclear aboveleft all amenu anoremenu append argadd argdelete argdo argedit argglobal arglocal args argument ascii augroup aunmenu autocmd bNext badd ball bdelete behave belowright bfirst blast bmodified bnext botright bprevious break breakadd breakdel breaklist brewind browse bufdo buffer buffers bunload bwipeout cNext cNfile cabbrev cabclear caddbuffer caddexpr caddfile call catch cbottom cbuffer cc cclose cd cdo center cexpr cfdo cfile cfirst cgetbuffer cgetexpr cgetfile change changes chdir checkpath checktime chistory clast clearjumps clist close cmap cmapclear cmenu cnewer cnext cnfile cnoreabbrev cnoremap cnoremenu colder colorscheme comclear command compiler confirm continue copen copy cpfile cprevious cquit crewind cscope cstag cunabbrev cunmap cunmenu cwindow debug debuggreedy delcommand delete delfunction delmarks diffget diffoff diffpatch diffput diffsplit diffthis diffupdate digraphs display djump dlist doautoall doautocmd drop dsearch dsplit earlier echo echoerr echohl echomsg echon edit else elseif emenu endfor endfunction endif endtry endwhile enew ex execute exit exusage file files filetype filter finally find finish first fixdel fold foldclose folddoclosed folddoopen foldopen for function global goto grep grepadd gui gvim hardcopy help helpclose helpfind helpgrep helptags hide highlight history iabbrev iabclear if ijump ilist imap imapclear imenu inoreabbrev inoremap inoremenu insert intro isearch isplit iunabbrev iunmap iunmenu join jumps k keepalt keepjumps keepmarks keeppatterns lNext lNfile laddbuffer laddexpr laddfile language last later lbottom lbuffer lcd lchdir lclose lcscope ldo left leftabove let lexpr lfdo lfile lfirst lgetbuffer lgetexpr lgetfile lgrep lgrepadd lhelpgrep lhistory list ll llast llist lmake lmap lmapclear lnewer lnext lnfile lnoremap loadkeymap loadview lockmarks lockvar lolder lopen lpfile lprevious lrewind ls ltag lua luado luafile lunmap lvimgrep lvimgrepadd lwindow make map mapclear mark marks match menu menutranslate messages mkexrc mksession mkspell mkview mkvimrc mode move mzfile mzscheme nbclose nbkey nbstart new next nmap nmapclear nmenu nnoremap nnoremenu noautocmd nohlsearch noreabbrev noremap noremenu normal noswapfile number nunmap nunmenu oldfiles omap omapclear omenu only onoremap onoremenu open options ounmap ounmenu ownsyntax packadd packloadall pclose pedit perl perldo pop popup ppop preserve previous print profdel profile promptfind promptrepl psearch ptNext ptag ptfirst ptjump ptlast ptnext ptprevious ptrewind ptselect put pwd py3 py3do py3file pydo pyfile python python3 pythonx pyx pyxdo pyxfile qall quit quitall read recover redir redo redraw redrawstatus registers resize retab return rewind right rightbelow ruby rubydo rubyfile rundo runtime rviminfo sNext sall sandbox sargument saveas sbNext sball sbfirst sblast sbmodified sbnext sbprevious sbrewind sbuffer scriptencoding scriptnames scscope set setfiletype setglobal setlocal sfind sfirst shell sign silent simalt slast sleep smagic smap smapclear smenu smile snext snomagic snoremap snoremenu sort source spelldump spellgood spellinfo spellrepall spellundo spellwrong split sprevious srewind stag startgreplace startinsert startreplace stjump stop stopinsert stselect substitute sunhide sunmap sunmenu suspend sview swapname syncbind syntax syntime t tNext tab tabNext tabclose tabdo tabedit tabfind tabfirst tablast tabmove tabnew tabnext tabonly tabprevious tabrewind tabs tag tags tcl tcldo tclfile tearoff terminal tfirst throw tjump tlast tmap tmapclear tmenu tnext tnoremap topleft tprevious trewind try tselect tunmap tunmenu unabbreviate undo undojoin undolist unhide unlet unlockvar unmap unmenu unsilent update verbose version vertical vglobal view vimgrep vimgrepadd visual viusage vmap vmapclear vmenu vnew vnoremap vnoremenu vsplit vunmap vunmenu wNext wall while wincmd windo winpos winsize wnext wprevious wq wqall write wsverb wundo wviminfo xall xit xmap xmapclear xmenu xnoremap xnoremenu xunmap xunmenu yank z /home/noe/
-|2,0,1528296525,,>6150
-|<"! # & * < = > @ Ag AirlineRefresh AirlineTheme AirlineToggle AirlineToggleWhitespace BCommits BLines BTags BufExplorer BufExplorerHorizontalSplit BufExplorerVerticalSplit Buffers CTAGS ClearAllCtrlPCaches ClearCtrlPCache Colors Commands Commits CtrlP CtrlPBookmarkDir CtrlPBookmarkDirAdd CtrlPBufTag CtrlPBufTagAll CtrlPBuffer CtrlPChange CtrlPChangeAll CtrlPClearAllCaches CtrlPClearCache CtrlPCurFile CtrlPCurWD CtrlPDir CtrlPLastMode CtrlPLine CtrlPMRUFiles CtrlPMixed CtrlPQuickfix Ctrl
-|<PRTS CtrlPRoot CtrlPTag CtrlPUndo DoMatchParen Errors Explore F FZF Files Filetypes Find GFiles GLVS GREP Gblame Gbrowse Gcd Gcommit Gdelete Gdiff Ge Gedit GetLatestVimScripts GetScripts Gfetch Ggrep Git GitFiles Glcd Glgrep Gllog Glog Gmerge Gmove Gpedit Gpull Gpush Gread Grebase Gremove Grename Gsdiff Gsplit Gstatus Gtabedit Gvdiff Gvsplit Gw Gwq Gwrite Helptags Hexplore History LP LPE LPF LPR Lexplore Lines Locate LogiPat LogiPatFlags MANPAGER Maps Marks MatchDebug MkVimball NERDTre
-|<e NERDTreeCWD NERDTreeClose NERDTreeFind NERDTreeFocus NERDTreeFocusToggle NERDTreeFromBookmark NERDTreeMirror NERDTreeMirrorOpen NERDTreeMirrorToggle NERDTreeSteppedClose NERDTreeSteppedOpen NERDTreeTabsClose NERDTreeTabsFind NERDTreeTabsOpen NERDTreeTabsToggle NERDTreeToggle NetUserPass NetrwClean NetrwSettings Nexplore Next NoMatchParen Nread Nsource Ntree NumTog Nwrite Pexplore Print QFix QFix2 Rg RgRoot RmVimball Sexplore Snippets SyntasticCheck SyntasticInfo SyntasticReset Syntas
-|<ticSetLoclist SyntasticToggleMode TComment TCommentAs TCommentBlock TCommentInline TCommentMaybeInline TCommentRight TOhtml TabVis Tagbar TagbarClose TagbarCurrentTag TagbarDebug TagbarDebugEnd TagbarGetTypeConfig TagbarOpen TagbarOpenAutoClose TagbarSetFoldlevel TagbarShowTag TagbarToggle TagbarTogglePause Tags TbAup TbStart TbStop TbToggle Tbbn Tbbp Texplore Tlist TlistAddFiles TlistAddFilesRecursive TlistClose TlistDebug TlistHighlightTag TlistLock TlistMessages TlistOpen TlistSessi
-|<onLoad TlistSessionSave TlistShowPrototype TlistShowTag TlistSync TlistToggle TlistUndebug TlistUnlock TlistUpdate UseVimball Vexplore VimballList Vimuntar Windows X abbreviate abclear aboveleft all amenu anoremenu append argadd argdelete argdo argedit argglobal arglocal args argument ascii augroup aunmenu autocmd bNext badd ball bdelete behave belowright bfirst blast bmodified bnext botright bprevious break breakadd breakdel breaklist brewind browse bufdo buffer buffers bunload bwipeo
-|<ut cNext cNfile cabbrev cabclear caddbuffer caddexpr caddfile call catch cbottom cbuffer cc cclose cd cdo center cexpr cfdo cfile cfirst cgetbuffer cgetexpr cgetfile change changes chdir checkpath checktime chistory clast clearjumps clist close cmap cmapclear cmenu cnewer cnext cnfile cnoreabbrev cnoremap cnoremenu colder colorscheme comclear command compiler confirm continue copen copy cpfile cprevious cquit crewind cscope cstag cunabbrev cunmap cunmenu cwindow debug debuggreedy delco
-|<mmand delete delfunction delmarks diffget diffoff diffpatch diffput diffsplit diffthis diffupdate digraphs display djump dlist doautoall doautocmd drop dsearch dsplit earlier echo echoerr echohl echomsg echon edit else elseif emenu endfor endfunction endif endtry endwhile enew ex execute exit exusage file files filetype filter finally find finish first fixdel fold foldclose folddoclosed folddoopen foldopen for function global goto grep grepadd gui gvim hardcopy help helpclose helpfind 
-|<helpgrep helptags hide highlight history iabbrev iabclear if ijump ilist imap imapclear imenu inoreabbrev inoremap inoremenu insert intro isearch isplit iunabbrev iunmap iunmenu join jumps k keepalt keepjumps keepmarks keeppatterns lNext lNfile laddbuffer laddexpr laddfile language last later lbottom lbuffer lcd lchdir lclose lcscope ldo left leftabove let lexpr lfdo lfile lfirst lgetbuffer lgetexpr lgetfile lgrep lgrepadd lhelpgrep lhistory list ll llast llist lmake lmap lmapclear lne
-|<wer lnext lnfile lnoremap loadkeymap loadview lockmarks lockvar lolder lopen lpfile lprevious lrewind ls ltag lua luado luafile lunmap lvimgrep lvimgrepadd lwindow make map mapclear mark marks match menu menutranslate messages mkexrc mksession mkspell mkview mkvimrc mode move mzfile mzscheme nbclose nbkey nbstart new next nmap nmapclear nmenu nnoremap nnoremenu noautocmd nohlsearch noreabbrev noremap noremenu normal noswapfile number nunmap nunmenu oldfiles omap omapclear omenu only on
-|<oremap onoremenu open options ounmap ounmenu ownsyntax packadd packloadall pclose pedit perl perldo pop popup ppop preserve previous print profdel profile promptfind promptrepl psearch ptNext ptag ptfirst ptjump ptlast ptnext ptprevious ptrewind ptselect put pwd py3 py3do py3file pydo pyfile python python3 pythonx pyx pyxdo pyxfile qall quit quitall read recover redir redo redraw redrawstatus registers resize retab return rewind right rightbelow ruby rubydo rubyfile rundo runtime rvimi
-|<nfo sNext sall sandbox sargument saveas sbNext sball sbfirst sblast sbmodified sbnext sbprevious sbrewind sbuffer scriptencoding scriptnames scscope set setfiletype setglobal setlocal sfind sfirst shell sign silent simalt slast sleep smagic smap smapclear smenu smile snext snomagic snoremap snoremenu sort source spelldump spellgood spellinfo spellrepall spellundo spellwrong split sprevious srewind stag startgreplace startinsert startreplace stjump stop stopinsert stselect substitute su
-|<nhide sunmap sunmenu suspend sview swapname syncbind syntax syntime t tNext tab tabNext tabclose tabdo tabedit tabfind tabfirst tablast tabmove tabnew tabnext tabonly tabprevious tabrewind tabs tag tags tcl tcldo tclfile tearoff terminal tfirst throw tjump tlast tmap tmapclear tmenu tnext tnoremap topleft tprevious trewind try tselect tunmap tunmenu unabbreviate undo undojoin undolist unhide unlet unlockvar unmap unmenu unsilent update verbose version vertical vglobal view vimgrep vimg
-|<repadd visual viusage vmap vmapclear vmenu vnew vnoremap vnoremenu vsplit vunmap vunmenu wNext wall while wincmd windo winpos winsize wnext wprevious wq wqall write wsverb wundo wviminfo xall xit xmap xmapclear xmenu xnoremap xnoremenu xunmap xunmenu yank z /home/noe/"
-:641
-|2,0,1528291674,,"641"
-:F sky_eth_mngr.c
-|2,0,1528291672,,"F sky_eth_mngr.c"
-:TbStop
-|2,0,1528290422,,"TbStop"
-:TbAup
-|2,0,1528290416,,"TbAup"
-:Tbbd
-|2,0,1528290413,,"Tbbd"
-:Tbd
-|2,0,1528290410,,"Tbd"
-:Rg -tc br0
-|2,0,1528290258,,"Rg -tc br0"
-:TagbarGetTypeConfig:q
-|2,0,1528302209,,"TagbarGetTypeConfig:q"
-:F wireless_mngrc.:q!
-|2,0,1528300470,,"F wireless_mngrc.:q!"
-:Rg -tc process_attr
-|2,0,1528299847,,"Rg -tc process_attr"
-:Rg -tc ADD
-|2,0,1528299811,,"Rg -tc ADD"
-:Rg -tc "RX EAPOL HOSTAPD"
-|2,0,1528298177,,"Rg -tc \"RX EAPOL HOSTAPD\""
-:Rg -tc "Peer discovered"
-|2,0,1528291540,,"Rg -tc \"Peer discovered\""
-:Rg -tc tunnel
-|2,0,1528292790,,"Rg -tc tunnel"
-:715
-|2,0,1528286800,,"715"
-:3892
-|2,0,1528283915,,"3892"
-:Rg -tc awf_set_wps_trustedpin
-|2,0,1528213132,,"Rg -tc awf_set_wps_trustedpin"
-:F wireless_mngr.c<F12><F12>
-|2,0,1528213069,,"F wireless_mngr.c<F12><F12>"
-:é
-|2,0,1528212101,,"é"
-:FZF
-|2,0,1528193388,,"FZF"
-:Tb
-|2,0,1528208077,,"Tb"
-:..
-|2,0,1528207939,,".."
-:r
-|2,0,1528207795,,"r"
-:Gb
-|2,0,1528206645,,"Gb"
-:F .vimrc
-|2,0,0,,"F .vimrc"
-:Rg -tc DISABLE_AUTOMESH
-|2,0,1528189517,,"Rg -tc DISABLE_AUTOMESH"
-:Rg DISABLE_AUTOMESH
-|2,0,1528189508,,"Rg DISABLE_AUTOMESH"
-:Tbbn
-|2,0,1528189301,,"Tbbn"
-:FZF dev.c
-|2,0,1528187939,,"FZF dev.c"
-:FZF broadcom_wllib.c
-|2,0,1528187712,,"FZF broadcom_wllib.c"
-:FZ
-|2,0,1528186672,,"FZ"
-:FZF routing.c
-|2,0,1528186656,,"FZF routing.c"
-:FZF .
-|2,0,1528187511,,"FZF ."
-:FZF .vimr
-|2,0,1528187497,,"FZF .vimr"
-:FZF .vimrc
-|2,0,1528187485,,"FZF .vimrc"
-:!fzf mustang-vim/
-|2,0,1528186416,,"!fzf mustang-vim/"
-:F vim
-|2,0,1528186157,,"F vim"
-:F wireless_mngrc.
-|2,0,1528127952,,"F wireless_mngrc."
-:Find wireless_mngr.c
-|2,0,0,,"Find wireless_mngr.c"
-:Locate wireless_mngr.c
-|2,0,0,,"Locate wireless_mngr.c"
-:Find 
-|2,0,0,,"Find "
-:Commits
-|2,0,0,,"Commits"
-:fzf
-|2,0,0,,"fzf"
-:Rg -tc PRE
-|2,0,0,,"Rg -tc PRE"
-:Rg -tc PRE_ROUTING
-|2,0,0,,"Rg -tc PRE_ROUTING"
-:Rg -tc HOOK
-|2,0,0,,"Rg -tc HOOK"
-:TabVis
-|2,0,0,,"TabVis"
-:TagbarDebugEnd
-|2,0,0,,"TagbarDebugEnd"
-:TagbarClose
-|2,0,0,,"TagbarClose"
-:Rg -tc automesh
-|2,0,0,,"Rg -tc automesh"
-:Rg -tc automehs
-|2,0,0,,"Rg -tc automehs"
-:Rg -tc nejat
-|2,0,0,,"Rg -tc nejat"
-:Rg -tc
-|2,0,0,,"Rg -tc"
-:!rg -tc wireless
-|2,0,0,,"!rg -tc wireless"
-:!rg
-|2,0,0,,"!rg"
-:rg
-|2,0,0,,"rg"
-:rg -tc NF_STOLEN
-|2,0,0,,"rg -tc NF_STOLEN"
-:Rg -tc NF_STOLEN
-|2,0,0,,"Rg -tc NF_STOLEN"
-:Ag -tc NF_STOLEN
-|2,0,0,,"Ag -tc NF_STOLEN"
-:OrgCheckBoxNewBelow
-|2,0,0,,"OrgCheckBoxNewBelow"
-:OrgAgendaTodo
-|2,0,0,,"OrgAgendaTodo"
-:qé
-|2,0,0,,"qé"
+|2,0,1533216798,,"F"
+:Rg airbus_client
+|2,0,1533215595,,"Rg airbus_client"
+:Q!
+|2,0,1533215220,,"Q!"
+:q!'
+|2,0,1533215012,,"q!'"
+:Wq!
+|2,0,1533214782,,"Wq!"
+:Rg airbus
+|2,0,1533202738,,"Rg airbus"
+:44
+|2,0,1533202373,,"44"
+:wqa
+|2,0,1533200983,,"wqa"
+:F data_model.json
+|2,0,1533138911,,"F data_model.json"
+:Rg json
+|2,0,1533138888,,"Rg json"
+:Rg get_gw_ip
+|2,0,1533036250,,"Rg get_gw_ip"
+:Rg get_device_uptime
+|2,0,1533136966,,"Rg get_device_uptime"
+:Gblame
+|2,0,1533136441,,"Gblame"
+:Rg "non-existent cdf path"
+|2,0,1533127228,,"Rg \"non-existent cdf path\""
+:Rg AccessPointNumberOfEntries
+|2,0,1533127163,,"Rg AccessPointNumberOfEntries"
+:Rg connected_to_gw
+|2,0,1533126290,,"Rg connected_to_gw"
+:Rg eth_connected
+|2,0,1533126282,,"Rg eth_connected"
+:Rg is_ethernet_connected
+|2,0,1533126276,,"Rg is_ethernet_connected"
+:Rg direct
+|2,0,1532955110,,"Rg direct"
+:hi MBENormal guifg=#808080 guibg=fg
+|2,0,1533125125,,"hi MBENormal guifg=#808080 guibg=fg"
+:hi MBENormal 
+|2,0,1533125040,,"hi MBENormal "
+:hi
+|2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
-?/F11
-|2,1,1531325415,47,"F11"
-? \<PreRegistration\>
-|2,1,1531322712,,"\\<PreRegistration\\>"
-? \<RetryMinimumWaite\>
-|2,1,1531322707,,"\\<RetryMinimumWaite\\>"
-? \<ConnectionRequest\>
-|2,1,1531322704,,"\\<ConnectionRequest\\>"
-? \<DataModelVersion\>
-|2,1,1531322700,,"\\<DataModelVersion\\>"
-? \<JsonRPCVersion\>
-|2,1,1531322694,,"\\<JsonRPCVersion\\>"
-? \<NumberOfWorkers\>
-|2,1,1531322687,,"\\<NumberOfWorkers\\>"
-? \<PrimaryMACAddress\>
-|2,1,1531322676,,"\\<PrimaryMACAddress\\>"
-?/Software
-|2,1,1531322670,47,"Software"
-?/PrimaryMACAddress
-|2,1,1531321388,47,"PrimaryMACAddress"
-? \<ACA_PLATFORM_CONFIG_CDF_PATH\>
-|2,1,1531317490,,"\\<ACA_PLATFORM_CONFIG_CDF_PATH\\>"
-? \<__get_mac_by_ifname\>
-|2,1,1531316057,,"\\<__get_mac_by_ifname\\>"
-?/mac
-|2,1,1531316051,47,"mac"
-? \<fetch_serial_number\>
-|2,1,1531315962,,"\\<fetch_serial_number\\>"
-?/serial
-|2,1,1531315893,47,"serial"
-? \<system_get_serial_number\>
-|2,1,1531315871,,"\\<system_get_serial_number\\>"
-?/licensing
-|2,1,1531315763,47,"licensing"
-?/licensing
-|2,1,1531315755,47,"licensing"
-?/disconnected
-|2,1,1531315564,47,"disconnected"
-? \<platform_add_object\>
-|2,1,1531315513,,"\\<platform_add_object\\>"
-? \<platform_get_pathvalues\>
-|2,1,1531315459,,"\\<platform_get_pathvalues\\>"
-? \<platform_get_pathvalue_with_type\>
-|2,1,1531315433,,"\\<platform_get_pathvalue_with_type\\>"
-? \<platform_get_pathvalue_type\>
-|2,1,1531315386,,"\\<platform_get_pathvalue_type\\>"
-?/platform_set_pathvalue_string
-|2,1,1531307089,47,"platform_set_pathvalue_string"
-?/platform_set_pathvalue_s
-|2,1,1531307053,47,"platform_set_pathvalue_s"
-?/setParam_handler
-|2,1,1531307022,47,"setParam_handler"
-?/xmpp_password
-|2,1,1531306625,47,"xmpp_password"
-?/xmpp_pas
-|2,1,1531306605,47,"xmpp_pas"
-?/pass
-|2,1,1531306549,47,"pass"
-?/Domain
-|2,1,1531306541,47,"Domain"
-?/xmpp
-|2,1,1531306486,47,"xmpp"
-?/set
-|2,1,1531306350,47,"set"
-?/asp_xmls
-|2,1,1531305298,47,"asp_xmls"
-?/files
-|2,1,1531305295,47,"files"
-?/manager
-|2,1,1531305250,47,"manager"
-?/filesystem
-|2,1,1531305206,47,"filesystem"
-?/cloud
-|2,1,1531305187,47,"cloud"
-?/Cloud
-|2,1,1531305272,47,"Cloud"
-?/viper
-|2,1,1531304678,47,"viper"
-? \<CONFIG_filesystem_platform_CLOUD_DEVELOPMENT_VERSION_1_2\>
-|2,1,1531304993,,"\\<CONFIG_filesystem_platform_CLOUD_DEVELOPMENT_VERSION_1_2\\>"
-? \<CONFIG_filesystem_platform_DEVELOPMENT_VERSION_1_2\>
-|2,1,1531304928,,"\\<CONFIG_filesystem_platform_DEVELOPMENT_VERSION_1_2\\>"
-?/file
-|2,1,1531304872,47,"file"
-?/bakv
-|2,1,1531304262,47,"bakv"
-?/openssl
-|2,1,1531239307,47,"openssl"
-?/axtls
-|2,1,1531239347,47,"axtls"
-?/CONFIG_manager
-|2,1,1531238209,47,"CONFIG_manager"
-? \<PRIMARY_INTERFACE_NAME\>
-|2,1,1531212458,,"\\<PRIMARY_INTERFACE_NAME\\>"
-?/MESHEST
-|2,1,1529503900,47,"MESHEST"
-?/meshest
-|2,1,1529503894,47,"meshest"
-?/ignoring
-|2,1,1529503858,47,"ignoring"
-?/ignored
-|2,1,1529503840,47,"ignored"
-?/MESHE
-|2,1,1529503339,47,"MESHE"
-??*
-|2,1,1531211867,63,"*"
-? \<ETHER_ADDR_LEN\>
-|2,1,1531210837,,"\\<ETHER_ADDR_LEN\\>"
-?/trim
-|2,1,1531209237,47,"trim"
-?/strncpy
-|2,1,1531204235,47,"strncpy"
-?/fetch
-|2,1,1531153583,47,"fetch"
-? \<mac_str\>
-|2,1,1531153304,,"\\<mac_str\\>"
-?/o
-|2,1,1531153068,47,"o"
-?/strlwr
-|2,1,1531152851,47,"strlwr"
-?/ifname
-|2,1,1531152590,47,"ifname"
-?/fetc
-|2,1,1531151736,47,"fetc"
-?/PRIMARY_INTERFACE_NAME
-|2,1,1531151125,47,"PRIMARY_INTERFACE_NAME"
-? \<get_device_primary_mac\>
-|2,1,1531151112,,"\\<get_device_primary_mac\\>"
-?/__get
-|2,1,1531151082,47,"__get"
-?/air-cloud
-|2,1,1531150805,47,"air-cloud"
-?/HEAD
-|2,1,1531150802,47,"HEAD"
-?/adapter_get_data
-|2,1,1531119223,47,"adapter_get_data"
-?/password
-|2,1,1531118885,47,"password"
-? \<MAX_SERIAL_NUMBER_LEN\>
-|2,1,1531117907,,"\\<MAX_SERIAL_NUMBER_LEN\\>"
-? \<int\>
-|2,1,1531117622,,"\\<int\\>"
-? \<__get_device_serial_number\>
-|2,1,1531117416,,"\\<__get_device_serial_number\\>"
-?/data_adapter_init
-|2,1,1530892220,47,"data_adapter_init"
-?/serial_number
-|2,1,1531149209,47,"serial_number"
-?/gw_mac
-|2,1,1531149119,47,"gw_mac"
-?/asp_xml
-|2,1,1531146959,47,"asp_xml"
-?/asp_x
-|2,1,1531146883,47,"asp_x"
-?/asp
-|2,1,1531146911,47,"asp"
-?/cdf
-|2,1,1531146451,47,"cdf"
-?/air-bus
-|2,1,1531146299,47,"air-bus"
-?/air-cdf
-|2,1,1531146294,47,"air-cdf"
-?/filesyste
-|2,1,1531128693,47,"filesyste"
-?/filesystem_platform
-|2,1,1531128337,47,"filesystem_platform"
-?/patch
-|2,1,1531124351,47,"patch"
-? \<_config\>
-|2,1,1531124236,,"\\<_config\\>"
-?/air-bus-master
-|2,1,1531122407,47,"air-bus-master"
-?/mana
-|2,1,1531122379,47,"mana"
-?/json
-|2,1,1531122373,47,"json"
-?/dhcpcap
-|2,1,1531122369,47,"dhcpcap"
-?/libstrop
-|2,1,1531122365,47,"libstrop"
-? \<SIOCDEVPRIVATE\>
-|2,1,1531077705,,"\\<SIOCDEVPRIVATE\\>"
-? \<SIOCATHAIRTIES\>
-|2,1,1531077676,,"\\<SIOCATHAIRTIES\\>"
-?/init
-|2,1,1531077160,47,"init"
-?/awf-ng
-|2,1,1531077068,47,"awf-ng"
-? \<strstr\>
-|2,1,1531076432,,"\\<strstr\\>"
-?/seri
-|2,1,1531075776,47,"seri"
-? \<__str_remove_space\>
-|2,1,1530890912,,"\\<__str_remove_space\\>"
-? \<strdup\>
-|2,1,1530890220,,"\\<strdup\\>"
-? \<NVRAM_FILE\>
-|2,1,1530888938,,"\\<NVRAM_FILE\\>"
-?/seria
-|2,1,1530888338,47,"seria"
-? \<caonlywithcdf\>
-|2,1,1530888231,,"\\<caonlywithcdf\\>"
-? \<INCDIR\>
-|2,1,1530884013,,"\\<INCDIR\\>"
-?/webs
-|2,1,1530883645,47,"webs"
-?/manager_
-|2,1,1530884062,47,"manager_"
-?/aircdf
-|2,1,1530882593,47,"aircdf"
-?/air-wall
-|2,1,1530882501,47,"air-wall"
-?/sky
-|2,1,1530878752,47,"sky"
-?/GetHandler
-|2,1,1530868663,47,"GetHandler"
-?/Creating
-|2,1,1530868640,47,"Creating"
-?/ReadConfig
-|2,1,1530868588,47,"ReadConfig"
-? \<RestartCloudAgent\>
-|2,1,1530865049,,"\\<RestartCloudAgent\\>"
-? \<CLOUD_AGENT_ENABLE_PATH\>
-|2,1,1530864704,,"\\<CLOUD_AGENT_ENABLE_PATH\\>"
-? \<sky_airbus_listener_deinit\>
-|2,1,1530862891,,"\\<sky_airbus_listener_deinit\\>"
-? \<data_adapter_deinit\>
-|2,1,1530862830,,"\\<data_adapter_deinit\\>"
-?/"end air-wall transactions"
-|2,1,1530862741,47,"\"end air-wall transactions\""
-?/ "end air-wall transactions"
-|2,1,1530862734,47," \"end air-wall transactions\""
-? \<MeshestGetHandler\>
-|2,1,1530860363,,"\\<MeshestGetHandler\\>"
-?/listener
-|2,1,1530806634,47,"listener"
-?/install
-|2,1,1530869727,47,"install"
-?/statis
-|2,1,1530868847,47,"statis"
-?/air-cloud-agent
-|2,1,1530868835,47,"air-cloud-agent"
-?/dhcp
-|2,1,1530860958,47,"dhcp"
-?/air-clo
-|2,1,1530860938,47,"air-clo"
-? \<LICENSING_AIRBUS_ID\>
-|2,1,1530806268,,"\\<LICENSING_AIRBUS_ID\\>"
-? \<licensing_airbus_listener_init\>
-|2,1,1530806236,,"\\<licensing_airbus_listener_init\\>"
-?/dhcpca
-|2,1,1530805474,47,"dhcpca"
-?/Read
-|2,1,1530804222,47,"Read"
-? \<ConfigFree\>
-|2,1,1530801235,,"\\<ConfigFree\\>"
-?/xdomain
-|2,1,1530800302,47,"xdomain"
-? \<CAConfigHandler\>
-|2,1,1530799927,,"\\<CAConfigHandler\\>"
-?/GetHand
-|2,1,1530799795,47,"GetHand"
-?/G
-|2,1,1530799140,47,"G"
-?/GetHAndler
-|2,1,1530799137,47,"GetHAndler"
-? \r$
-|2,1,1530804961,,"\\r$"
-? \<bDaemonEnable\>
-|2,1,1530793638,,"\\<bDaemonEnable\\>"
-? \<StartCloudAgent\>
-|2,1,1530793596,,"\\<StartCloudAgent\\>"
-?/Start
-|2,1,1530793591,47,"Start"
-? \<Makefile\>
-|2,1,1530791845,,"\\<Makefile\\>"
-?/apply
-|2,1,1530791281,47,"apply"
-?/SetHand
-|2,1,1530791243,47,"SetHand"
-?/Restart
-|2,1,1530791030,47,"Restart"
-?/topo
-|2,1,1530782163,47,"topo"
-?/topoJn
-|2,1,1530782158,47,"topoJn"
-?/basic
-|2,1,1530781922,47,"basic"
-?/Service
-|2,1,1530781370,47,"Service"
-?/Get
-|2,1,1530779084,47,"Get"
-?/get
-|2,1,1530779081,47,"get"
-?/Enabled
-|2,1,1530719350,47,"Enabled"
-?/printf
-|2,1,1530719188,47,"printf"
-?/log_error
-|2,1,1530200039,47,"log_error"
-?/statistics-collector
-|2,1,1530180058,47,"statistics-collector"
-?/\<ETH_ALEN\>
-|2,1,1530260820,47,"\\<ETH_ALEN\\>"
-?/Report
-|2,1,1530718744,47,"Report"
-? \<CLOUD_AGENT_PID\>
-|2,1,1530718624,,"\\<CLOUD_AGENT_PID\\>"
-? \<CLOUD_AGENT_PATH\>
-|2,1,1530718619,,"\\<CLOUD_AGENT_PATH\\>"
-?/status
-|2,1,1530718468,47,"status"
-?/397
-|2,1,1530718151,47,"397"
-?/server_status
-|2,1,1530718063,47,"server_status"
-?/client_server
-|2,1,1530717856,47,"client_server"
-?/manag
-|2,1,1530717607,47,"manag"
-?/manager,
-|2,1,1530717282,47,"manager,"
-?/zlib
-|2,1,1530717191,47,"zlib"
-?/m
-|2,1,1530716069,47,"m"
-?/air-cdf:q!
-|2,1,1530715304,47,"air-cdf:q!"
-?/server_stat
-|2,1,1530712410,47,"server_stat"
-?/i.7
-|2,1,1530711763,47,"i.7"
-?/cdf_client_ser
-|2,1,1530711678,47,"cdf_client_ser"
-?/airbus
-|2,1,1530711530,47,"airbus"
-?/memset
-|2,1,1530704596,47,"memset"
-?/connection timeout
-|2,1,1530695238,47,"connection timeout"
-?/error
-|2,1,1530695193,47,"error"
-? \<aircdf_client\>
-|2,1,1530694618,,"\\<aircdf_client\\>"
-?/cdf_client_get
-|2,1,1530694503,47,"cdf_client_get"
-? \<PLATFORM_CONFIG\>
-|2,1,1530694045,,"\\<PLATFORM_CONFIG\\>"
-? \<cdf_client_options\>
-|2,1,1530694023,,"\\<cdf_client_options\\>"
-? \<pcInstId\>
-|2,1,1530692149,,"\\<pcInstId\\>"
-? \<pstNode\>
-|2,1,1530691515,,"\\<pstNode\\>"
-? \<pathTmp\>
-|2,1,1530691496,,"\\<pathTmp\\>"
-?/config.
-|2,1,1530691380,47,"config."
-?/cannot 
-|2,1,1530690305,47,"cannot "
-? \<asp_xmls\>
-|2,1,1530688171,,"\\<asp_xmls\\>"
-?/vipern
-|2,1,1530686859,47,"vipern"
-?/asp_xm
-|2,1,1530686848,47,"asp_xm"
-?/bEnabled
-|2,1,1530635298,47,"bEnabled"
-? \<pstPriv\>
-|2,1,1530634599,,"\\<pstPriv\\>"
-? \<ReadConfig\>
-|2,1,1530634529,,"\\<ReadConfig\\>"
-?/bDaemonEnable
-|2,1,1530634030,47,"bDaemonEnable"
-? \<CAReadConfig\>
-|2,1,1530633543,,"\\<CAReadConfig\\>"
-? \<bEnable\>
-|2,1,1530632890,,"\\<bEnable\\>"
-?/filesys
-|2,1,1530631744,47,"filesys"
-?/libxml2
-|2,1,1530707231,47,"libxml2"
-?/cdev
-|2,1,1530632418,47,"cdev"
-?/leader
-|2,1,1530631603,47,"leader"
-?/mappings
-|2,1,1530631580,47,"mappings"
-? \<leader\>
-|2,1,1530631300,,"\\<leader\\>"
-? \<copen\>
-|2,1,1530629397,,"\\<copen\\>"
-? \<QFixToggle2\>
-|2,1,1530629367,,"\\<QFixToggle2\\>"
-? \<QFix2\>
-|2,1,1530629349,,"\\<QFix2\\>"
-?/:botright
-|2,1,1530629316,47,":botright"
-?/cdf_
-|2,1,1530624141,47,"cdf_"
-?/IOCTL
-|2,1,1530624073,47,"IOCTL"
-?/READ
-|2,1,1530628271,47,"READ"
-?/WRITABLE
-|2,1,1530628172,47,"WRITABLE"
-?/CONFIG_ROOTFS_WRITABLE_DIRECTORY
-|2,1,1530627969,47,"CONFIG_ROOTFS_WRITABLE_DIRECTORY"
-?/writable
-|2,1,1530627765,47,"writable"
-?/ CONFIG_writable
-|2,1,1530627750,47," CONFIG_writable"
-?/awf
-|2,1,1530624014,47,"awf"
-?/IOCT
-|2,1,1530619948,47,"IOCT"
-?/scan
-|2,1,1530619943,47,"scan"
-?/StartInst
-|2,1,1530283118,47,"StartInst"
-?/FreeConfig
-|2,1,1530282457,47,"FreeConfig"
-? \<pcXMPPDomain\>
-|2,1,1530281935,,"\\<pcXMPPDomain\\>"
-?/enabled
-|2,1,1530281748,47,"enabled"
-?/strdup
-|2,1,1530281611,47,"strdup"
-?/cdf_get
-|2,1,1530280865,47,"cdf_get"
-?/while
-|2,1,1530280678,47,"while"
-?/false
-|2,1,1530280414,47,"false"
-?/true
-|2,1,1530280402,47,"true"
-? \<bKeepGoing\>
-|2,1,1530279884,,"\\<bKeepGoing\\>"
-? \<bIsNewManager\>
-|2,1,1530279837,,"\\<bIsNewManager\\>"
-?/Set
-|2,1,1530279118,47,"Set"
-? \<bPrereg\>
-|2,1,1530274333,,"\\<bPrereg\\>"
-?/awf_ng
-|2,1,1530273601,47,"awf_ng"
-? \<log_error\>
-|2,1,1530265340,,"\\<log_error\\>"
-? \<log_err\>
-|2,1,1530265334,,"\\<log_err\\>"
-?/CtlCloudAgentEnable
-|2,1,1530201177,47,"CtlCloudAgentEnable"
-?/ERR
-|2,1,1530201052,47,"ERR"
-?/ERR_CFG_GET
-|2,1,1530200903,47,"ERR_CFG_GET"
-?/debug_log
-|2,1,1530199964,47,"debug_log"
-?/awfng
-|2,1,1530198731,47,"awfng"
-?/DataIn
-|2,1,1530191571,47,"DataIn"
-? \<get_device_gw_mac_address\>
-|2,1,1530546831,,"\\<get_device_gw_mac_address\\>"
-?/primary_mac
-|2,1,1530546670,47,"primary_mac"
+?/ssid
+|2,1,1534336321,47,"ssid"
+? \<bss_index\>
+|2,1,1534326060,,"\\<bss_index\\>"
+?/security
+|2,1,1534325751,47,"security"
+?/_ssid
+|2,1,1534325523,47,"_ssid"
+?/SSID
+|2,1,1534324575,47,"SSID"
+?/ssid_reference
+|2,1,1534324532,47,"ssid_reference"
 ? \<AIRTIES_FWVERSION_FILE\>
-|2,1,1530546633,,"\\<AIRTIES_FWVERSION_FILE\\>"
-?/version
-|2,1,1530546572,47,"version"
-?/config.c
-|2,1,1530546466,47,"config.c"
-?/serail
-|2,1,1530546173,47,"serail"
-? \<join_apply_thread\>
-|2,1,1530287832,,"\\<join_apply_thread\\>"
-? \<ether_addr_octet\>
-|2,1,1530286947,,"\\<ether_addr_octet\\>"
-? \<ether_addr\>
-|2,1,1530286934,,"\\<ether_addr\\>"
-?/IDENTIF
-|2,1,1530266033,47,"IDENTIF"
-?/IDENTIFIER
-|2,1,1530265193,47,"IDENTIFIER"
-?/_init
-|2,1,1530192188,47,"_init"
-? \<data_adapter_init\>
-|2,1,1530192180,,"\\<data_adapter_init\\>"
-?/adapter_init
-|2,1,1530192177,47,"adapter_init"
-?/Init
-|2,1,1530192168,47,"Init"
-? \<get_device_serial_number\>
-|2,1,1530191907,,"\\<get_device_serial_number\\>"
-?/name
-|2,1,1530543538,47,"name"
-?/autochd
-|2,1,1530526225,47,"autochd"
-?/air
-|2,1,1530525726,47,"air"
-?/vimrc
-|2,1,1530525588,47,"vimrc"
-?/destination is
-|2,1,1530288736,47,"destination is"
-? \<PROFILE_DIR\>
-|2,1,1530286614,,"\\<PROFILE_DIR\\>"
-?/create
-|2,1,1530286576,47,"create"
-?/strcpy
-|2,1,1530280147,47,"strcpy"
-?/?
-|2,1,1530276588,47,"?"
-?/wireless_mngr.c
-|2,1,1530274645,47,"wireless_mngr.c"
-?/wireless
-|2,1,1530274606,47,"wireless"
-? \<usr\>
-|2,1,1530283477,,"\\<usr\\>"
-?/DataGet
-|2,1,1530261303,47,"DataGet"
-?/Data
-|2,1,1530261239,47,"Data"
-?/jsonü/
-|2,1,1530259544,47,"jsonü/"
-?/CONFIG_air-rm_DEFAULT_BRIDGE_NAME
-|2,1,1530178366,47,"CONFIG_air-rm_DEFAULT_BRIDGE_NAME"
-? \<ETH_ALEN\>
-|2,1,1530187822,,"\\<ETH_ALEN\\>"
-?/ether_etoa
-|2,1,1530187171,47,"ether_etoa"
-?/gw_
-|2,1,1530187011,47,"gw_"
-?/get_device_primary
-|2,1,1530186532,47,"get_device_primary"
-?/strlw
-|2,1,1530186206,47,"strlw"
-?/gw_mac_address
-|2,1,1530186098,47,"gw_mac_address"
-?/SET_FAIL
-|2,1,1530179239,47,"SET_FAIL"
-? \<libaca_sky_err_to_ret\>
-|2,1,1530179015,,"\\<libaca_sky_err_to_ret\\>"
-?/libaca_sky
-|2,1,1530179011,47,"libaca_sky"
-? \<is_unsigned\>
-|2,1,1530178939,,"\\<is_unsigned\\>"
-?/set_persistent
-|2,1,1530178908,47,"set_persistent"
-? \<strlwr\>
-|2,1,1530178687,,"\\<strlwr\\>"
-?/penv
-|2,1,1530178600,47,"penv"
-? \<init_bss_data\>
-|2,1,1530177996,,"\\<init_bss_data\\>"
-?/get_serial_number
-|2,1,1530177711,47,"get_serial_number"
-?/set_path
-|2,1,1530176735,47,"set_path"
-?/err_to_ret
-|2,1,1530174346,47,"err_to_ret"
-?/get_pathvalue
-|2,1,1530173787,47,"get_pathvalue"
-?/set_pathvalue
-|2,1,1530173466,47,"set_pathvalue"
-? \<inited\>
-|2,1,1530173391,,"\\<inited\\>"
-? \<handler\>
-|2,1,1530173358,,"\\<handler\\>"
-? \<notify_handler_fn\>
-|2,1,1530173337,,"\\<notify_handler_fn\\>"
-?/get_data_cdf
-|2,1,1530172629,47,"get_data_cdf"
-?/get_data
-|2,1,1530172622,47,"get_data"
-?/prereg
-|2,1,1530172578,47,"prereg"
-?/prere
-|2,1,1530172564,47,"prere"
-?/Pre
-|2,1,1530172510,47,"Pre"
-?/key_passphrase
-|2,1,1530172462,47,"key_passphrase"
-?/wall
-|2,1,1530172391,47,"wall"
-?/shutdown
-|2,1,1530170738,47,"shutdown"
-? \<certs\>
-|2,1,1530170377,,"\\<certs\\>"
-?/scr
-|2,1,1530188394,47,"scr"
-?/statistics
-|2,1,1530180097,47,"statistics"
-?/platform_init
-|2,1,1530169853,47,"platform_init"
-?/get_pathvalu
-|2,1,1530116037,47,"get_pathvalu"
-?/SERIAL_NUMBER
-|2,1,1530115000,47,"SERIAL_NUMBER"
-?/ETHER_ADDR
-|2,1,1530114303,47,"ETHER_ADDR"
-? \<get_wifi_radio_enabled\>
-|2,1,1530113650,,"\\<get_wifi_radio_enabled\\>"
-?/_func
-|2,1,1530112085,47,"_func"
-?/PreRe
-|2,1,1530112035,47,"PreRe"
-?/platform
-|2,1,1530110607,47,"platform"
-?/get_config
-|2,1,1530109652,47,"get_config"
-? \<airca_config\>
-|2,1,1530109591,,"\\<airca_config\\>"
-?/CONFIG_air-cloud-agent_PLATFORM
-|2,1,1530005973,47,"CONFIG_air-cloud-agent_PLATFORM"
-?/SerialNumber
-|2,1,1530093766,47,"SerialNumber"
-?/DeviceInfo
-|2,1,1530093757,47,"DeviceInfo"
-?/patc
-|2,1,1530087381,47,"patc"
-?/test
-|2,1,1530086275,47,"test"
-?/tests
-|2,1,1530086247,47,"tests"
-? \<licensing\>
-|2,1,1530019112,,"\\<licensing\\>"
-?/wlib
-|2,1,1530018902,47,"wlib"
-?/scan_res
-|2,1,1530029273,47,"scan_res"
-?/scan_start
-|2,1,1530029244,47,"scan_start"
-?/results
-|2,1,1530029143,47,"results"
-? \<aci_wif_indexSw_indCSwifistatsCSintSXXoutput\>
-|2,1,1530029093,,"\\<aci_wif_indexSw_indCSwifistatsCSintSXXoutput\\>"
-? \<cb_aci_wif_indexSw_indCSwifistatsCSintSXXoutput\>
-|2,1,1530029090,,"\\<cb_aci_wif_indexSw_indCSwifistatsCSintSXXoutput\\>"
-?/aci_wif_indexSw_indCSintSXout
-|2,1,1530028980,47,"aci_wif_indexSw_indCSintSXout"
-?/aci_wif_indexSw_indCSscanresSXXoutCSintSXout
-|2,1,1530028963,47,"aci_wif_indexSw_indCSscanresSXXoutCSintSXout"
-? \<aci_wif_indexSw_indCSintSXout\>
-|2,1,1530028923,,"\\<aci_wif_indexSw_indCSintSXout\\>"
-? \<aci_wif_indexSw_indCSscanresSXXoutCSintSXout\>
-|2,1,1530028785,,"\\<aci_wif_indexSw_indCSscanresSXXoutCSintSXout\\>"
-?/scan_results
-|2,1,1530028757,47,"scan_results"
-? \<print_out_enum\>
-|2,1,1530028362,,"\\<print_out_enum\\>"
-? \<print_out_i\>
-|2,1,1530028342,,"\\<print_out_i\\>"
-?/1836
-<1	153			15,000.00		1	191			2,700.00				320			17,700.00	2	320			17,700.00		2		153			15,000.00			391			2,700.00	3	120			10,856.00		3		600			9,200.00			391			1,656.00	4	610			9,200.00		4	191			1,656.00				120			10,856.00	5	120			8,968.00		5		600			7,600.00			391			1,368.00	6	153			3,600.00		6	191			648.00				320			4,248.00	7	254			30,000.00		7	191			5,400.00				320			35,400.00	8	610			7,600.00		8	191			1,368.00				120			8,968.00	9	320			35,400.00		9		254			30,000.00			391			5,400.00	10	254			7,500.00		10	191			1,350.00				320			8,850.00	11	120			5,900.00		11		600			5,000.00			391			900.00	12	610			2,500.00		12	191			450.00				120			2,950.00	13	150			40,000.00		13	191			7,200.00				320			47,200.00	14	320			28,320.00		14		150			24,000.00			391			4,320.00	15	320			8,496.00		15		153			7,200.00			391			1,296.00	16	610			20,000.00		16	191			3,600.00				120			23,600.00	17	120			3,540.00		17		600			3,000.00			391			540.00	18	610			900.00		18	191			162.00				120			1,062.00	19	153			10,000.00		19	191			1,800.00				320			11,800.00	20	320			2,950.00		20		153			2,500.00			391			450.00	21	253			50,000.00		21	191			9,000.00				100			29,500.00			320			29,500.00	22	100			23,600.00		22	120			23,600.00				600			40,000.00			391			7,200.00	23	101			35,400.00		23		600			30,000.00			391			5,400.00	24	255			20,000.00		24	191			3,600.00				103			11,800.00			321			11,800.00	25	320			59,000.00		25		253			50,000.00			391			9,000.00	26	610			40,000.00		26	191			7,200.00				120			47,200.00	27	255			60,000.00			191			10,800.00				100			10,800.00			101			60,000.00	28	100			2,700.00			221			15,000.00				600			15,000.00			391			2,700.00	29	320			53,100.00				253			45,000.00			391			8,100.00	30	610			35,000.00			191			6,300.00				120			41,300.00	
-|2,1,1530028288,47,>1835
-|<"1	153			15,000.00		1	191			2,700.00				320			17,700.00	2	320			17,700.00		2		153			15,000.00			391			2,700.00	3	120			10,856.00		3		600			9,200.00			391			1,656.00	4	610			9,200.00		4	191			1,656.00				120			10,856.00	5	120			8,968.00		5		600			7,600.00			391			1,368.00	6	153			3,600.00		6	191			648.00				320			4,248.00	7	254			30,000.00		7	191			5,400.00				320			35,400.00	8	610			7,600.00		8	191			1,368.00				120			8,968.00	9	320			35,400.00		9		254			30,000.
-|<00			391			5,400.00	10	254			7,500.00		10	191			1,350.00				320			8,850.00	11	120			5,900.00		11		600			5,000.00			391			900.00	12	610			2,500.00		12	191			450.00				120			2,950.00	13	150			40,000.00		13	191			7,200.00				320			47,200.00	14	320			28,320.00		14		150			24,000.00			391			4,320.00	15	320			8,496.00		15		153			7,200.00			391			1,296.00	16	610			20,000.00		16	191			3,600.00				120			23,600.00	17	120			3,540.00		17		600			3,000.00			391			540.00	18	6
-|<10			900.00		18	191			162.00				120			1,062.00	19	153			10,000.00		19	191			1,800.00				320			11,800.00	20	320			2,950.00		20		153			2,500.00			391			450.00	21	253			50,000.00		21	191			9,000.00				100			29,500.00			320			29,500.00	22	100			23,600.00		22	120			23,600.00				600			40,000.00			391			7,200.00	23	101			35,400.00		23		600			30,000.00			391			5,400.00	24	255			20,000.00		24	191			3,600.00				103			11,800.00			321			11,800.00	25	320			59,000.00		25		25
-|<3			50,000.00			391			9,000.00	26	610			40,000.00		26	191			7,200.00				120			47,200.00	27	255			60,000.00			191			10,800.00				100			10,800.00			101			60,000.00	28	100			2,700.00			221			15,000.00				600			15,000.00			391			2,700.00	29	320			53,100.00				253			45,000.00			391			8,100.00	30	610			35,000.00			191			6,300.00				120			41,300.00	"
-? \<list\>
-|2,1,1530019661,,"\\<list\\>"
-? \<scan_results\>
-|2,1,1530019654,,"\\<scan_results\\>"
-? \<3\>
-|2,1,1530018698,,"\\<3\\>"
-? \<ifeq\>
-|2,1,1530006396,,"\\<ifeq\\>"
-?/net
-|2,1,1529583826,47,"net"
-?/wps_enabled
-|2,1,1529582938,47,"wps_enabled"
-?/wirelessins
-|2,1,1529582705,47,"wirelessins"
-?/main
-|2,1,1528472596,47,"main"
-? \<ethhdr\>
-|2,1,1528472376,,"\\<ethhdr\\>"
-? \<islocal\>
-|2,1,1528472325,,"\\<islocal\\>"
-?/localout
-|2,1,1528470558,47,"localout"
-?/local
-|2,1,1528382365,47,"local"
-?/LOCAL
-|2,1,1528470261,47,"LOCAL"
-? \<unlock\>
-|2,1,1528384872,,"\\<unlock\\>"
-?/AIR_EOE
-|2,1,1528377347,47,"AIR_EOE"
-?/netif_receive_skb
-|2,1,1529509228,47,"netif_receive_skb"
-?/printk
-|2,1,1529506893,47,"printk"
-?/rout
-|2,1,1529508248,47,"rout"
-? \<recv_packet\>
-|2,1,1529335211,,"\\<recv_packet\\>"
-?/alloc_netdev
-|2,1,1529420483,47,"alloc_netdev"
-? \<pt_prev\>
-|2,1,1529407969,,"\\<pt_prev\\>"
-? \<ncls\>
-|2,1,1529333502,,"\\<ncls\\>"
-?/CONFIG_NET_CLS
-|2,1,1529332677,47,"CONFIG_NET_CLS"
-?/skb_bond
-|2,1,1529332659,47,"skb_bond"
-?/free
-|2,1,1529332609,47,"free"
-?/AIR
-|2,1,1529330961,47,"AIR"
-?/A
-|2,1,1529330958,47,"A"
-?/AIR_EOF
-|2,1,1529330956,47,"AIR_EOF"
-?/revision
-|2,1,1529501606,47,"revision"
-? \<release\>
-|2,1,1529419360,,"\\<release\\>"
-?/svn ci
-|2,1,1529326969,47,"svn ci"
-?/SCRIPTS
-|2,1,1529326689,47,"SCRIPTS"
-?/patches
-|2,1,1529326368,47,"patches"
-?/pat
-|2,1,1529325952,47,"pat"
-?/PRE_ROUTING
-|2,1,1529324841,47,"PRE_ROUTING"
-?/routing
-|2,1,1529324817,47,"routing"
-?/RestartDaemons
-|2,1,1528472902,47,"RestartDaemons"
-? \<apply_target_uuid\>
-|2,1,1528472788,,"\\<apply_target_uuid\\>"
-?/TPIN
-|2,1,1528467429,47,"TPIN"
-?/Got
-|2,1,1528467422,47,"Got"
-?/Recv
-|2,1,1528385977,47,"Recv"
+|2,1,1534256790,,"\\<AIRTIES_FWVERSION_FILE\\>"
+?/firmware_v
+|2,1,1534256782,47,"firmware_v"
+?/cloud-agent
+|2,1,1534256774,47,"cloud-agent"
+?/direct
+|2,1,1534256692,47,"direct"
+? \<ether_ntoa_rz\>
+|2,1,1534253319,,"\\<ether_ntoa_rz\\>"
+?/statis
+|2,1,1534253297,47,"statis"
+?/is_gatwa
+|2,1,1534250568,47,"is_gatwa"
+?/is_master
+|2,1,1534250511,47,"is_master"
+?/air-cloud
+|2,1,1534250506,47,"air-cloud"
+?/gateway
+|2,1,1534246907,47,"gateway"
+?/dhcpcap
+|2,1,1534246897,47,"dhcpcap"
+? \<is_gw\>
+|2,1,1534246847,,"\\<is_gw\\>"
+?/statistic
+|2,1,1534246825,47,"statistic"
+? \<PLATFORM_FILE\>
+|2,1,1534245570,,"\\<PLATFORM_FILE\\>"
+?/product
+|2,1,1534244086,47,"product"
+?/gw
+|2,1,1534238432,47,"gw"
+?/gate
+|2,1,1534238231,47,"gate"
+?/air-cloud-agent
+|2,1,1534238202,47,"air-cloud-agent"
+?/sky_ap_get_current
+|2,1,1534169379,47,"sky_ap_get_current"
+? \<bcm_get_current_channel\>
+|2,1,1534169324,,"\\<bcm_get_current_channel\\>"
+? \<swap\>
+|2,1,1534169286,,"\\<swap\\>"
+? \<Boolean\>
+|2,1,1534169266,,"\\<Boolean\\>"
+?/cca
+|2,1,1533734151,47,"cca"
+? \<sky_ap_get_channel_cca\>
+|2,1,1533734141,,"\\<sky_ap_get_channel_cca\\>"
+? \<brMac\>
+|2,1,1533740763,,"\\<brMac\\>"
+? \<ReadConfig\>
+|2,1,1533740703,,"\\<ReadConfig\\>"
+?/StartInst
+|2,1,1533740650,47,"StartInst"
+? \<pcSerial\>
+|2,1,1533740459,,"\\<pcSerial\\>"
+?/serial
+|2,1,1533740448,47,"serial"
+?/BSD
+|2,1,1533740380,47,"BSD"
+? \<__get_mac_by_ifname\>
+|2,1,1533739455,,"\\<__get_mac_by_ifname\\>"
+?/release
+|2,1,1533804328,47,"release"
+? \<pcMac\>
+|2,1,1533802430,,"\\<pcMac\\>"
+?/brMac
+|2,1,1533802419,47,"brMac"
+? \<generic_platform_get_mesh_peers\>
+|2,1,1533738788,,"\\<generic_platform_get_mesh_peers\\>"
+?/00:e0:4c:30:a5:6f
+|2,1,1533732498,47,"00:e0:4c:30:a5:6f"
+?/Kabils-MBP-8
+|2,1,1533732487,47,"Kabils-MBP-8"
+?/94:bf:2d:c1:7a:a7
+|2,1,1533732352,47,"94:bf:2d:c1:7a:a7"
+?/recv
+|2,1,1533582619,47,"recv"
+?/Remote
+|2,1,1533545361,47,"Remote"
+?/ServiceA
+|2,1,1533545211,47,"ServiceA"
+?/ServiceActivation
+|2,1,1533546372,47,"ServiceActivation"
+?/Service
+|2,1,1533546330,47,"Service"
+? \<trx\>
+|2,1,1533542378,,"\\<trx\\>"
+? \<__dev_alloc_skb\>
+|2,1,1533468989,,"\\<__dev_alloc_skb\\>"
+? \<dev_alloc_skb\>
+|2,1,1533468973,,"\\<dev_alloc_skb\\>"
 ?/cscope
-|2,1,1528376962,47,"cscope"
-?/csope
-|2,1,1528376960,47,"csope"
-?/Toggle
-|2,1,1528363208,47,"Toggle"
-?/ADD
-|2,1,1528300901,47,"ADD"
-? \<configShare\>
-|2,1,1528300716,,"\\<configShare\\>"
-?/WpsFetch
-|2,1,1528296539,47,"WpsFetch"
-? \<EVT_PLC_RESTART_DAEMONS_NEEDED\>
-|2,1,1528292120,,"\\<EVT_PLC_RESTART_DAEMONS_NEEDED\\>"
-? \<pstAwfWpsConfig\>
-|2,1,1528290520,,"\\<pstAwfWpsConfig\\>"
-?/br0
-|2,1,1528290366,47,"br0"
-?/var/lib
-|2,1,1528303759,47,"var/lib"
-?/ta
-|2,1,1528302489,47,"ta"
-? \<Bf_DelWithD\>
-|2,1,1528302308,,"\\<Bf_DelWithD\\>"
-?/Tbbd
-|2,1,1528302301,47,"Tbbd"
-?/Toglle
-|2,1,1528301950,47,"Toglle"
-?/ğ
-|2,1,1528301793,47,"ğ"
-? \<wps\>
-|2,1,1528298300,,"\\<wps\\>"
-? \<uuid\>
-|2,1,1528293011,,"\\<uuid\\>"
-?/tunnel
-|2,1,1528292783,47,"tunnel"
-?/Fetch
-|2,1,1528286783,47,"Fetch"
-? \<WlCmpWpsMac\>
-|2,1,1528285918,,"\\<WlCmpWpsMac\\>"
-? \<mesh_mac\>
-|2,1,1528285818,,"\\<mesh_mac\\>"
-? \<WPS_PIN_MESH\>
-|2,1,1528285432,,"\\<WPS_PIN_MESH\\>"
-?/PIN
-|2,1,1528285429,47,"PIN"
-? \<WlCommonReturnWirelessInstanceNumber\>
-|2,1,1528285396,,"\\<WlCommonReturnWirelessInstanceNumber\\>"
-? }
-|2,1,1528285392,,"}"
-? \<ADD_WDS_MAC_ON_CONFIG_FILE\>
-|2,1,1528285122,,"\\<ADD_WDS_MAC_ON_CONFIG_FILE\\>"
-?/ADD_
-|2,1,1528285081,47,"ADD_"
-?/WlCmp
-|2,1,1528208970,47,"WlCmp"
-?/wps_trustedpin
-|2,1,1528213092,47,"wps_trustedpin"
-?/wps
-|2,1,1528212760,47,"wps"
-?/WlCmpWpsMac
-|2,1,1528206857,47,"WlCmpWpsMac"
-?/Nejat
-|2,1,1528206752,47,"Nejat"
-?/FindArgFilter
-|2,1,0,47,"FindArgFilter"
-?/F
-|2,1,0,47,"F"
-?/a
-|2,1,1528189342,47,"a"
-?/mini
-|2,1,1528189319,47,"mini"
-?/mi
-|2,1,1528189314,47,"mi"
-?/__netif
-|2,1,1528189085,47,"__netif"
-?/__netif_receive.skb
-|2,1,1528188846,47,"__netif_receive.skb"
-?/__netif_receive_skb
-|2,1,1528187954,47,"__netif_receive_skb"
-?/fzf
-|2,1,1528187744,47,"fzf"
-?/MAP
-|2,1,1528187450,47,"MAP"
-?/Plugins
-|2,1,1528187445,47,"Plugins"
-?/silver
-|2,1,1528187283,47,"silver"
-?/Find
-|2,1,0,47,"Find"
-?/!F
-|2,1,0,47,"!F"
-?/http
-|2,1,0,47,"http"
-?/http_
-|2,1,0,47,"http_"
-?/noe2
-|2,1,0,47,"noe2"
-?/lscr
-|2,1,0,47,"lscr"
-?/nejat
-|2,1,0,47,"nejat"
-?/SCR
-|2,1,0,47,"SCR"
-?/set 
-|2,1,0,47,"set "
-?/grep
-|2,1,0,47,"grep"
-?/rg
-|2,1,0,47,"rg"
-?/mustang
-|2,1,0,47,"mustang"
-?/colors
-|2,1,0,47,"colors"
-? ^\s*$
-|2,1,0,,"^\\s*$"
-?/TComment
-|2,1,0,47,"TComment"
-?/Tlist
-|2,1,0,47,"Tlist"
-?/YouCompleteMe
-|2,1,0,47,"YouCompleteMe"
-?/grepper
-|2,1,0,47,"grepper"
-? \<vim\>
-|2,1,0,,"\\<vim\\>"
-?/MB
-|2,1,0,47,"MB"
-?/autocmd
-|2,1,0,47,"autocmd"
-?/color
-|2,1,0,47,"color"
-? \<NERDTreeToggle\>
-|2,1,0,,"\\<NERDTreeToggle\\>"
-?/NerdTree
-|2,1,0,47,"NerdTree"
-?/PROXY
-|2,1,0,47,"PROXY"
-?/pull
-|2,1,0,47,"pull"
-?/office
-|2,1,0,47,"office"
-?/Alive
-|2,1,0,47,"Alive"
-?/AliveInterval
-|2,1,0,47,"AliveInterval"
-?/130
-|2,1,0,47,"130"
-?/system
-|2,1,0,47,"system"
-?/docker
-|2,1,0,47,"docker"
-?/1001
-|2,1,0,47,"1001"
-? nejat
-|2,1,0,,"nejat"
-? home
-|2,1,0,,"home"
-?/%s /prf/bar/g
-|2,1,0,47,"%s /prf/bar/g"
-?/alias
-|2,1,0,47,"alias"
-?/source
-|2,1,0,47,"source"
+|2,1,1533467110,47,"cscope"
+?/channel
+|2,1,1533210857,47,"channel"
+?/spec
+|2,1,1533210787,47,"spec"
+?/get_channel
+|2,1,1533210776,47,"get_channel"
+?/get_wifi_radio_channel
+|2,1,1533210976,47,"get_wifi_radio_channel"
+?/int
+|2,1,1533210711,47,"int"
+?/channl
+|2,1,1533210405,47,"channl"
+?/WiFi
+|2,1,1533210402,47,"WiFi"
+?/autochannel
+|2,1,1533139824,47,"autochannel"
+? \<__get_device_productId\>
+|2,1,1533137946,,"\\<__get_device_productId\\>"
+? \<fetch_product_id\>
+|2,1,1533137920,,"\\<fetch_product_id\\>"
+?/main
+|2,1,1533130281,47,"main"
+?/airties
+|2,1,1533226096,47,"airties"
+?/all
+|2,1,1533224301,47,"all"
+?/steer
+|2,1,1533224203,47,"steer"
+?/buildsys
+|2,1,1533222337,47,"buildsys"
+?/CONFIG_BUILDSYS_BRANCH_CHECKOUT_PAT
+|2,1,1533222334,47,"CONFIG_BUILDSYS_BRANCH_CHECKOUT_PAT"
+?/mer
+|2,1,1533222294,47,"mer"
+?/cloud
+|2,1,1533218122,47,"cloud"
+? \<acName\>
+|2,1,1533217825,,"\\<acName\\>"
+? \<iOmit\>
+|2,1,1533217717,,"\\<iOmit\\>"
+? \<omit\>
+|2,1,1533217696,,"\\<omit\\>"
+?/chanspec
+|2,1,1533217623,47,"chanspec"
+?/cmd_
+|2,1,1533217601,47,"cmd_"
+?/wall
+|2,1,1533217593,47,"wall"
+?/get_,ğ,ğ
+|2,1,1533217434,47,"get_,ğ,ğ"
+?/air-wall
+|2,1,1533217265,47,"air-wall"
+? \<WlCommonGetCurrentChannel\>
+|2,1,1533216822,,"\\<WlCommonGetCurrentChannel\\>"
+? \<WlCommonGetConnectedClients\>
+|2,1,1533216777,,"\\<WlCommonGetConnectedClients\\>"
+?/wireless
+|2,1,1533216452,47,"wireless"
+?/tags
+|2,1,1533216067,47,"tags"
+? \<platform_get_routes\>
+|2,1,1533216001,,"\\<platform_get_routes\\>"
+?/routes
+|2,1,1533215927,47,"routes"
+? \<airbus_client_put_string\>
+|2,1,1533215873,,"\\<airbus_client_put_string\\>"
+? \<airbus_client_wait_event\>
+|2,1,1533215842,,"\\<airbus_client_wait_event\\>"
+? \<airbus_client_unsubscribe_list\>
+|2,1,1533215836,,"\\<airbus_client_unsubscribe_list\\>"
+? \<airbus_client_subscribe_list\>
+|2,1,1533215832,,"\\<airbus_client_subscribe_list\\>"
+?/manager
+|2,1,1533215778,47,"manager"
+?/create
+|2,1,1533215581,47,"create"
+?/libxml2
+|2,1,1533215472,47,"libxml2"
+?/access
+|2,1,1533214850,47,"access"
+?/HOME
+|2,1,1533214756,47,"HOME"
+?/access-dlna
+|2,1,1533213513,47,"access-dlna"
+?/zlib
+|2,1,1533211693,47,"zlib"
+?/mobile
+|2,1,1533211680,47,"mobile"
+?/air-b
+|2,1,1533210085,47,"air-b"
+? \<CSCOPE_FILES\>
+|2,1,1533209658,,"\\<CSCOPE_FILES\\>"
+?/xupnd
+|2,1,1533208542,47,"xupnd"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@2
+|2,3,1533542956,,"2"
+@1
+|2,3,1533473163,,"1"
+@4
+|2,3,1531900859,,"4"
+@3
+|2,3,1531897439,,"3"
 @/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-cloud-support/src/webs/cgi-bin/darwin/request.c
 |2,3,1530883667,,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-cloud-support/src/webs/cgi-bin/darwin/request.c"
-@1
-|2,3,1530868634,,"1"
 @/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-cloud-support/src/manager/modules/cloud_agent/my_modif.c
 |2,3,1530799262,,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-cloud-support/src/manager/modules/cloud_agent/my_modif.c"
 @/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/docs/getTopologyResponse_sky.json
@@ -1699,8 +486,6 @@ $\rparent
 |2,3,1528383554,,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox-May-16_12.10.55-2018-Çrş_release/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi/src/modules/arch/noe/"
 @/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox-May-16_12.10.55-2018-Çrş_release/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi/src/modules/arch/noe
 |2,3,1528383447,,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox-May-16_12.10.55-2018-Çrş_release/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi/src/modules/arch/noe"
-@2
-|2,3,1528376830,,"2"
 @/home/noe/minicomlogs/mr0_2018-06-07_17:20
 |2,3,1528383419,,"/home/noe/minicomlogs/mr0_2018-06-07_17:20"
 @y
@@ -1709,1037 +494,962 @@ $\rparent
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-		aca_errorf("----->>>>>>>>>>>>>  1");
-|3,0,0,1,1,0,1531321366,"	aca_errorf(\"----->>>>>>>>>>>>>  1\");"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1531324939,""
+"0	CHAR	0
+	i
+|3,0,0,0,1,0,1534336887,"i"
+""1	LINE	0
+			# __process_cscope
+|3,1,1,1,1,0,1534337044,"		# __process_cscope"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1531324939,""
-"3	LINE	0
+|3,0,2,1,1,0,1534236314,""
+"3	CHAR	0
+	#Number of folders in buildsys is 256 
 	
-|3,0,3,1,1,0,1531324908,""
+|3,0,3,0,2,0,1534236310,"#Number of folders in buildsys is 256 ",""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1531316297,""
+		# find $DIR $FILTER > $CSCOPE_FILES
+|3,0,4,1,1,0,1534236171,"	# find $DIR $FILTER > $CSCOPE_FILES"
 "5	LINE	0
-			
-|3,0,5,1,1,0,1531316162,"		"
-"6	LINE	0
-			} else {
-|3,0,6,1,1,0,1531316143,"		} else {"
-"7	LINE	0
-			goto out;
-|3,0,7,1,1,0,1531316137,"		goto out;"
-"8	LINE	0
-			ret = -1;
-|3,0,8,1,1,0,1531316136,"		ret = -1;"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1531316092,""
-""-	CHAR	0
-	-
-|3,1,36,0,1,0,1531324980,"-"
+|3,0,5,1,1,0,1533804669,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1533804563,""
+"7	LINE	0
+	fi
+|3,0,7,1,1,0,1533804559,"fi"
+"8	LINE	0
+	elif [ "$1" == "skybuilder" ]
+|3,0,8,1,1,0,1533804559,"elif [ \"$1\" == \"skybuilder\" ]"
+"9	LINE	0
+	if [ "$1" == "skybuilder" ]
+	then
+		git clone ssh://nejatonay.erkose@git.corp.airties.com:29418/bskyb-shr-builder ${DATE}_${1}_${2}
+		exit
+	fi
+|3,0,9,1,5,0,1533804553,"if [ \"$1\" == \"skybuilder\" ]","then","	git clone ssh://nejatonay.erkose@git.corp.airties.com:29418/bskyb-shr-builder ${DATE}_${1}_${2}","	exit","fi"
+"a	CHAR	0
+	Jxj0auu
+|3,0,10,0,1,0,1531496568,"Jxj0auu"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1534337038," "
 
 # global variables:
 
 # File marks:
-'0  427  0  ~/.vim/vimrc
-|4,48,427,0,1531325457,"~/.vim/vimrc"
-'1  1  16  ~/.vim/.git/COMMIT_EDITMSG
-|4,49,1,16,1531325363,"~/.vim/.git/COMMIT_EDITMSG"
-'2  1  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,50,1,14,1531325100,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
-'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,51,1,0,1531325007,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
-'4  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,52,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
-'5  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,53,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
-'6  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,54,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
-'7  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,55,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
-'8  19  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/patches/brcm-gw-4.14L.04/BSKYB_VIPER/profile-pre-configure-patch.sh
-|4,56,19,0,1531324715,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/patches/brcm-gw-4.14L.04/BSKYB_VIPER/profile-pre-configure-patch.sh"
-'9  142  173  ~/agentStartingseq.txt
-|4,57,142,173,1531322728,"~/agentStartingseq.txt"
+'0  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1
+|4,48,4,0,1534337148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1"
+'1  87  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,49,87,1,1534337052,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+'2  58  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,50,58,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+'3  59  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,51,59,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+'4  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,52,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'5  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,53,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+'6  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,54,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'7  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,55,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'8  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,56,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+'9  7  0  ~/air-cloud-agent-sky/CodingStyle
+|4,57,7,0,1534253190,"~/air-cloud-agent-sky/CodingStyle"
 
 # Jumplist (newest first):
--'  427  0  ~/.vim/vimrc
-|4,39,427,0,1531325457,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1531325415,"~/.vim/vimrc"
--'  1  16  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,16,1531325363,"~/.vim/.git/COMMIT_EDITMSG"
--'  1  16  ~/.vim/.git/COMMIT_EDITMSG
-|4,39,1,16,1531325363,"~/.vim/.git/COMMIT_EDITMSG"
--'  1  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,14,1531325100,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,14,1531325100,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,14,1531325100,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,14,1531325100,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,0,1531325007,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,0,1531325007,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,0,1531325007,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,0,1531325007,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  1  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-|4,39,1,16,1531324997,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,27,0,1531324945,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-|4,39,1,0,1531324876,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
--'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-|4,39,2,0,1531324860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1
+|4,39,4,0,1534337148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1"
+-'  9  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1
+|4,39,9,2,1534337058,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1
+|4,39,1,0,1534337058,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1"
+-'  87  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,87,1,1534337052,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  87  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,87,1,1534337052,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  87  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,87,1,1534337052,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,1,0,1534337004,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,1,0,1534337004,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+|4,39,1,0,1534337004,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh"
+-'  58  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,58,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  59  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,59,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  59  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,59,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  59  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,59,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  59  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,59,6,1534336992,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  76  30  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,76,30,1534317890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534317754,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  3  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,3,7,1534257090,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+|4,39,1,0,1534256999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  101  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,101,1,1534256938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1534256909,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  367  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,367,2,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,1,8,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  368  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,368,2,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,1,8,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  368  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,368,2,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,1,8,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  368  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,368,2,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,1,8,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  368  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,368,2,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+|4,39,1,8,1534256774,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
+-'  1  0  ~/air-cloud-agent-sky/CodingStyle
+|4,39,1,0,1534253194,"~/air-cloud-agent-sky/CodingStyle"
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/vimrc
-	*	1531325453	0
-	"	427	0
-
-> ~/.vim/.git/COMMIT_EDITMSG
-	*	1531325362	0
-	"	1	16
-	^	1	17
-	.	1	16
-	+	3	8
-	+	1	16
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/COMMIT_EDITMSG
-	*	1531325099	0
-	"	1	14
-	^	1	15
-	.	1	14
-	+	3	8
-	+	1	17
-	+	3	11
-	+	1	14
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/resys.sh
-	*	1531324943	0
-	"	27	0
-	^	21	151
-	.	30	0
-	+	21	150
-	+	19	0
-	+	30	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/Configuration/airbuilder_conf.sh
-	*	1531324856	0
-	"	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/patches/brcm-gw-4.14L.04/BSKYB_VIPER/profile-pre-configure-patch.sh
-	*	1531324715	0
-	"	19	0
-
-> ~/agentStartingseq.txt
-	*	1531322727	0
-	"	142	173
-	^	297	135
-	.	297	134
-	+	297	134
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/sky.c
-	*	1531321594	0
-	"	539	12
-	^	369	17
-	.	369	17
-	+	33	0
-	+	32	50
-	+	395	0
-	+	201	0
-	+	231	0
-	+	304	0
-	+	145	22
-	+	150	22
-	+	189	0
-	+	201	0
-	+	78	0
-	+	34	0
-	+	77	0
-	+	223	17
-	+	369	17
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/daemon/main.c
-	*	1531321537	0
-	"	848	0
-	^	851	7
-	.	851	0
-	+	864	0
-	+	851	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/daemon/config.c
-	*	1531321537	0
-	"	523	28
-	^	925	34
-	.	937	33
-	+	925	33
-	+	927	33
-	+	933	33
-	+	937	33
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/__Tagbar__
-	*	1531321516	0
-	"	19	4
-	.	33	0
-	+	33	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/-TabBar-
-	*	1531321503	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/__Tag_List__
-	*	1531321498	0
-	"	167	4
-	.	169	0
-	+	170	0
-	+	169	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
-	*	1531321173	0
-	"	742	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/licensing.c
-	*	1531321171	0
-	"	571	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/libaca.c
-	*	1531321169	0
-	"	270	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/data_adapter.h
-	*	1531321167	0
-	"	21	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.h
-	*	1531321167	0
-	"	21	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/NERD_tree_1
-	*	1531321151	0
-	"	9	2
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/licensing_common.h
-	*	1531316330	0
-	"	26	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/CodingStyle
-	*	1531316330	0
-	"	50	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
-	*	1531316299	0
-	"	308	0
-	^	344	2
-	.	308	0
-	+	321	0
-	+	360	0
-	+	357	0
-	+	351	0
-	+	339	71
-	+	315	9
-	+	339	1
-	+	339	0
-	+	337	0
-	+	339	0
-	+	318	49
-	+	318	0
-	+	359	1
-	+	334	7
-	+	336	9
-	+	318	7
-	+	336	7
-	+	321	0
-	+	321	14
-	+	40	28
-	+	345	19
-	+	328	99
-	+	328	0
-	+	328	83
-	+	340	0
-	+	345	0
-	+	351	0
-	+	352	0
-	+	357	0
-	+	345	91
-	+	345	0
-	+	328	90
-	+	340	90
-	+	345	90
-	+	351	90
-	+	352	90
-	+	357	90
-	+	351	91
-	+	352	119
-	+	345	30
-	+	345	19
-	+	351	19
-	+	352	19
-	+	345	0
-	+	348	0
-	+	345	34
-	+	345	54
-	+	345	37
-	+	345	65
-	+	345	35
-	+	345	0
-	+	328	0
-	+	340	0
-	+	345	0
-	+	351	0
-	+	320	0
-	+	345	0
-	+	344	23
-	+	345	24
-	+	346	0
-	+	345	5
-	+	346	20
-	+	347	69
-	+	360	0
-	+	351	0
-	+	352	0
-	+	357	0
-	+	328	0
-	+	40	7
-	+	328	17
-	+	330	25
-	+	332	25
-	+	334	25
-	+	337	65
-	+	321	0
-	+	254	7
-	+	256	7
-	+	253	14
-	+	265	0
-	+	273	0
-	+	293	0
-	+	295	0
-	+	299	0
-	+	296	0
-	+	266	43
-	+	268	2
-	+	264	0
-	+	297	0
-	+	314	7
-	+	317	7
-	+	313	14
-	+	340	0
-	+	351	0
-	+	340	0
-	+	338	0
-	+	339	0
-	+	344	2
-	+	344	0
-	+	351	20
-	+	308	0
-	n	401	48
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/data_adapter.c
-	*	1531316017	0
-	"	217	0
-	.	1110	0
-	+	570	0
-	+	983	0
-	+	38	0
-	+	551	0
-	+	37	33
-	+	35	17
-	+	550	0
-	+	557	0
-	+	1110	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/request.c
-	*	1531315715	0
-	"	460	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/daemon/xmpp.c
-	*	1531307010	0
-	"	587	1
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/daemon/dispatcher.c
-	*	1531307008	0
-	"	52	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.c
-	*	1531306764	0
-	"	354	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.json
-	*	1531306763	0
-	"	92	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/.git/COMMIT_EDITMSG
-	*	1531305425	0
-	"	1	37
-	^	1	38
-	.	1	37
-	+	3	11
-	+	1	37
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/configs/atlantis/bskyb-viper-cloud-release.config
-	*	1531305323	0
-	"	2594	44
-	^	2594	45
-	.	2595	44
-	+	593	32
-	+	1814	55
-	+	2595	44
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/airties-bskyb-viper-debug/manager/Config
-	*	1531305303	0
-	"	165	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/a.txt
-	*	1531305176	0
-	"	381	47
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/airties-bskyb-viper-debug/.config
-	*	1531305167	0
-	"	602	56
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/.config
-	*	1531305139	0
-	"	586	9
-	^	600	62
-	.	600	61
-	+	999	50
-	+	2599	45
-	+	599	49
-	+	600	61
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-	*	1531305048	0
-	"	1	40
-	^	1	41
-	.	1	40
-	+	5	13
-	+	1	39
-	+	3	13
-	+	1	40
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/filesystem_platform/Config
-	*	1531304995	0
-	"	80	47
-	^	44	40
-	.	44	39
-	+	80	47
-	+	80	103
-	+	44	0
-	+	46	0
-	+	45	20
-	+	44	39
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/configs/viper-cloud-release.config
-	*	1531304495	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/git
-	*	1531304420	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/-TabBar-
-	*	1531304418	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/Config
-	*	1531304396	0
-	"	360	4
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/.config
-	*	1531304293	0
-	"	20	0
-
-> ~/.bashrc
-	*	1531304264	0
-	"	182	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-11-12_24_59_Çrş/4.14L.04-SkyHybridRouting/bcm963xx/targets/makeDevs
-	*	1531304086	0
-	"	210	0
-	^	210	0
-	.	210	0
-	+	210	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/.config
-	*	1531301083	0
-	"	1863	22
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/Makefile
-	*	1531238951	0
-	"	49	23
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/Makefile
-	*	1531238737	0
-	"	22	0
-	.	22	0
-	+	22	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/Makefile
-	*	1531238704	0
-	"	1	0
-	.	20	0
-	+	38	0
-	+	46	0
-	+	37	0
-	+	20	0
-	+	21	0
-	+	20	45
-	+	20	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/Makefile
-	*	1531238671	0
-	"	14	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/-TabBar-
-	*	1531238451	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/airties/Makefile
-	*	1531238444	0
-	"	15	11
-	^	15	8
-	.	15	8
-	+	15	8
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/NERD_tree_1
-	*	1531238332	0
-	"	13	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/manager/manager-1.27_cdf/src/manager/modules/cloud_agent/cloud_agent_mngr.c
-	*	1531238311	0
-	"	292	20
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/airties/airties.c
-	*	1531237897	0
-	"	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-	*	1531237786	0
-	"	28	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c
-	*	1531232495	0
-	"	510	3
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/manager/src/manager/modules/physical_devices/wireless/wireless_common.c
-	*	1531232493	0
-	"	3315	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/manager/-TabBar-
-	*	1531232448	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/manager/src/manager/modules/physical_devices/wireless/wireless_common.h
-	*	1531232445	0
-	"	660	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/manager/NERD_tree_1
-	*	1531232434	0
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/NERD_tree_1
+	*	1534337151	0
 	"	4	0
 	.	1	0
 	+	1	0
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/configs/atlantis/bskyb-viper-release.config
-	*	1531232092	0
-	"	1710	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/NERD_tree_1
-	*	1531225598	0
-	"	31	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/libstrophe/libmas/src/tls_openssl.c
-	*	1531225018	0
-	"	239	46
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/third_party/patches/103-tls-client-auth.patch
-	*	1531225011	0
-	"	235	9
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/-TabBar-
-	*	1531224825	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/daemon/main.h
-	*	1531224824	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/libstrophe/libstrophe-master/src/tls_openssl.c
-	*	1531224480	0
-	"	240	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/openssl/openssl-1.0.2o/ssl/ssl_lib.c
-	*	1531224442	0
-	"	3281	17
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/openssl/openssl-1.0.2o/include/openssl/ssl.h
-	*	1531224411	0
-	"	543	53
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/openssl/openssl-1.0.2o/crypto/x509/x509_vfy.h
-	*	1531224218	0
-	"	315	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/openssl/openssl-1.0.2o/crypto/crypto.h
-	*	1531223979	0
-	"	244	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/libstrophe/-TabBar-
-	*	1531223942	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/libstrophe/NERD_tree_1
-	*	1531223914	0
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/NERD_tree_1
+	*	1534337148	0
 	"	4	0
 	.	1	0
 	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
+	*	1534337051	0
+	"	87	1
+	^	85	73
+	.	88	0
+	+	64	0
+	+	59	9
+	+	63	0
+	+	57	1
+	+	63	0
+	+	59	22
+	+	20	29
+	+	43	0
+	+	26	0
+	+	63	1
+	+	57	0
+	+	56	16
+	+	58	0
+	+	21	461
+	+	21	87
+	+	22	1
+	+	21	1
+	+	22	125
+	+	23	0
+	+	24	0
+	+	23	1
+	+	24	133
+	+	12	7
+	+	13	0
+	+	8	0
+	+	10	17
+	+	10	0
+	+	10	1
+	+	10	12
+	+	10	6
+	+	10	7
+	+	12	0
+	+	6	15
+	+	10	0
+	+	15	0
+	+	18	2
+	+	43	0
+	+	58	0
+	+	7	32
+	+	10	0
+	+	25	11
+	+	6	13
+	+	7	18
+	+	25	9
+	+	15	11
+	+	12	8
+	+	17	12
+	+	42	0
+	+	30	11
+	+	37	21
+	+	41	0
+	+	40	0
+	+	39	7
+	+	37	14
+	+	2	27
+	+	37	16
+	+	2	0
+	+	37	7
+	+	87	11
+	+	74	20
+	+	59	1
+	+	66	0
+	+	65	9
+	+	60	14
+	+	32	33
+	+	83	28
+	+	86	0
+	+	83	28
+	+	84	5
+	+	85	41
+	+	86	5
+	+	87	14
+	+	85	22
+	+	83	29
+	+	87	89
+	+	85	72
+	+	2	0
+	+	88	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/topology/topology.c
+	*	1534336984	0
+	"	1013	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/gettext/Config
+	*	1534336983	0
+	"	7	0
+	^	2	14
+	.	2	6
+	+	1	1
+	+	2	6
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/air_wall.c
+	*	1534336978	0
+	"	1033	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/airties/airties.c
+	*	1534336977	0
+	"	1239	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/cli/air_wall_cli.c
+	*	1534336974	0
+	"	755	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c
+	*	1534336967	0
+	"	424	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/manager/modules/physical_devices/wireless/wireless_common.c
+	*	1534336961	0
+	"	705	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/manager/modules/physical_devices/wireless/wireless_mngr.c
+	*	1534336958	0
+	"	3614	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/user/dhcpcap.c
+	*	1534336956	0
+	"	320	0
+	^	326	13
+	.	326	12
+	+	301	19
+	+	320	13
+	+	339	41
+	+	326	12
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/data_adapter.c
+	*	1534336954	0
+	"	2087	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.json
+	*	1534336952	0
+	"	503	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
+	*	1534336950	0
+	"	2259	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/lib/psi/source/bsdapi.c
+	*	1534336943	0
+	"	41	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/manager/modules/physical_devices/wireless/wireless_common.h
+	*	1534336940	0
+	"	205	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/lib/psi/source/BCMBSP/BCMBSP_bsd.c
+	*	1534336938	0
+	"	35	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/ControlP
+	*	1534336911	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/sky.c
+	*	1534324507	0
+	"	371	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-	*	1531223865	0
-	"	100	0
-	^	70	0
-	.	66	90
-	+	50	0
-	+	49	0
-	+	66	0
-	+	50	0
-	+	67	0
-	+	67	15
-	+	67	3
-	+	49	19
-	+	67	0
-	+	68	1
-	+	71	0
-	+	66	90
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/4.14L.04-SkyHybridRouting/bcm963xx/targets/makeDevs
-	*	1531222940	0
-	"	210	0
-	^	211	0
-	.	210	0
-	+	210	191
-	+	210	0
-
-> -TabBar-
-	*	1531221080	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/NERD_tree_1
-	*	1531220816	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-cloud-support/src/manager/modules/cloud_agent/cloud_agent_mngr.c
-	*	1531220815	0
-	"	111	22
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-cloud-devel/.git/COMMIT_EDITMSG
-	*	1531213046	0
-	"	1	15
-	^	1	16
-	.	1	15
-	+	5	6
-	+	3	3
-	+	1	0
-	+	3	14
-	+	1	2
-	+	4	13
-	+	2	20
-	+	3	13
-	+	1	15
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-cloud-devel/bskyb-viper/data.xml
-	*	1531213030	0
-	"	29	56
-	^	30	65
-	.	30	64
-	+	20	17
-	+	13	21
-	+	20	12
-	+	30	64
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/playground.c/read.c
-	*	1531212845	0
-	"	1	0
-	^	33	54
-	.	33	54
-	+	1	0
-	+	42	135
-	+	1	15
-	+	6	9
-	+	43	0
-	+	4	29
-	+	17	0
-	+	19	21
-	+	1	8
-	+	2	16
-	+	12	1
-	+	14	0
-	+	12	22
-	+	33	60
-	+	32	42
-	+	33	65
-	+	32	64
-	+	26	0
-	+	25	0
-	+	26	42
-	+	33	72
-	+	32	48
-	+	43	0
-	+	43	11
-	+	32	89
+	*	1534317890	0
+	"	76	30
+	^	88	3
+	.	83	28
+	+	80	5
+	+	79	0
+	+	6	93
+	+	7	62
+	+	8	79
+	+	9	89
+	+	11	0
+	+	31	8
+	+	37	0
+	+	33	105
+	+	34	102
 	+	33	0
-	+	43	0
-	+	33	51
-	+	32	34
-	+	31	1
-	+	30	10
-	+	13	12
-	+	29	8
-	+	31	21
-	+	32	40
-	+	33	54
+	+	25	3
+	+	30	3
+	+	30	0
+	+	25	4
+	+	30	0
+	+	29	0
+	+	58	0
+	+	56	0
+	+	76	0
+	+	77	0
+	+	78	0
+	+	81	0
+	+	80	13
+	+	31	22
+	+	83	29
+	+	84	0
+	+	89	30
+	+	83	28
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/18_06_18-12.22.29_mr/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi/src/modules/routing.c
-	*	1531212823	0
-	"	3317	16
-	^	1421	40
-	.	1421	0
-	+	1421	0
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/.git/COMMIT_EDITMSG
+	*	1534257089	0
+	"	3	7
+	^	5	8
+	.	5	8
+	+	7	13
+	+	1	32
+	+	3	21
+	+	2	29
+	+	5	8
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/.git/COMMIT_EDITMSG
-	*	1531212685	0
-	"	2	13
-	^	2	14
-	.	2	13
-	+	5	13
-	+	1	33
-	+	6	52
-	+	3	20
-	+	4	13
+> ~/air-cloud-agent-sky/CodingStyle
+	*	1534253193	0
+	"	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/-MiniBufExplorer-
+	*	1534236774	0
+	"	1	0
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/sky-ap.c
+	*	1534174640	0
+	"	1	0
+	^	45	0
+	.	44	0
+	+	44	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/NERD_tree_1
+	*	1534169246	0
+	"	5	3
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/-MiniBufExplorer-
+	*	1534169239	0
+	"	1	25
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/sky-ap.c
+	*	1534153467	0
+	"	1488	77
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/NERD_tree_1
+	*	1533914497	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/air-rm-devel/rmd/src/topogen-airwall.c
+	*	1533914491	0
+	"	82	5
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/air-rm-devel/rmd/src/topogen.c
+	*	1533914455	0
+	"	803	19
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/-MiniBufExplorer-
+	*	1533914302	0
+	"	1	38
+	.	2	0
+	+	2	0
+
+> ~/airrmerror.txt
+	*	1533901272	0
+	"	978	76
+	^	978	77
+	.	978	76
+	+	978	76
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/console.sh
+	*	1533894002	0
+	"	30	19
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/air-wall.c
+	*	1533823260	0
+	"	520	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/platform.c
+	*	1533823257	0
+	"	129	13
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/topology/topology.c
+	*	1533823245	0
+	"	855	20
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/-MiniBufExplorer-
+	*	1533823238	0
+	"	1	67
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/NERD_tree_1
+	*	1533823228	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/air-wall/air-wall-master/lib/platform_common.c
+	*	1533821510	0
+	"	426	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/air-wall/air-wall-master/lib/airties/airties.c
+	*	1533821467	0
+	"	1647	11
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/air-wall/air-wall-master/lib/air_wall.c
+	*	1533821464	0
+	"	504	16
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/statistics-collector/master/src/topology/topology.c
+	*	1533821454	0
+	"	564	24
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/NERD_tree_1
+	*	1533821438	0
+	"	5	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/-MiniBufExplorer-
+	*	1533821434	0
+	"	1	68
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/generic/generic_platform.c
+	*	1533820288	0
+	"	1197	28
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/manager/modules/stats/stats_mngr.c
+	*	1533820286	0
+	"	531	13
+	^	531	14
+	.	531	13
+	+	530	20
+	+	531	0
+	+	529	0
+	+	531	1
+	+	530	19
+	+	532	0
+	+	531	13
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/Makefile
+	*	1533818870	0
+	"	275	4
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
+	*	1533818870	0
+	"	419	33
+	^	880	76
+	.	1630	0
+	+	871	18
+	+	880	75
+	+	1388	0
+	+	1407	0
+	+	1445	0
+	+	1464	0
+	+	1623	0
+	+	1630	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/topogen.c
+	*	1533815886	0
+	"	801	28
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-rm/NERD_tree_1
+	*	1533815734	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/topogen.h
+	*	1533815651	0
+	"	33	8
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-rm/-MiniBufExplorer-
+	*	1533815636	0
+	"	1	51
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
+	*	1533809729	0
+	"	36	5
+	^	36	6
+	.	36	5
+	+	36	5
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/.git/COMMIT_EDITMSG
+	*	1533742686	0
+	"	16	82
+	^	8	52
+	.	8	51
+	+	1	0
+	+	9	10
 	+	1	52
-	+	4	13
-	+	2	13
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/awf-ng/-TabBar-
-	*	1531210653	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14/src/common/awf_common.c
-	*	1531210652	0
-	"	571	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14/src/engine/broadcom/engine_bcm_common.c
-	*	1531210324	0
-	"	2318	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/awf-ng/NERD_tree_1
-	*	1531210273	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/playground.c/nvram.txt
-	*	1531209320	0
-	"	20	9
-	^	20	10
-	.	20	9
-	+	1	26
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	18
-	+	1	23
-	+	1	28
-	+	1	23
-	+	1	30
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	18
-	+	20	9
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/playground.c/ifname.c
-	*	1531208675	0
-	"	11	0
-	^	19	59
-	.	19	6
-	+	28	0
-	+	1	0
-	+	14	27
-	+	18	18
-	+	21	14
-	+	18	60
-	+	20	11
-	+	17	27
-	+	22	5
-	+	13	0
-	+	12	16
-	+	19	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/playground.c/ifname
-	*	1531208670	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/__Tagbar__
-	*	1531153170	0
-	"	25	4
-	.	35	0
-	+	35	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-wall/air-wall/lib/air_wall.c
-	*	1531150664	0
-	"	579	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-wall/air-wall/include/air_wall.h
-	*	1531150621	0
-	"	799	4
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-wall/-TabBar-
-	*	1531150621	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/airties-bskyb-viper-debug/air-wall/NERD_tree_1
-	*	1531150610	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/4.14L.04-SkyHybridRouting/bcm963xx/targets/makeDevs
-	*	1531149494	0
-	"	211	0
-	.	212	0
-	+	211	51
-	+	212	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/4.14L.04-SkyHybridRouting/bcm963xx/targets/__Tagbar__
-	*	1531149482	0
-	"	4	4
-	.	5	0
-	+	5	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/4.14L.04-SkyHybridRouting/bcm963xx/targets/-TabBar-
-	*	1531149481	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Haz-19-17_47_15_Sal/4.14L.04-SkyHybridRouting/bcm963xx/targets/__Tag_List__
-	*	1531149481	0
-	"	5	4
-	.	6	0
+	+	3	17
+	+	2	34
+	+	3	0
 	+	6	0
+	+	4	36
+	+	3	51
+	+	4	53
+	+	5	22
+	+	3	44
+	+	5	36
+	+	3	14
+	+	2	33
+	+	4	46
+	+	5	50
+	+	8	51
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/airties-bskyb-viper-debug/.config
-	*	1531149302	0
-	"	1020	51
-	^	2600	41
-	.	2600	40
-	+	1887	57
-	+	2600	40
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/NERD_tree_1
+	*	1533742324	0
+	"	12	2
+	.	1	0
+	+	1	0
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/cloud_Tem-09-15_38_02_Pzt/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
-	*	1531149247	0
-	"	687	0
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/-MiniBufExplorer-
+	*	1533742320	0
+	"	1	25
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/lib/psi/source/bsdapi.c
+	*	1533740626	0
+	"	41	9
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/lib/psi/source/BCMBSP/BCMBSP_bsd.c
+	*	1533740625	0
+	"	40	18
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/-MiniBufExplorer-
+	*	1533740377	0
+	"	1	25
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/NERD_tree_1
+	*	1533740359	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/data_adapter.c
+	*	1533739453	0
+	"	558	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.c
+	*	1533739427	0
+	"	905	5
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.h
+	*	1533739416	0
+	"	56	16
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/-MiniBufExplorer-
+	*	1533739415	0
+	"	1	86
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/NERD_tree_1
+	*	1533739393	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-mal/NERD_tree_1
+	*	1533739062	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/-MiniBufExplorer-
+	*	1533738991	0
+	"	1	53
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/airties/airties.c
+	*	1533738985	0
+	"	1647	14
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/NERD_tree_1
+	*	1533738983	0
+	"	9	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/air_wall.c
+	*	1533738978	0
+	"	504	8
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/brcm-brcm/brcm_brcm.c
+	*	1533738791	0
+	"	188	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/-MiniBufExplorer-
+	*	1533738772	0
+	"	1	25
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/NERD_tree_1
+	*	1533738763	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/NERD_tree_1
+	*	1533738756	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/mesh-wal/mesh-wal/NERD_tree_1
+	*	1533738672	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1533736513	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/brcm-ap.c
+	*	1533721539	0
+	"	1452	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/getGwIPNl.c
+	*	1533582622	0
+	"	58	23
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/getGwIPRouteT.c
+	*	1533559690	0
+	"	39	19
+	^	45	19
+	.	45	0
+	+	26	22
+	+	24	13
+	+	26	27
+	+	53	2
+	+	36	32
+	+	30	0
+	+	14	26
+	+	21	17
+	+	17	65
+	+	17	24
+	+	18	7
+	+	21	36
+	+	38	0
+	+	52	0
+	+	36	0
+	+	10	53
+	+	45	39
+	+	46	0
+	+	47	1
+	+	45	39
+	+	48	0
+	+	45	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.json
+	*	1533559689	0
+	"	959	16
+	.	945	0
+	+	945	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-steer_devel/bskyb-viper/data.xml
+	*	1533559681	0
+	"	48	2
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/.git/COMMIT_EDITMSG
+	*	1533554767	0
+	"	2	53
+	^	2	54
+	.	1	48
+	+	5	13
+	+	1	47
+	+	3	55
+	+	4	13
+	+	1	48
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-steer_devel/bskyb-viper/data.xml
+	*	1533547267	0
+	"	31	44
+	^	23	5
+	.	23	4
+	+	21	22
+	+	22	25
+	+	23	4
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/OLDIES/cloud_Tem-26-18_12_51_Prş/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-cloud-devel/bskyb-viper/data.xml
+	*	1533546199	0
+	"	18	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/licensing/data_model.json
+	*	1533545423	0
+	"	1779	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/.git/MERGE_MSG
+	*	1533542674	0
+	"	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
+	*	1533542541	0
+	"	1661	8
+	^	879	19
+	.	1630	0
+	+	871	20
+	+	881	12
+	+	880	75
+	+	881	0
+	+	1407	0
+	+	1388	0
+	+	1445	0
+	+	1464	0
+	+	1623	0
+	+	1630	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/NERD_tree_1
+	*	1533542267	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/wl/sys/wl_linux.c
+	*	1533476861	0
+	"	3188	11
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/netlink/genetlink.c
+	*	1533473176	0
+	"	137	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/unix/diag.c
+	*	1533473165	0
+	"	47	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/netlink/af_netlink.c
+	*	1533473151	0
+	"	313	31
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/-MiniBufExplorer-
+	*	1533473095	0
+	"	1	51
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/__Tagbar__
+	*	1533473093	0
+	"	57	4
+	.	68	0
+	+	68	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/NERD_tree_1
+	*	1533473053	0
+	"	33	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/4.14L.04-SkyHybridRouting/bcm963xx/kernel/linux-3.4rt/net/core/skbuff.c
+	*	1533469001	0
+	"	561	3
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/shared/bcm_rpc_tp_dbus.c
+	*	1533468888	0
+	"	853	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/router/emf/igs/igs_linux.c
+	*	1533468881	0
+	"	80	11
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/shared/linux_osl.c
+	*	1533468872	0
+	"	886	0
