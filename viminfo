@@ -11,21 +11,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/date
+~MSle0~/Bad
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
 
 # Last Substitute String:
-$\rparent 
+$
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1536668632,,"wq!"
+:w
+|2,0,1536668611,,"w"
+:W
+|2,0,1536668392,,"W"
+:ew
+|2,0,1536667999,,"ew"
+:ToggleBadWhitespace
+|2,0,1536667849,,"ToggleBadWhitespace"
+:ToogleBadWhitespace
+|2,0,1536667742,,"ToogleBadWhitespace"
+:ToogleBadWhitespace!
+|2,0,1536667741,,"ToogleBadWhitespace!"
+:707
+|2,0,1536667705,,"707"
+:Wq!
+|2,0,1536664548,,"Wq!"
+:q!
+|2,0,1536664088,,"q!"
+:set list!
+|2,0,1536663705,,"set list!"
+:set number!
+|2,0,1536663692,,"set number!"
+:set number
+|2,0,1536663688,,"set number"
+:set number 1
+|2,0,1536663656,,"set number 1"
+:set number 0
+|2,0,1536663653,,"set number 0"
+:EraseBadWhitespace
+|2,0,1536663585,,"EraseBadWhitespace"
 :qa!
 |2,0,1536331976,,"qa!"
 :é
 |2,0,1536331730,,"é"
-:q!
-|2,0,1536331695,,"q!"
 :q
 |2,0,1536331530,,"q"
 :LookupFile 
@@ -42,10 +72,6 @@ $\rparent
 |2,0,1536314573,,"helptags project"
 :VTreeExplore
 |2,0,1536314410,,"VTreeExplore"
-:wq!
-|2,0,1536138237,,"wq!"
-:w
-|2,0,1536138198,,"w"
 :90
 |2,0,1534337007,,"90"
 :Z
@@ -136,8 +162,6 @@ $\rparent
 |2,0,1533733910,,"qa1"
 :R data_model.json
 |2,0,1533546297,,"R data_model.json"
-:W
-|2,0,1533543042,,"W"
 :1631
 |2,0,1533543011,,"1631"
 :1449
@@ -222,8 +246,6 @@ $\rparent
 |2,0,1533215220,,"Q!"
 :q!'
 |2,0,1533215012,,"q!'"
-:Wq!
-|2,0,1533214782,,"Wq!"
 :Rg airbus
 |2,0,1533202738,,"Rg airbus"
 :44
@@ -260,6 +282,26 @@ $\rparent
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1536668622,,"\\s\\+$"
+?/Bad
+|2,1,1536668515,47,"Bad"
+?/BAd
+|2,1,1536668441,47,"BAd"
+?/ü
+|2,1,1536668276,47,"ü"
+?/Toggle
+|2,1,1536668093,47,"Toggle"
+?/Toogle
+|2,1,1536668053,47,"Toogle"
+? \<TabVisible\>
+|2,1,1536667482,,"\\<TabVisible\\>"
+?/Num
+|2,1,1536667438,47,"Num"
+? \<NumToggle\>
+|2,1,1536667403,,"\\<NumToggle\\>"
+?/Erase
+|2,1,1536664747,47,"Erase"
 ?/date
 |2,1,1536138255,47,"date"
 ?/git commit
@@ -514,42 +556,44 @@ $\rparent
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	viper_Ağu-15-15_25_17_Çrş
-|3,1,0,1,1,0,1536314399,"viper_Ağu-15-15_25_17_Çrş"
+"0	LINE	0
+	nnoremap <silent> <leader>ğ :TagbarToggle<CR>
+	nnoremap <silent> <leader>ü :TlistToggle<CR>
+|3,0,0,1,2,0,1536668286,"nnoremap <silent> <leader>ğ :TagbarToggle<CR>","nnoremap <silent> <leader>ü :TlistToggle<CR>"
 "1	LINE	0
-	|  |  |- bin/
-|3,0,1,1,1,0,1536314399,"|  |  |- bin/"
+	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
+|3,0,1,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
 "2	LINE	0
-	|  |- _install/
-|3,0,2,1,1,0,1536314399,"|  |- _install/"
+	nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>
+|3,0,2,1,1,0,1536668526,"nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>"
 "3	LINE	0
-	|  |- third_party/
-|3,0,3,1,1,0,1536314397,"|  |- third_party/"
+	
+	
+|3,0,3,1,2,0,1536667923,"",""
 "4	LINE	0
-	|- air-cloud-agent-sky/
-|3,0,4,1,1,0,1536314397,"|- air-cloud-agent-sky/"
+	                         
+|3,0,4,1,1,0,1536667922,"                         "
 "5	LINE	0
-	|  |- third_party/
-|3,0,5,1,1,0,1536314396,"|  |- third_party/"
+	 
+|3,0,5,1,1,0,1536667921," "
 "6	LINE	0
-	|- ac/
-|3,0,6,1,1,0,1536314396,"|- ac/"
+	 
+|3,0,6,1,1,0,1536667921," "
 "7	LINE	0
-	|  |- test4.sh
-|3,0,7,1,1,0,1536314391,"|  |- test4.sh"
+	  
+|3,0,7,1,1,0,1536667921,"  "
 "8	LINE	0
-	|- filter/
-|3,0,8,1,1,0,1536314391,"|- filter/"
+	                          
+|3,0,8,1,1,0,1536667920,"                          "
 "9	LINE	0
-	|- x.c
-|3,0,9,1,1,0,1536314384,"|- x.c"
+	asdfdfd
+|3,0,9,1,1,0,1536667920,"asdfdfd"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
+""-	CHAR	0
 	 
-|3,0,36,0,1,0,1534511057," "
+|3,1,36,0,1,0,1536668529," "
 
 # global variables:
 !ST_WIN_CMD	NUM	0
@@ -557,230 +601,398 @@ $\rparent
 !ST_UNIX	NUM	2
 
 # File marks:
-'0  12  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c
-|4,48,12,0,1536331976,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c"
-'1  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,49,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
-'2  45  0  ~/TreeExplorer
-|4,50,45,0,1536314411,"~/TreeExplorer"
-'3  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,51,6,0,1536313478,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
-'4  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,52,6,0,1536313328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
-'5  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/ghupload
-|4,53,3,0,1536313314,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/ghupload"
-'6  52  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,54,52,10,1536138266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'7  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,55,53,0,1536138237,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'8  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,56,53,0,1536138237,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'9  14  20  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh
-|4,57,14,20,1534511118,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh"
+'0  192  4  ~/.vimrc
+|4,48,192,4,1536668632,"~/.vimrc"
+'1  311  0  ~/.vimrc
+|4,49,311,0,1536668624,"~/.vimrc"
+'2  311  0  ~/.vimrc
+|4,50,311,0,1536668624,"~/.vimrc"
+'3  408  7  ~/.vimrc
+|4,51,408,7,1536668568,"~/.vimrc"
+'4  403  7  ~/.vimrc
+|4,52,403,7,1536668568,"~/.vimrc"
+'5  408  7  ~/.vimrc
+|4,53,408,7,1536668568,"~/.vimrc"
+'6  403  7  ~/.vimrc
+|4,54,403,7,1536668568,"~/.vimrc"
+'7  410  26  ~/.vimrc
+|4,55,410,26,1536668513,"~/.vimrc"
+'8  411  26  ~/.vimrc
+|4,56,411,26,1536668513,"~/.vimrc"
+'9  405  26  ~/.vimrc
+|4,57,405,26,1536668513,"~/.vimrc"
 
 # Jumplist (newest first):
--'  12  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c
-|4,39,12,0,1536331976,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c
-|4,39,1,0,1536331738,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-|4,39,1,2,1536331534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
--'  45  0  ~/TreeExplorer
-|4,39,45,0,1536314411,"~/TreeExplorer"
+-'  192  4  ~/.vimrc
+|4,39,192,4,1536668632,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668625,"~/.vimrc"
+-'  311  0  ~/.vimrc
+|4,39,311,0,1536668624,"~/.vimrc"
+-'  311  0  ~/.vimrc
+|4,39,311,0,1536668624,"~/.vimrc"
+-'  353  0  ~/.vimrc
+|4,39,353,0,1536668620,"~/.vimrc"
+-'  353  0  ~/.vimrc
+|4,39,353,0,1536668620,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668569,"~/.vimrc"
+-'  408  7  ~/.vimrc
+|4,39,408,7,1536668568,"~/.vimrc"
+-'  403  7  ~/.vimrc
+|4,39,403,7,1536668568,"~/.vimrc"
+-'  408  7  ~/.vimrc
+|4,39,408,7,1536668568,"~/.vimrc"
+-'  403  7  ~/.vimrc
+|4,39,403,7,1536668568,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668515,"~/.vimrc"
+-'  410  26  ~/.vimrc
+|4,39,410,26,1536668513,"~/.vimrc"
+-'  411  26  ~/.vimrc
+|4,39,411,26,1536668513,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668513,"~/.vimrc"
+-'  406  26  ~/.vimrc
+|4,39,406,26,1536668513,"~/.vimrc"
+-'  410  26  ~/.vimrc
+|4,39,410,26,1536668513,"~/.vimrc"
+-'  411  26  ~/.vimrc
+|4,39,411,26,1536668513,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668513,"~/.vimrc"
+-'  406  26  ~/.vimrc
+|4,39,406,26,1536668513,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1536668464,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1536668464,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1536668464,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668464,"~/.vimrc"
+-'  4  0  ~/.vimrc
+|4,39,4,0,1536668464,"~/.vimrc"
+-'  406  26  ~/.vimrc
+|4,39,406,26,1536668450,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668443,"~/.vimrc"
+-'  407  36  ~/.vimrc
+|4,39,407,36,1536668425,"~/.vimrc"
+-'  402  36  ~/.vimrc
+|4,39,402,36,1536668425,"~/.vimrc"
+-'  407  36  ~/.vimrc
+|4,39,407,36,1536668425,"~/.vimrc"
+-'  402  36  ~/.vimrc
+|4,39,402,36,1536668425,"~/.vimrc"
+-'  402  36  ~/.vimrc
+|4,39,402,36,1536668425,"~/.vimrc"
+-'  402  36  ~/.vimrc
+|4,39,402,36,1536668425,"~/.vimrc"
+-'  402  36  ~/.vimrc
+|4,39,402,36,1536668425,"~/.vimrc"
+-'  406  50  ~/.vimrc
+|4,39,406,50,1536668390,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668345,"~/.vimrc"
+-'  406  44  ~/.vimrc
+|4,39,406,44,1536668344,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1536668312,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668311,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668311,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668311,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668311,"~/.vimrc"
+-'  405  26  ~/.vimrc
+|4,39,405,26,1536668311,"~/.vimrc"
+-'  403  8  ~/.vimrc
+|4,39,403,8,1536668276,"~/.vimrc"
+-'  403  8  ~/.vimrc
+|4,39,403,8,1536668276,"~/.vimrc"
+-'  403  8  ~/.vimrc
+|4,39,403,8,1536668276,"~/.vimrc"
+-'  403  8  ~/.vimrc
+|4,39,403,8,1536668276,"~/.vimrc"
+-'  403  8  ~/.vimrc
+|4,39,403,8,1536668276,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1536668202,"~/.vimrc"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
+-'  18  0  ~/airwall
+|4,39,18,0,1536668197,"~/airwall"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1536668630	0
+	"	192	4
+	^	503	38
+	.	310	0
+	+	405	7
+	+	406	9
+	+	407	9
+	+	405	10
+	+	406	10
+	+	407	10
+	+	405	31
+	+	406	31
+	+	407	33
+	+	408	32
+	+	405	7
+	+	408	11
+	+	408	28
+	+	411	0
+	+	408	7
+	+	405	7
+	+	406	7
+	+	407	0
+	+	406	0
+	+	405	0
+	+	408	0
+	+	409	0
+	+	405	9
+	+	406	9
+	+	407	9
+	+	408	9
+	+	408	34
+	+	409	0
+	+	405	0
+	+	406	0
+	+	409	0
+	+	316	0
+	+	389	0
+	+	386	0
+	+	387	24
+	+	394	0
+	+	648	0
+	+	648	2
+	+	648	17
+	+	648	28
+	+	648	10
+	+	648	0
+	+	646	0
+	+	640	0
+	+	641	0
+	+	648	0
+	+	403	0
+	+	403	35
+	+	403	42
+	+	399	0
+	+	648	28
+	+	648	0
+	+	399	0
+	+	398	0
+	+	397	0
+	+	396	1
+	+	403	0
+	+	401	0
+	+	408	7
+	+	407	7
+	+	408	7
+	+	695	0
+	+	407	7
+	+	408	7
+	+	407	36
+	+	408	0
+	+	407	7
+	+	408	7
+	+	414	0
+	+	415	0
+	+	414	0
+	+	415	0
+	+	407	7
+	+	408	7
+	+	409	0
+	+	408	0
+	+	410	0
+	+	410	45
+	+	407	0
+	+	408	0
+	+	410	47
+	+	410	26
+	+	410	0
+	+	410	48
+	+	410	0
+	+	407	0
+	+	408	0
+	+	407	0
+	+	408	7
+	+	315	0
+	+	310	130
+	+	336	105
+	+	350	115
+	+	456	66
+	+	465	137
+	+	466	137
+	+	493	64
+	+	494	40
+	+	503	37
+	+	310	0
+	m	1	0
+
+> ~/-MiniBufExplorer-
+	*	1536668438	0
+	"	1	11
+	.	2	0
+	+	2	0
+
+> ~/__Tagbar__
+	*	1536668438	0
+	"	1	0
+	.	27	0
+	+	131	0
+	+	52	0
+	+	27	0
+
+> ~/__Tag_List__
+	*	1536668436	0
+	"	3	0
+	.	34	0
+	+	42	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	36	0
+	+	35	0
+	+	34	0
+
+> ~/airwall
+	*	1536668197	0
+	"	18	0
+
+> ~/ControlP
+	*	1536668190	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/NERD_tree_1
+	*	1536668068	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/a.patch
+	*	1536663565	0
+	"	62	27
+	.	13	0
+	+	13	0
+
+> ~/.vim/clewn.vim
+	*	1536663525	0
+	"	54	0
+
+> ~/.vim/NERD_tree_1
+	*	1536663523	0
+	"	15	0
+	.	1	0
+	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c
 	*	1536331974	0
@@ -816,18 +1028,6 @@ $\rparent
 	*	1536331466	0
 	"	1	0
 	^	1	0
-
-> ~/NERD_tree_1
-	*	1536331464	0
-	"	20	0
-	.	1	0
-	+	1	0
-
-> ~/-MiniBufExplorer-
-	*	1536331457	0
-	"	1	26
-	.	2	0
-	+	2	0
 
 > ~/Downloads/NERD_tree_1
 	*	1536331353	0
@@ -1482,69 +1682,3 @@ $\rparent
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/brcm-brcm/brcm_brcm.c
 	*	1533738791	0
 	"	188	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/-MiniBufExplorer-
-	*	1533738772	0
-	"	1	25
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/NERD_tree_1
-	*	1533738763	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/NERD_tree_1
-	*	1533738756	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/mesh-wal/mesh-wal/NERD_tree_1
-	*	1533738672	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/brcm-ap.c
-	*	1533721539	0
-	"	1452	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/getGwIPNl.c
-	*	1533582622	0
-	"	58	23
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/getGwIPRouteT.c
-	*	1533559690	0
-	"	39	19
-	^	45	19
-	.	45	0
-	+	26	22
-	+	24	13
-	+	26	27
-	+	53	2
-	+	36	32
-	+	30	0
-	+	14	26
-	+	21	17
-	+	17	65
-	+	17	24
-	+	18	7
-	+	21	36
-	+	38	0
-	+	52	0
-	+	36	0
-	+	10	53
-	+	45	39
-	+	46	0
-	+	47	1
-	+	45	39
-	+	48	0
-	+	45	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_model.json
-	*	1533559689	0
-	"	959	16
-	.	945	0
-	+	945	0

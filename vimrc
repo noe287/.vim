@@ -22,7 +22,7 @@
 " Plugin 'vim-airline'
 " Plugin 'vim-autoclose'
 " Plugin 'vim-gitgutter'
-" Plugin 'vim-mltiple-cursors' 
+" Plugin 'vim-mltiple-cursors'
 " Plugin 'vim-scriptease'
 " Plugin 'vim-sensible'
 " Plugin 'vim-rvm'
@@ -76,7 +76,7 @@ set rtp+=~/.fzf
 " This file contains some boilerplate settings for vim's cscope interface,
 " plus some keyboard mappings that I've found useful.
 "
-" USAGE: 
+" USAGE:
 " -- vim 6:     Stick this file in your ~/.vim/plugin directory (or in a
 "               'plugin' directory in some other directory that is in your
 "               'runtimepath'.
@@ -84,7 +84,7 @@ set rtp+=~/.fzf
 " -- vim 5:     Stick this file somewhere and 'source cscope.vim' it from
 "               your ~/.vimrc file (or cut and paste it into your .vimrc).
 "
-" NOTE: 
+" NOTE:
 " These key maps use multiple keystrokes (2 or 3 keys).  If you find that vim
 " keeps timing you out before you can complete them, try changing your timeout
 " settings, as explained below.
@@ -96,7 +96,7 @@ set rtp+=~/.fzf
 
 
 " This tests to see if vim was configured with the '--enable-cscope' option
-" when it was compiled.  If it wasn't, time to recompile vim... 
+" when it was compiled.  If it wasn't, time to recompile vim...
 if has("cscope")
 
     """"""""""""" Standard cscope/vim boilerplate
@@ -111,14 +111,14 @@ if has("cscope")
 
     " add any cscope database in current directory
     if filereadable("./cscope/cscope.out")
-        cs add ./cscope/cscope.out  
-    " else add the database pointed to by environment variable 
+        cs add ./cscope/cscope.out
+    " else add the database pointed to by environment variable
     elseif $CSCOPE_DB != ""
         cs add $CSCOPE_DB
     endif
 
     " show msg when any other cscope db added
-    set cscopeverbose  
+    set cscopeverbose
 
 
     """"""""""""" My cscope/vim key mappings
@@ -157,7 +157,7 @@ if has("cscope")
     " To do the first type of search, hit 'CTRL-\', followed by one of the
     " cscope search types above (s,g,c,t,e,f,i,d).  The result of your cscope
     " search will be displayed in the current window.  You can use CTRL-T to
-    " go back to where you were before the search.  
+    " go back to where you were before the search.
     "
     " h map-which-keys
     " h map-alt-keys
@@ -177,19 +177,19 @@ if has("cscope")
     "
     " (Note: earlier versions of vim may not have the :scs command, but it
     " can be simulated roughly via:
-    "    nmap <C-@>s <C-W><C-S> :cs find s <C-R>=expand("<cword>")<CR><CR>	
+    "    nmap <C-@>s <C-W><C-S> :cs find s <C-R>=expand("<cword>")<CR><CR>
 
-    nmap <C-@><C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@><C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@><C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@><C-@>t :scs find t <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@><C-@>e :scs find e <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-@><C-@>f :scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@><C-@>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
-    nmap <C-@><C-@>d :scs find d <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-@><C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-@><C-@>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-@><C-@>d :scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
-    " Hitting CTRL-space *twice* before the search type does a vertical 
+    " Hitting CTRL-space *twice* before the search type does a vertical
     " split instead of a horizontal one (vim 6 and up only)
     "
     " (Note: you may wish to put a 'set splitright' in your .vimrc
@@ -200,8 +200,8 @@ if has("cscope")
     nmap <C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
     nmap <C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
     nmap <C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
     nmap <C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
@@ -211,7 +211,7 @@ if has("cscope")
     " You may find that too short with the above typemaps.  If so, you should
     " either turn off mapping timeouts via 'notimeout'.
     "
-    "set notimeout 
+    "set notimeout
     "
     " Or, you can keep timeouts, by uncommenting the timeoutlen line below,
     " with your own personal favorite value (in milliseconds):
@@ -224,7 +224,7 @@ if has("cscope")
     " delays as vim waits for a keystroke after you hit ESC (it will be
     " waiting to see if the ESC is actually part of a key code like <F1>).
     "
-    "set ttimeout 
+    "set ttimeout
     "
     " personally, I find a tenth of a second to work well for key code
     " timeouts. If you experience problems and have a slow terminal or network
@@ -239,7 +239,7 @@ if has("cscope")
 "set csprg=/usr/bin/cscope
 "set cscopequickfix
 "set cscoperelative
-"set csre 
+"set csre
 "set csverb
 "set cspc=5
 
@@ -268,35 +268,35 @@ set noerrorbells         " don't beep
 set nobackup
 set noswapfile
 "Custom Editor Environment from yavide
-set sessionoptions=blank,buffers,folds,help,resize,tabpages,winpos,winsize  " Set session persistence options 
-set enc=utf-8                                                               " Set UTF-8 encoding              
-set fenc=utf-8                                                                                                
-set termencoding=utf-8                                                                                        
+set sessionoptions=blank,buffers,folds,help,resize,tabpages,winpos,winsize  " Set session persistence options
+set enc=utf-8                                                               " Set UTF-8 encoding
+set fenc=utf-8
+set termencoding=utf-8
 set nocompatible                                                            " Disable vi compatibility (emulation of old bugs)
 set autoindent                                                              " Use indentation of previous line
 set smartindent                                                             " Use intelligent indentation for C
-set tabstop=8                                                               " Tab width is 4 spaces           
-set shiftwidth=8                                                            " Indent also with 4 spaces       
-" set expandtab                                                               " Expand tabs to spaces           
-set nowrap                                                                  " Do not wrap lines               
+set tabstop=8                                                               " Tab width is 4 spaces
+set shiftwidth=8                                                            " Indent also with 4 spaces
+" set expandtab                                                               " Expand tabs to spaces
+set nowrap                                                                  " Do not wrap lines
 set noequalalways                                                           " Do not maintain window-size ratio (when having multiple window splits I don't find it desirable)
 set textwidth=150                                                           " Wrap lines at 120 chars. 80 is somewhat antiquated with nowadays displays.
-let mapleader = ","                                                         " Define ',' is leader key        
-syntax on                                                                   " Turn syntax highlighting on     
-"set ignorecase                                                                                                
-"set smartcase                                                                                                 
-set incsearch                                                                                                 
-set hlsearch                                                                " Highlight all search results    
-set number                                                                  " Turn line numbers on            
-set showmatch                                                               " Highlight matching braces       
-set comments=sl:/*,mb:\ *,elx:\ */                                          " Intelligent comments            
+let mapleader = ","                                                         " Define ',' is leader key
+syntax on                                                                   " Turn syntax highlighting on
+"set ignorecase
+"set smartcase
+set incsearch
+set hlsearch                                                                " Highlight all search results
+set number                                                                  " Turn line numbers on
+set showmatch                                                               " Highlight matching braces
+set comments=sl:/*,mb:\ *,elx:\ */                                          " Intelligent comments
 set wildmode=longest:full                                                   " Use intelligent file completion like in the bash
-set wildmenu                                                                                                  
+set wildmenu
 set hidden                                                                  " Allow changing buffers without saving them
-set cul                                                                     " Highlight the current line      
-set backspace=2                                                             " Backspace tweaks                
-set backspace=indent,eol,start                                                                                
-set smarttab       
+set cul                                                                     " Highlight the current line
+set backspace=2                                                             " Backspace tweaks
+set backspace=indent,eol,start
+set smarttab
 set undofile
 set autoread
 " /yavide custom editor environment
@@ -310,15 +310,9 @@ highlight ColorColumn ctermbg=darkgray
 set wildignore=*.o,*.obj,*~,*.out,*.ko,tags,*.txt,*.in,package*,cscope.*,*.swp,*.bak,*.pyc,*.class,*.diff,*.patch,*.a
 
 
-"Shows empty spaces and tabs in the file
-"set list
-"set listchars=tab:>.,trail:.,extends:#,nbsp:.
-"set listchars=trail:.,extends:#,nbsp:.
 
-"set list
-set listchars=tab:>-,trail:.,space:.
-nnoremap <silent> <Leader>ç :TabVis<CR>
-command -bang -nargs=? TabVis call TabVisible()
+
+
 
 
 "Scripts for color
@@ -339,13 +333,14 @@ set pastetoggle=<F2>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""MAPPINGS""""""""""""""""""""""""""""""""""""" 
+"""""""""""""""""""""""""""""""""""MAPPINGS"""""""""""""""""""""""""""""""""""""
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " My mappings
 vnoremap > >gv
 vnoremap < <gv
-vnoremap <Tab> > 
+vnoremap <Tab> >
 vnoremap <S-Tab> <
 
 
@@ -353,7 +348,8 @@ vnoremap <S-Tab> <
 map <leader>y "+y
 map <leader>p "+p
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" map <F11> :!cscope -b<CR>:cs reset<CR><CR>                                      
+
+" map <F11> :!cscope -b<CR>:cs reset<CR><CR>
 "  nmap <C-F12> <Plug>CscopeDBInit <bar> :!rm cscope.out <CR>
 "nmap <C-F11> <Plug>CscopeDBInit <bar><CR>
 
@@ -388,9 +384,33 @@ nmap <silent> <leader>. :NumTog<CR>
 command -bang -nargs=? NumTog call NumToggle()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set tabs/spaces visible
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Shows empty spaces and tabs in the file
+"set list
+"set listchars=tab:>.,trail:.,extends:#,nbsp:.
+"set listchars=trail:.,extends:#,nbsp:.
 
 
+
+" set list
+set listchars=tab:>-,trail:.,space:.
+nnoremap <silent> <Leader>ç :TabVis<CR>
+command -bang -nargs=? TabVis call TabVisible()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Delete/hide bad-whitespace
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" map <C-h> :ShowBadWhitespace <CR>
+" map <C-j> :HideBadWhitespace <CR>
+" map <C-m> :ToggleBadWhitespace <CR>
+map <C-m> :EraseBadWhitespace <CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "minibufferexplorer
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-f> :MBEbn <CR>
 map <C-a> :MBEbp <CR>
 map <C-d> :MBEbd <CR>
@@ -434,6 +454,7 @@ nmap <silent> <leader>" :nohlsearch<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Finally, a trick by Steve Losh for when you forgot to sudo before editing a file that requires root privileges (typically /etc/hosts). This lets you use w!! to do that after you opened the file already:
 cmap w!! w !sudo tee % >/dev/null
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings for choosing the window
@@ -497,7 +518,7 @@ function! AdjustWindowHeight(minheight, maxheight)
       exe max([min([n_lines, a:maxheight]), a:minheight]) . "wincmd _"
 endfunction
 
-"1 - QFix funct toogle 
+"1 - QFix funct toogle
 "let g:jah_Quickfix_Win_Height = 10
 function! QFixToggle(forced)
   if exists("g:qfix_win") && a:forced == 0
@@ -609,36 +630,21 @@ endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " check file change every 4 seconds ('CursorHold') and reload the buffer upon detecting change
-" set autoread                                                                                                                                                                                    
-au CursorHold * checktime    
+" set autoread
+au CursorHold * checktime
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Toggle line numbers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! NumToggle()
-  "if exists("hide") 
-   " unlet hide
     exe "set number!"
-  "else
-   " exe "set number"
-   " let hide = 1
-  "endif
 endfunction
 
 " Toggle Tabs and space visibility
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! TabVisible()
-  "if exists("hide") 
-   " unlet hide
     exe "set list!"
 endfunction
-
-
-
-
-
-
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""" PLUGIN settings"""""""""""""""""""""""""""""""""
@@ -686,5 +692,3 @@ let g:clang_complete_copen = 1
 "FZF
 " command! -bang -nargs=? -complete=dir Files
 " \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-
-
