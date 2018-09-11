@@ -20,10 +20,10 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1536670211,,"wq!"
 :q!
 |2,0,1536670177,,"q!"
-:wq!
-|2,0,1536669341,,"wq!"
 :w
 |2,0,1536668611,,"w"
 :W
@@ -557,9 +557,8 @@ $
 
 # Registers:
 "0	LINE	0
-	nnoremap <silent> <leader>ğ :TagbarToggle<CR>
-	nnoremap <silent> <leader>ü :TlistToggle<CR>
-|3,0,0,1,2,0,1536668286,"nnoremap <silent> <leader>ğ :TagbarToggle<CR>","nnoremap <silent> <leader>ü :TlistToggle<CR>"
+	socks_proxy="socks://proxyws.corp.airties.com:3128/"
+|3,0,0,1,1,0,1536670193,"socks_proxy=\"socks://proxyws.corp.airties.com:3128/\""
 "1	LINE	0
 	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
 |3,0,1,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
@@ -592,8 +591,8 @@ $
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
 ""-	CHAR	0
-	/
-|3,1,36,0,1,0,1536669298,"/"
+	s
+|3,1,36,0,1,0,1536670206,"s"
 
 # global variables:
 !ST_WIN_CMD	NUM	0
@@ -601,36 +600,50 @@ $
 !ST_UNIX	NUM	2
 
 # File marks:
-'0  173  0  ~/.bashrc
-|4,48,173,0,1536670177,"~/.bashrc"
-'1  134  0  ~/.bashrc
-|4,49,134,0,1536670021,"~/.bashrc"
+'0  8  26  /etc/environment
+|4,48,8,26,1536670211,"/etc/environment"
+'1  173  0  ~/.bashrc
+|4,49,173,0,1536670177,"~/.bashrc"
 '2  134  0  ~/.bashrc
 |4,50,134,0,1536670021,"~/.bashrc"
-'3  4  7  /etc/cron.daily/ghupload
-|4,51,4,7,1536669341,"/etc/cron.daily/ghupload"
+'3  134  0  ~/.bashrc
+|4,51,134,0,1536670021,"~/.bashrc"
 '4  4  7  /etc/cron.daily/ghupload
-|4,52,4,7,1536669327,"/etc/cron.daily/ghupload"
-'5  1  0  /etc/cron.daily/passwd
-|4,53,1,0,1536668789,"/etc/cron.daily/passwd"
-'6  1  0  /etc/cron.daily/upstart
-|4,54,1,0,1536668775,"/etc/cron.daily/upstart"
-'7  1  0  ~/NERD_tree_1
-|4,55,1,0,1536668724,"~/NERD_tree_1"
-'8  2  0  ~/NERD_tree_1
-|4,56,2,0,1536668721,"~/NERD_tree_1"
-'9  3  0  ~/NERD_tree_1
-|4,57,3,0,1536668721,"~/NERD_tree_1"
+|4,52,4,7,1536669341,"/etc/cron.daily/ghupload"
+'5  4  7  /etc/cron.daily/ghupload
+|4,53,4,7,1536669327,"/etc/cron.daily/ghupload"
+'6  1  0  /etc/cron.daily/passwd
+|4,54,1,0,1536668789,"/etc/cron.daily/passwd"
+'7  1  0  /etc/cron.daily/upstart
+|4,55,1,0,1536668775,"/etc/cron.daily/upstart"
+'8  1  0  ~/NERD_tree_1
+|4,56,1,0,1536668724,"~/NERD_tree_1"
+'9  2  0  ~/NERD_tree_1
+|4,57,2,0,1536668721,"~/NERD_tree_1"
 
 # Jumplist (newest first):
+-'  8  26  /etc/environment
+|4,39,8,26,1536670211,"/etc/environment"
+-'  1  0  /etc/environment
+|4,39,1,0,1536670184,"/etc/environment"
 -'  173  0  ~/.bashrc
 |4,39,173,0,1536670177,"~/.bashrc"
+-'  173  0  ~/.bashrc
+|4,39,173,0,1536670177,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1536670166,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1536670166,"~/.bashrc"
 -'  134  0  ~/.bashrc
 |4,39,134,0,1536670021,"~/.bashrc"
 -'  134  0  ~/.bashrc
 |4,39,134,0,1536670021,"~/.bashrc"
+-'  134  0  ~/.bashrc
+|4,39,134,0,1536670021,"~/.bashrc"
+-'  134  0  ~/.bashrc
+|4,39,134,0,1536670021,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1536669995,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1536669995,"~/.bashrc"
 -'  4  7  /etc/cron.daily/ghupload
@@ -641,6 +654,22 @@ $
 |4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
 -'  4  7  /etc/cron.daily/ghupload
 |4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669341,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669330,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669330,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669330,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669330,"/etc/cron.daily/ghupload"
 -'  1  0  /etc/cron.daily/ghupload
 |4,39,1,0,1536669330,"/etc/cron.daily/ghupload"
 -'  1  0  /etc/cron.daily/ghupload
@@ -657,6 +686,22 @@ $
 |4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
 -'  4  7  /etc/cron.daily/ghupload
 |4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
+-'  4  7  /etc/cron.daily/ghupload
+|4,39,4,7,1536669327,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669294,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669294,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669294,"/etc/cron.daily/ghupload"
+-'  1  0  /etc/cron.daily/ghupload
+|4,39,1,0,1536669294,"/etc/cron.daily/ghupload"
 -'  1  0  /etc/cron.daily/ghupload
 |4,39,1,0,1536669294,"/etc/cron.daily/ghupload"
 -'  1  0  /etc/cron.daily/ghupload
@@ -697,6 +742,38 @@ $
 |4,39,1,0,1536668789,"/etc/cron.daily/passwd"
 -'  1  0  /etc/cron.daily/passwd
 |4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
+-'  1  0  /etc/cron.daily/passwd
+|4,39,1,0,1536668789,"/etc/cron.daily/passwd"
 -'  1  0  /etc/cron.daily/upstart
 |4,39,1,0,1536668775,"/etc/cron.daily/upstart"
 -'  1  0  /etc/cron.daily/upstart
@@ -745,86 +822,25 @@ $
 |4,39,1,0,1536668775,"/etc/cron.daily/upstart"
 -'  1  0  /etc/cron.daily/upstart
 |4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  /etc/cron.daily/upstart
-|4,39,1,0,1536668775,"/etc/cron.daily/upstart"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1536668724,"~/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
+
+> /etc/environment
+	*	1536670210	0
+	"	8	26
+	.	9	26
+	+	3	0
+	+	5	0
+	+	7	0
+	+	9	0
+	+	8	0
+	+	6	0
+	+	4	0
+	+	2	0
+	+	3	24
+	+	5	26
+	+	7	22
+	+	9	26
 
 > ~/.bashrc
 	*	1536670176	0
@@ -1677,9 +1693,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid_steer_devel/src/lib/psi/source/BCMBSP/BCMBSP_bsd.c
 	*	1533740625	0
 	"	40	18
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/manager/-MiniBufExplorer-
-	*	1533740377	0
-	"	1	25
-	.	2	0
-	+	2	0
