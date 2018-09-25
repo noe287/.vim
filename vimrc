@@ -405,7 +405,7 @@ command -bang -nargs=? TabVis call TabVisible()
 " map <C-h> :ShowBadWhitespace <CR>
 " map <C-j> :HideBadWhitespace <CR>
 " map <C-m> :ToggleBadWhitespace <CR>
-map <C-m> :EraseBadWhitespace <CR>
+" map <C-m> :EraseBadWhitespace <CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
