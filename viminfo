@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<generic_platform_get_mesh_peers\>
+~MSle0~/br_
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,12 +20,12 @@
 $\rparent 
 
 # Command Line History (newest to oldest):
+:qa!
+|2,0,1537879711,,"qa!"
 :Rg -tc routing_get_mesh_peers
 |2,0,1534236463,,"Rg -tc routing_get_mesh_peers"
 :Rg get_mesh_peers
 |2,0,1534174568,,"Rg get_mesh_peers"
-:qa!
-|2,0,1537535018,,"qa!"
 :w
 |2,0,1534340166,,"w"
 :q!
@@ -284,6 +284,12 @@ $\rparent
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/br_
+|2,1,1537879706,47,"br_"
+?/netif
+|2,1,1537879685,47,"netif"
+? \<dev_addr_lists\>
+|2,1,1537879666,,"\\<dev_addr_lists\\>"
 ?/SupportedStandards
 |2,1,1534340326,47,"SupportedStandards"
 ?/Device.WiFi.SSID.1.SSID
@@ -609,38 +615,62 @@ $\rparent
 # global variables:
 
 # File marks:
-'0  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
-|4,48,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
-'1  81  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,49,81,0,1537364640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'2  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,50,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'0  52  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,48,52,2,1537879711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+'1  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
+|4,49,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
+'2  81  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,50,81,0,1537364640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 '3  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,51,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'4  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,52,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'4  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,52,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 '5  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,53,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 '6  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,54,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 '7  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,55,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'8  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,56,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'8  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,56,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 '9  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,57,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 
 # Jumplist (newest first):
+-'  52  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,39,52,2,1537879711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+-'  12  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,39,12,2,1537879666,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+-'  13  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,39,13,2,1537879663,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+-'  74  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,39,74,2,1537879605,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+|4,39,1,0,1537879605,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
+|4,39,1,0,1537879605,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
+-'  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
+|4,39,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
 -'  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
 |4,39,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
 -'  81  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,81,0,1537364640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  81  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,81,0,1537364640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1537364614,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1537364614,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,17,0,1537262548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1537262378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1537262378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -649,6 +679,14 @@ $\rparent
 |4,39,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,14,0,1537262325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1537190397,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1537190397,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -659,6 +697,22 @@ $\rparent
 |4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  73  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,73,0,1537190384,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,48,0,1537190320,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,48,0,1537190320,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,48,0,1537190320,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,48,0,1537190320,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,48,0,1537190320,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  48  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -683,6 +737,22 @@ $\rparent
 |4,39,406,0,1537190316,"~/.vimrc"
 -'  406  0  ~/.vimrc
 |4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
+-'  406  0  ~/.vimrc
+|4,39,406,0,1537190316,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1537190303,"~/.vimrc"
 -'  1  0  ~/.vimrc
@@ -699,6 +769,24 @@ $\rparent
 |4,39,1,0,1537190303,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1537190303,"~/.vimrc"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1537190285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1537190285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  214  0  ~/.bashrc
@@ -749,88 +837,36 @@ $\rparent
 |4,39,214,0,1537190278,"~/.bashrc"
 -'  214  0  ~/.bashrc
 |4,39,214,0,1537190278,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1537190268,"~/.bashrc"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
--'  7  47  /etc/environment
-|4,39,7,47,1536670445,"/etc/environment"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1
+	*	1537879709	0
+	"	52	2
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
+	*	1537879700	0
+	"	3667	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/__Tagbar__
+	*	1537879690	0
+	"	250	4
+	.	365	0
+	+	365	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/-MiniBufExplorer-
+	*	1537879629	0
+	"	1	10
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/__Tag_List__
+	*	1537879628	0
+	"	195	4
+	.	350	0
+	+	350	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
 	*	1537535016	0
@@ -1654,27 +1690,3 @@ $\rparent
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/air-wall/air-wall-master/lib/airties/airties.c
 	*	1533821467	0
 	"	1647	11
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/air-wall/air-wall-master/lib/air_wall.c
-	*	1533821464	0
-	"	504	16
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/statistics-collector/master/src/topology/topology.c
-	*	1533821454	0
-	"	564	24
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/NERD_tree_1
-	*	1533821438	0
-	"	5	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/04_05_18-16.30.35_Air4920-lm/-MiniBufExplorer-
-	*	1533821434	0
-	"	1	68
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/27_06_18-11.49.55_Air4920-Bison-lm/air-wall/air-wall-master/lib/generic/generic_platform.c
-	*	1533820288	0
-	"	1197	28
