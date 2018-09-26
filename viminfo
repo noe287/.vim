@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/rebuild
+~MSle0~/7380
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,10 +20,22 @@
 $
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1537883808,,"q!"
 :qa!
-|2,0,1537883024,,"qa!"
+|2,0,1537964292,,"qa!"
+:Rg -tc "0x7380"
+|2,0,1537964285,,"Rg -tc \"0x7380\""
+:F meshest_msg.h
+|2,0,1537964274,,"F meshest_msg.h"
+:q!
+|2,0,1537964272,,"q!"
+:F meshest_msh.h
+|2,0,1537964262,,"F meshest_msh.h"
+:F meshest_msh.g
+|2,0,1537964259,,"F meshest_msh.g"
+:Rg -tc 0x7380
+|2,0,1537964198,,"Rg -tc 0x7380"
+:Rg -tc 7380
+|2,0,1537964190,,"Rg -tc 7380"
 :w
 |2,0,1537881969,,"w"
 :EraseBadWhitespace
@@ -290,12 +302,16 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/7380
+|2,1,1537964183,47,"7380"
+?/manager
+|2,1,1537964115,47,"manager"
+? \s\+$
+|2,1,1537964109,,"\\s\\+$"
 ?/rebuild
 |2,1,1537883806,47,"rebuild"
 ?/bak
 |2,1,1537883739,47,"bak"
-? \s\+$
-|2,1,1537881966,,"\\s\\+$"
 ?/netif_receive_skb
 |2,1,1537881129,47,"netif_receive_skb"
 ?/netif_rx
@@ -520,8 +536,6 @@ $
 |2,1,1533215836,,"\\<airbus_client_unsubscribe_list\\>"
 ? \<airbus_client_subscribe_list\>
 |2,1,1533215832,,"\\<airbus_client_subscribe_list\\>"
-?/manager
-|2,1,1533215778,47,"manager"
 ?/create
 |2,1,1533215581,47,"create"
 ?/libxml2
@@ -592,43 +606,43 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	nejatonay.erkose:Mavisirin287@p
-|3,0,0,0,1,0,1536670409,"nejatonay.erkose:Mavisirin287@p"
+""0	LINE	0
+	
+|3,1,0,1,1,0,1537964228,""
 "1	LINE	0
-	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
-|3,0,1,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
+	
+|3,0,1,1,1,0,1537879576,""
 "2	LINE	0
-	nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>
-|3,0,2,1,1,0,1536668526,"nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>"
+	
+|3,0,2,1,1,0,1537879575,""
 "3	LINE	0
 	
-	
-|3,0,3,1,2,0,1536667923,"",""
+|3,0,3,1,1,0,1537879575,""
 "4	LINE	0
-	                         
-|3,0,4,1,1,0,1536667922,"                         "
+	/*   */
+|3,0,4,1,1,0,1537879574,"/*   */"
 "5	LINE	0
-	 
-|3,0,5,1,1,0,1536667921," "
+	/*   */
+|3,0,5,1,1,0,1537879563,"/*   */"
 "6	LINE	0
-	 
-|3,0,6,1,1,0,1536667921," "
+	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
+|3,0,6,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
 "7	LINE	0
-	  
-|3,0,7,1,1,0,1536667921,"  "
+	nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>
+|3,0,7,1,1,0,1536668526,"nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>"
 "8	LINE	0
-	                          
-|3,0,8,1,1,0,1536667920,"                          "
+	
+	
+|3,0,8,1,2,0,1536667923,"",""
 "9	LINE	0
-	asdfdfd
-|3,0,9,1,1,0,1536667920,"asdfdfd"
+	                         
+|3,0,9,1,1,0,1536667922,"                         "
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	p
-|3,1,36,0,1,0,1536670442,"p"
+|3,0,36,0,1,0,1536670442,"p"
 
 # global variables:
 
@@ -651,10 +665,12 @@ $
 |4,55,52,2,1537879711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/NERD_tree_1"
 '8  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
 |4,56,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
-'9  81  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,57,81,0,1537364640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'9  380  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c
+|4,57,380,27,1537535018,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/airties/airdata.c"
 
 # Jumplist (newest first):
+-'  33  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.c
+|4,39,33,0,1537964155,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.c"
 -'  22  44  ~/Downloads/meshdiag-runner(1).sh
 |4,39,22,44,1537947467,"~/Downloads/meshdiag-runner(1).sh"
 -'  1  0  ~/Downloads/meshdiag-runner(1).sh
@@ -849,14 +865,39 @@ $
 |4,39,3350,17,1537881032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
 -'  3350  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
 |4,39,3350,17,1537881032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
--'  3350  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
-|4,39,3350,17,1537881032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
--'  3350  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
-|4,39,3350,17,1537881032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
--'  3350  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
-|4,39,3350,17,1537881032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/net.c
+	*	1537964281	0
+	"	26	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1
+	*	1537964280	0
+	"	213	2
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest_msg.h
+	*	1537964274	0
+	"	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/ControlP
+	*	1537964244	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.c
+	*	1537964150	0
+	"	33	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/-MiniBufExplorer-
+	*	1537964146	0
+	"	1	66
+	.	2	0
+	+	2	0
 
 > ~/Downloads/meshdiag-runner(1).sh
 	*	1537947450	0
@@ -1686,32 +1727,3 @@ $
 	"	4	0
 	.	1	0
 	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/air-rm-devel/rmd/src/topogen-airwall.c
-	*	1533914491	0
-	"	82	5
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/air-rm-devel/rmd/src/topogen.c
-	*	1533914455	0
-	"	803	19
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/booster2_Ağu-09-18_29_51_Prş/airties-bskyb-booster2-debug/air-rm/-MiniBufExplorer-
-	*	1533914302	0
-	"	1	38
-	.	2	0
-	+	2	0
-
-> ~/airrmerror.txt
-	*	1533901272	0
-	"	978	76
-	^	978	77
-	.	978	76
-	+	978	76
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/console.sh
-	*	1533894002	0
-	"	30	19
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_cloud/airties-bskyb-viper-debug/statistics-collector/statistics-collector-sky/src/platform/air-wall.c
-	*	1533823260	0
-	"	520	1
