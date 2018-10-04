@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/PSTA_MESH_MODE
+~Msle0~/\<destMacStr\>
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1538655051,,"q!"
 :wq!
 |2,0,1538654897,,"wq!"
 :w
 |2,0,1538643965,,"w"
-:q!
-|2,0,1538641503,,"q!"
 :EraseBadWhitespace
 |2,0,1538641251,,"EraseBadWhitespace"
 :ERa
@@ -304,6 +304,8 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \<destMacStr\>
+|2,1,1538654946,,"\\<destMacStr\\>"
 ? \s\+$
 |2,1,1538641251,,"\\s\\+$"
 ?/PSTA_MESH_MODE
@@ -612,12 +614,18 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	  wds1.1: 78:3e:53:ff:72:60  78:3e:53:ff:72:62       2500
-|3,0,0,1,1,0,1538642794,"  wds1.1: 78:3e:53:ff:72:60  78:3e:53:ff:72:62       2500"
-""1	LINE	0
+""0	LINE	0
+				sscanf(destMacStr, "%2hhx:%2hhx:%2hhx:%2hhx:%2hhx:%2hhx",
+						&route_list->routes[i].destination[0],
+						&route_list->routes[i].destination[1],
+						&route_list->routes[i].destination[2],
+						&route_list->routes[i].destination[3],
+						&route_list->routes[i].destination[4],
+						&route_list->routes[i].destination[5]);
+|3,1,0,1,7,0,1538654956,"			sscanf(destMacStr, \"%2hhx:%2hhx:%2hhx:%2hhx:%2hhx:%2hhx\",","					&route_list->routes[i].destination[0],","					&route_list->routes[i].destination[1],","					&route_list->routes[i].destination[2],","					&route_list->routes[i].destination[3],","					&route_list->routes[i].destination[4],","					&route_list->routes[i].destination[5]);"
+"1	LINE	0
 			get_bridge_mac = 0;
-|3,1,1,1,1,0,1538643008,"		get_bridge_mac = 0;"
+|3,0,1,1,1,0,1538643008,"		get_bridge_mac = 0;"
 "2	LINE	0
 				if(ether_aton_r(token, &mac))
 |3,0,2,1,1,0,1538642676,"			if(ether_aton_r(token, &mac))"
@@ -652,20 +660,20 @@ $
 # global variables:
 
 # File marks:
-'0  39  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,48,39,22,1538654897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
-'1  39  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,49,39,7,1538653203,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
-'2  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,50,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'0  201  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,48,201,0,1538655051,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+'1  39  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,49,39,22,1538654897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'2  39  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,50,39,7,1538653203,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 '3  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,51,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 '4  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,52,41,0,1538643042,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+|4,52,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 '5  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,53,41,0,1538643042,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
-'6  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,54,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'6  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,54,41,0,1538643042,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 '7  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,55,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 '8  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
@@ -674,20 +682,42 @@ $
 |4,57,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 
 # Jumplist (newest first):
+-'  201  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,39,201,0,1538655051,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+-'  176  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,39,176,6,1538654946,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,39,1,0,1538654900,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+-'  39  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,39,22,1538654897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  39  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,39,22,1538654897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  39  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,39,7,1538653203,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  39  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,39,7,1538653203,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538643097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,1,0,1538643097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,41,0,1538643069,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538643045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,1,0,1538643045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,41,0,1538643042,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,41,0,1538643042,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538643033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,1,0,1538643033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
@@ -698,6 +728,16 @@ $
 |4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,42,2,1538643025,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538642962,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,1,0,1538642962,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
@@ -710,6 +750,18 @@ $
 |4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  16  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,16,32,1538642949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538642877,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,1,0,1538642877,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
@@ -776,106 +828,69 @@ $
 |4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 |4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  4  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,4,18,1538642862,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
--'  1  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,39,1,2,1538642792,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  5  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,5,21,1538642865,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+	*	1538655050	0
+	"	201	0
+	.	230	0
+	+	25	0
+	+	230	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 	*	1538654896	0
@@ -984,13 +999,6 @@ $
 	"	1	0
 	.	2	0
 	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
-	*	1538641502	0
-	"	1	0
-	.	230	0
-	+	25	0
-	+	230	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
 	*	1538573549	0
