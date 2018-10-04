@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1538641457,,"wq!"
+:w
+|2,0,1538641449,,"w"
+:EraseBadWhitespace
+|2,0,1538641251,,"EraseBadWhitespace"
 :q!
 |2,0,1538574365,,"q!"
-:wq!
-|2,0,1538573671,,"wq!"
-:EraseBadWhitespace
-|2,0,1538573582,,"EraseBadWhitespace"
-:w
-|2,0,1538573548,,"w"
 :ERa
 |2,0,1538149055,,"ERa"
 :qa!
@@ -305,7 +305,7 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1538573582,,"\\s\\+$"
+|2,1,1538641251,,"\\s\\+$"
 ?/PSTA_MESH_MODE
 |2,1,1537965636,47,"PSTA_MESH_MODE"
 ?/PROXY
@@ -613,68 +613,73 @@ $
 
 # Registers:
 ""0	LINE	0
-	
-|3,1,0,1,1,0,1537964228,""
+	    /* for (token = strtok_r(str, ",", &rest); token != NULL; token = strtok_r(NULL, ",", &rest)) { */
+|3,1,0,1,1,0,1538641312,"    /* for (token = strtok_r(str, \",\", &rest); token != NULL; token = strtok_r(NULL, \",\", &rest)) { */"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1537879576,""
+	#include <net/ethernet>
+|3,0,1,1,1,0,1538574380,"#include <net/ethernet>"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1537879575,""
-"3	LINE	0
-	
-|3,0,3,1,1,0,1537879575,""
+	    	struct ether_addr mac;
+|3,0,2,1,1,0,1538574209,"    	struct ether_addr mac;"
+"3	BLOCK	1
+	00
+|3,0,3,2,1,1,1538573839,"00"
 "4	LINE	0
-	/*   */
-|3,0,4,1,1,0,1537879574,"/*   */"
+	
+|3,0,4,1,1,0,1537879576,""
 "5	LINE	0
-	/*   */
-|3,0,5,1,1,0,1537879563,"/*   */"
+	
+|3,0,5,1,1,0,1537879575,""
 "6	LINE	0
-	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
-|3,0,6,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
+	
+|3,0,6,1,1,0,1537879575,""
 "7	LINE	0
-	nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>
-|3,0,7,1,1,0,1536668526,"nnoremap <silent> <leader>m :ToggleBadWhitespace <CR>"
+	/*   */
+|3,0,7,1,1,0,1537879574,"/*   */"
 "8	LINE	0
-	
-	
-|3,0,8,1,2,0,1536667923,"",""
+	/*   */
+|3,0,8,1,1,0,1537879563,"/*   */"
 "9	LINE	0
-	                         
-|3,0,9,1,1,0,1536667922,"                         "
+	nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>
+|3,0,9,1,1,0,1536668527,"nnoremap <silent> <leader>ç :EraseBadWhitespace  <CR>"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
 "-	CHAR	0
-	p
-|3,0,36,0,1,0,1536670442,"p"
+	 
+|3,0,36,0,1,0,1538574145," "
 
 # global variables:
 
 # File marks:
-'0  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
-|4,48,8,0,1538574365,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
-'1  7  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
-|4,49,7,0,1538574298,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+'0  39  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,48,39,0,1538641457,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'1  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,49,8,0,1538574365,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
 '2  7  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 |4,50,7,0,1538574298,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
-'3  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,51,4,12,1538573671,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
-'4  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-|4,52,4,12,1538573648,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
-'5  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
-|4,53,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
-'6  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,54,17,0,1538573550,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
-'7  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,55,1,0,1538565642,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
-'8  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/test.txt
-|4,56,4,56,1538149061,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/test.txt"
-'9  230  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
-|4,57,230,0,1538149039,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+'3  7  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,51,7,0,1538574298,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+'4  7  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,52,7,12,1538573671,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'5  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,53,4,12,1538573671,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'6  7  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,54,7,12,1538573648,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'7  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,55,4,12,1538573648,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+'8  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,56,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+'9  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,57,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 
 # Jumplist (newest first):
+-'  39  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,39,0,1538641457,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  38  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,38,4,1538641430,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  37  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,37,3,1538641251,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 |4,39,8,0,1538574365,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
@@ -685,6 +690,14 @@ $
 |4,39,7,0,1538574298,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 |4,39,1,0,1538574293,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+-'  50  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,50,56,1538573853,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  23  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,23,56,1538573763,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,1,0,1538573714,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
+-'  7  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+|4,39,7,12,1538573671,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 |4,39,4,12,1538573671,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c"
 -'  4  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
@@ -749,6 +762,8 @@ $
 |4,39,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 |4,39,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  4  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,4,56,1538573584,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 |4,39,1,0,1538573576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
@@ -781,6 +796,8 @@ $
 |4,39,1,0,1538573576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 |4,39,1,0,1538573576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
+|4,39,1,0,1538573576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt"
 -'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
 |4,39,17,0,1538573550,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
 -'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
@@ -845,26 +862,8 @@ $
 |4,39,17,0,1538573550,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
 -'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
 |4,39,17,0,1538573550,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
--'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
-|4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
+-'  17  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
+|4,39,17,0,1538573550,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
 -'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
 |4,39,19,56,1538573544,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c"
 -'  19  56  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
@@ -878,19 +877,73 @@ $
 
 # History of marks within files (newest to oldest):
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
+	*	1538641453	0
+	"	39	0
+	^	37	30
+	.	37	30
+	+	7	71
+	+	7	39
+	+	11	0
+	+	27	0
+	+	23	0
+	+	50	102
+	+	50	103
+	+	50	0
+	+	22	16
+	+	16	0
+	+	22	22
+	+	23	21
+	+	25	4
+	+	24	37
+	+	25	14
+	+	29	0
+	+	28	10
+	+	21	0
+	+	17	22
+	+	18	24
+	+	19	34
+	+	16	0
+	+	17	0
+	+	16	9
+	+	43	0
+	+	28	47
+	+	29	5
+	+	39	4
+	+	30	26
+	+	35	0
+	+	30	27
+	+	30	0
+	+	20	1
+	+	20	0
+	+	21	0
+	+	14	17
+	+	3	21
+	+	3	17
+	+	4	18
+	+	5	19
+	+	3	0
+	+	30	24
+	+	32	0
+	+	30	1
+	+	33	20
+	+	37	0
+	+	36	0
+	+	38	0
+	+	36	4
+	+	38	0
+	+	36	99
+	+	38	1
+	+	37	1
+	+	38	0
+	+	37	30
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 	*	1538574364	0
 	"	8	0
 	.	230	0
 	+	25	0
 	+	230	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
-	*	1538573670	0
-	"	4	12
-	.	4	0
-	+	4	71
-	+	4	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 	*	1538573583	0
