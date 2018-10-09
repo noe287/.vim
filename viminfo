@@ -21,13 +21,15 @@ $
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1539089497,,"wq!"
+|2,0,1539089976,,"wq!"
+:Wq!
+|2,0,1539089974,,"Wq!"
+:w
+|2,0,1539089970,,"w"
+:EraseBadWhitespace
+|2,0,1539089969,,"EraseBadWhitespace"
 :q!
 |2,0,1539089419,,"q!"
-:w
-|2,0,1539088980,,"w"
-:EraseBadWhitespace
-|2,0,1539085056,,"EraseBadWhitespace"
 :qa
 |2,0,1539084352,,"qa"
 :q
@@ -72,8 +74,6 @@ $
 |2,0,1536667741,,"ToogleBadWhitespace!"
 :707
 |2,0,1536667705,,"707"
-:Wq!
-|2,0,1536664548,,"Wq!"
 :set list!
 |2,0,1536663705,,"set list!"
 :set number!
@@ -305,7 +305,7 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1537256675,,"\\s\\+$"
+|2,1,1539089969,,"\\s\\+$"
 ?/STEER
 |2,1,1539079328,47,"STEER"
 ?/CONFIG_MANAGER_AIR_STEER
@@ -670,38 +670,60 @@ $
 !ST_UNIX	NUM	2
 
 # File marks:
-'0  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,48,15,0,1539089497,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'1  18  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,49,18,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'2  19  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,50,19,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
-|4,51,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
-'4  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,52,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'5  21  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,53,21,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'6  23  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,54,23,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'7  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,55,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
-|4,56,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
-'9  38  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,57,38,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'0  315  68  ~/steeringfootpring.txt
+|4,48,315,68,1539089976,"~/steeringfootpring.txt"
+'1  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,49,15,0,1539089497,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'2  18  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,50,18,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'3  19  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,51,19,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,52,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+'5  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,53,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'6  21  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,54,21,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'7  23  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,55,23,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'8  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,56,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,57,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
 
 # Jumplist (newest first):
+-'  315  68  ~/steeringfootpring.txt
+|4,39,315,68,1539089976,"~/steeringfootpring.txt"
+-'  1  0  ~/steeringfootpring.txt
+|4,39,1,0,1539089939,"~/steeringfootpring.txt"
 -'  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,15,0,1539089497,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,15,0,1539089497,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539089493,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539089493,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  18  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,18,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  19  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,19,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  18  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,18,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  19  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,19,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539089420,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539089420,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
 |4,39,1,0,1539089419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
@@ -720,10 +742,40 @@ $
 |4,39,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  21  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,21,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  23  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,23,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  22  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,22,1,1539089409,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539088917,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539088917,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088917,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088917,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
+|4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
 |4,39,1,0,1539088916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
@@ -764,6 +816,30 @@ $
 |4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  38  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,38,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  37  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,37,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,27,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  39  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,39,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  29  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,29,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  38  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,38,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  38  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,38,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  28  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,28,0,1539088277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
@@ -772,90 +848,14 @@ $
 |4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
--'  25  35  ~/Downloads/meshdiag-runner.sh
-|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,1,0,1539088262,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  25  35  ~/Downloads/meshdiag-runner.sh
 |4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
 -'  25  35  ~/Downloads/meshdiag-runner.sh
@@ -894,6 +894,14 @@ $
 |4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/steeringfootpring.txt
+	*	1539089975	0
+	"	315	68
+	^	315	61
+	.	3	0
+	+	315	78
+	+	3	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 	*	1539089496	0
@@ -1898,7 +1906,3 @@ $
 	.	2	6
 	+	1	1
 	+	2	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/air_wall.c
-	*	1534336978	0
-	"	1033	0
