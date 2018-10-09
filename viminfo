@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/STEER
+~MSle0~/Bad
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,10 +20,10 @@
 $
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1539085072,,"q!"
 :w
-|2,0,1539085057,,"w"
+|2,0,1537256679,,"w"
+:q!
+|2,0,1539085576,,"q!"
 :EraseBadWhitespace
 |2,0,1539085056,,"EraseBadWhitespace"
 :wq!
@@ -305,7 +305,7 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1539085056,,"\\s\\+$"
+|2,1,1537256675,,"\\s\\+$"
 ?/STEER
 |2,1,1539079328,47,"STEER"
 ?/CONFIG_MANAGER_AIR_STEER
@@ -622,9 +622,9 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
+"0	CHAR	0
 	(
-|3,1,0,0,1,0,1539084342,"("
+|3,0,0,0,1,0,1539084342,"("
 "1	LINE	0
 			get_bridge_mac = 0;
 |3,0,1,1,1,0,1538643008,"		get_bridge_mac = 0;"
@@ -655,35 +655,42 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
+""-	CHAR	0
 	(
-|3,0,36,0,1,0,1538655264,"("
+|3,1,36,0,1,0,1538655264,"("
 
 # global variables:
+!ST_WIN_CMD	NUM	0
+!ST_WIN_SH	NUM	1
+!ST_UNIX	NUM	2
 
 # File marks:
-'0  83  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-|4,48,83,0,1539085422,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
-'1  22  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-|4,49,22,0,1539085072,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
-'2  22  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-|4,50,22,0,1539085072,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
-'3  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,51,14,0,1539084860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'4  2211  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,52,2211,24,1539079338,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
-'5  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,53,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
-'6  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,54,3814,37,1539077428,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
-'7  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,55,3814,37,1539077428,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+'0  25  35  ~/Downloads/meshdiag-runner.sh
+|4,48,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
+'1  69  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,49,69,15,1539085576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'2  83  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,50,83,0,1539085422,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+'3  22  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,51,22,0,1539085072,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+'4  22  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,52,22,0,1539085072,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+'5  14  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,53,14,0,1539084860,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'6  2211  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,54,2211,24,1539079338,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+'7  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,55,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 '8  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
 |4,56,3814,37,1539077428,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 '9  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
 |4,57,3814,37,1539077428,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 
 # Jumplist (newest first):
+-'  25  35  ~/Downloads/meshdiag-runner.sh
+|4,39,25,35,1539085592,"~/Downloads/meshdiag-runner.sh"
+-'  69  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,69,15,1539085576,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  83  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
 |4,39,83,0,1539085422,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
@@ -714,6 +721,10 @@ $
 |4,39,1,0,1539084852,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
 |4,39,1,0,1539084852,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539079432,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  2211  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,24,1539079338,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 -'  2211  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
 |4,39,2211,24,1539079338,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 -'  2211  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
@@ -778,114 +789,165 @@ $
 |4,39,3814,37,1539079334,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 -'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
 |4,39,3814,37,1539079334,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 -'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3814,37,1539078276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3814,37,1539078276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3814,37,1539078276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3814,37,1539078276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
--'  3814  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
-|4,39,3814,37,1539078276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+|4,39,3814,37,1539079334,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  3245  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,3245,23,1539079332,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,1,0,1539079328,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
+-'  2211  25  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config
+|4,39,2211,25,1539078279,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/.config"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+	*	1539085575	0
+	"	69	15
+	^	73	1
+	.	78	0
+	+	77	5
+	+	76	0
+	+	6	93
+	+	6	153
+	+	6	231
+	+	6	319
+	+	7	0
+	+	27	8
+	+	33	0
+	+	29	105
+	+	30	102
+	+	29	0
+	+	21	3
+	+	26	3
+	+	26	0
+	+	21	4
+	+	26	0
+	+	25	0
+	+	54	0
+	+	52	0
+	+	72	0
+	+	74	0
+	+	75	0
+	+	78	0
+	+	77	13
+	+	27	22
+	+	80	29
+	+	81	0
+	+	86	30
+	+	80	28
+	+	1	0
+	+	6	93
+	+	6	153
+	+	6	231
+	+	6	320
+	+	6	92
+	+	6	152
+	+	6	127
+	+	6	230
+	+	6	319
+	+	6	318
+	+	53	0
+	+	52	36
+	+	53	26
+	+	52	24
+	+	53	0
+	+	30	0
+	+	72	0
+	+	74	0
+	+	75	0
+	+	78	0
+	+	73	0
+	+	78	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
 	*	1539085422	0
@@ -1426,64 +1488,11 @@ $
 	*	1537535016	0
 	"	380	27
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-	*	1537364640	0
-	"	81	0
-	^	73	1
-	.	78	0
-	+	77	5
-	+	76	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	319
-	+	7	0
-	+	27	8
-	+	33	0
-	+	29	105
-	+	30	102
-	+	29	0
-	+	21	3
-	+	26	3
-	+	26	0
-	+	21	4
-	+	26	0
-	+	25	0
-	+	54	0
-	+	52	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	78	0
-	+	77	13
-	+	27	22
-	+	80	29
-	+	81	0
-	+	86	30
-	+	80	28
-	+	1	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	320
-	+	6	92
-	+	6	152
-	+	6	127
-	+	6	230
-	+	6	319
-	+	6	318
-	+	53	0
-	+	52	36
-	+	53	26
-	+	52	24
-	+	53	0
-	+	30	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	78	0
-	+	73	0
-	+	78	0
+> ~/Downloads/meshdiag-runner.sh
+	*	1537256683	0
+	"	25	35
+	.	37	0
+	+	37	0
 
 > /etc/environment
 	*	1536670444	0
@@ -1860,7 +1869,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/airties/airties.c
 	*	1534336977	0
 	"	1239	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-13-09_44_40_Pzt/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/cli/air_wall_cli.c
-	*	1534336974	0
-	"	755	0
