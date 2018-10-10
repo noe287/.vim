@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/-Wno
+~MSle0~/json
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,10 +20,10 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1539179478,,"q!"
 :wq!
 |2,0,1539179194,,"wq!"
-:q!
-|2,0,1539177337,,"q!"
 :w!
 |2,0,1539174417,,"w!"
 :W
@@ -304,6 +304,8 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/json
+|2,1,1539179476,47,"json"
 ?/-Wno
 |2,1,1539179180,47,"-Wno"
 ?/Werror
@@ -682,36 +684,50 @@ $
 !ST_UNIX	NUM	2
 
 # File marks:
-'0  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
-|4,48,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
-'1  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
-|4,49,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
-'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
-|4,50,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
-'3  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,51,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
-|4,52,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
-'5  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,53,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
-'6  1367  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,54,1367,42,1539174829,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
+'0  1238  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
+|4,48,1238,7,1539179478,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config"
+'1  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,49,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+'2  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,50,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,51,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+'4  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,52,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'5  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,53,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+'6  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
+|4,54,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
 '7  1367  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
 |4,55,1367,42,1539174829,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
-'8  2421  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/atlantis/bskyb-viper-release.config
-|4,56,2421,24,1539174543,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/atlantis/bskyb-viper-release.config"
-'9  2215  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,57,2215,36,1539174521,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
+'8  1367  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
+|4,56,1367,42,1539174829,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
+'9  2421  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/atlantis/bskyb-viper-release.config
+|4,57,2421,24,1539174543,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/atlantis/bskyb-viper-release.config"
 
 # Jumplist (newest first):
+-'  1238  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
+|4,39,1238,7,1539179478,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539179476,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config"
+-'  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,39,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 |4,39,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  104  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 |4,39,104,0,1539179180,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+-'  104  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,39,104,0,1539179180,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,39,1,0,1539179173,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 |4,39,1,0,1539179173,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 |4,39,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+-'  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,39,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,39,1,0,1539177350,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 |4,39,1,0,1539177350,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
@@ -722,6 +738,14 @@ $
 |4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
 |4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,39,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
 -'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -738,6 +762,38 @@ $
 |4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1539174905,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -786,6 +842,38 @@ $
 |4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
 |4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
 -'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
 |4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
 -'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
@@ -818,94 +906,12 @@ $
 |4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
 -'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
 |4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
--'  1482  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,39,1482,7,1539174839,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
+	*	1539179477	0
+	"	1238	7
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
 	*	1539179193	0
@@ -1871,24 +1877,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/ghupload
 	*	1536313312	0
 	"	3	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/esky
-	*	1534511118	0
-	"	5	16
-	^	5	17
-	.	5	16
-	+	2	0
-	+	1	6
-	+	16	0
-	+	7	51
-	+	12	3
-	+	9	47
-	+	10	22
-	+	11	51
-	+	12	13
-	+	14	14
-	+	4	0
-	+	3	6
-	+	7	54
-	+	3	7
-	+	5	16
