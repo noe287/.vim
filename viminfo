@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/json
+~Msle0~/\<meshest_announce_u_cast_msg_init\>
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,31 +21,85 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1539180152,,"q!"
+|2,0,1539180434,,"q!"
+:w
+|2,0,1538663918,,"w"
+:Erase
+|2,0,1538658754,,"Erase"
+:W
+|2,0,1538655405,,"W"
+:Rg -tc request_tpin
+|2,0,1538654694,,"Rg -tc request_tpin"
+:EraseBadWhitespace
+|2,0,1538654582,,"EraseBadWhitespace"
+:235
+|2,0,1538653458,,"235"
+:Rg -tc incomaptible
+|2,0,1538644858,,"Rg -tc incomaptible"
+:s
+|2,0,1538643717,,"s"
+:Rg -tc insert_peer
+|2,0,1538143566,,"Rg -tc insert_peer"
+:Rg -tc insert_neighbor
+|2,0,1538143527,,"Rg -tc insert_neighbor"
+:Rg -tc "added to valid"
+|2,0,1538143361,,"Rg -tc \"added to valid\""
+:Rg -tc are_neighbors_incomaptible
+|2,0,1538140084,,"Rg -tc are_neighbors_incomaptible"
+:Rg -tc neighbor_list_cleanup
+|2,0,1538139795,,"Rg -tc neighbor_list_cleanup"
+:Rg -tc "delete its entry"
+|2,0,1538139703,,"Rg -tc \"delete its entry\""
+:Rg -tc "delete  its entry"
+|2,0,1538139700,,"Rg -tc \"delete  its entry\""
+:Rg -tc "deletw its entry"
+|2,0,1538139695,,"Rg -tc \"deletw its entry\""
+:Rg -tc "delet its entry"
+|2,0,1538139690,,"Rg -tc \"delet its entry\""
+:Rg -tc meshest_tpinreq
+|2,0,1538128018,,"Rg -tc meshest_tpinreq"
+:Rg announce
+|2,0,1537968600,,"Rg announce"
+:Rg meshest_announce_msg_init
+|2,0,1537968269,,"Rg meshest_announce_msg_init"
+:Rg -tc stray
+|2,0,1537966069,,"Rg -tc stray"
+:Rg request_tpin
+|2,0,1537964908,,"Rg request_tpin"
+:Rg meshest_tpinreq_msg_init
+|2,0,1537964871,,"Rg meshest_tpinreq_msg_init"
+:Rg fill_header
+|2,0,1537964805,,"Rg fill_header"
+:Rg fill_header_bcast
+|2,0,1537964753,,"Rg fill_header_bcast"
+:Rg meshest_init
+|2,0,1537964399,,"Rg meshest_init"
+:Rg -tc MESHEST_ETHERTYPE
+|2,0,1537964339,,"Rg -tc MESHEST_ETHERTYPE"
+:Rg -tc "0x7380"
+|2,0,1537964310,,"Rg -tc \"0x7380\""
+:qa!
+|2,0,1539180424,,"qa!"
+:Q!
+|2,0,1539180422,,"Q!"
+:Rg -tc br_handle_frame_finish
+|2,0,1537881202,,"Rg -tc br_handle_frame_finish"
+:F br_handle_frame_finish
+|2,0,1537881197,,"F br_handle_frame_finish"
+:F br_handle_frame
+|2,0,1537881188,,"F br_handle_frame"
 :wq!
 |2,0,1539179194,,"wq!"
 :w!
 |2,0,1539174417,,"w!"
-:W
-|2,0,1539174413,,"W"
-:w
-|2,0,1539174394,,"w"
 :Wq!
 |2,0,1539089974,,"Wq!"
-:EraseBadWhitespace
-|2,0,1539089969,,"EraseBadWhitespace"
 :qa
 |2,0,1539084352,,"qa"
 :q
 |2,0,1539084351,,"q"
-:Q!
-|2,0,1539072659,,"Q!"
 :ERa
 |2,0,1538149055,,"ERa"
-:qa!
-|2,0,1537964292,,"qa!"
-:Rg -tc "0x7380"
-|2,0,1537964285,,"Rg -tc \"0x7380\""
 :F meshest_msg.h
 |2,0,1537964274,,"F meshest_msg.h"
 :F meshest_msh.h
@@ -60,8 +114,6 @@ $
 |2,0,1537881962,,"F br_input.c"
 :Rg -tc br_handle_frame
 |2,0,1537881064,,"Rg -tc br_handle_frame"
-:F br_handle_frame
-|2,0,1537881050,,"F br_handle_frame"
 :Rg -tc routing_get_mesh_peers
 |2,0,1534236463,,"Rg -tc routing_get_mesh_peers"
 :Rg get_mesh_peers
@@ -250,8 +302,6 @@ $
 |2,0,1533111379,,"Rg dhcpcap"
 :wq
 |2,0,1533303387,,"wq"
-:s
-|2,0,1533217590,,"s"
 :Rg platform_get_routes
 |2,0,1533217236,,"Rg platform_get_routes"
 :F routes.c
@@ -304,6 +354,38 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \<meshest_announce_u_cast_msg_init\>
+|2,1,1538661711,,"\\<meshest_announce_u_cast_msg_init\\>"
+? \s\+$
+|2,1,1538658754,,"\\s\\+$"
+? \<ucast_announcements_to_mesh_neighs\>
+|2,1,1538658557,,"\\<ucast_announcements_to_mesh_neighs\\>"
+? \<fill_header\>
+|2,1,1538654753,,"\\<fill_header\\>"
+? \<meshest_tpinreq_msg_init\>
+|2,1,1538654736,,"\\<meshest_tpinreq_msg_init\\>"
+?/uururu
+|2,1,1538654591,47,"uururu"
+? \<uuid_ev\>
+|2,1,1538642530,,"\\<uuid_ev\\>"
+?/oll
+|2,1,1538569472,47,"oll"
+? \<zero_mac\>
+|2,1,1538569106,,"\\<zero_mac\\>"
+?/is_bc
+|2,1,1538567822,47,"is_bc"
+?/manager
+|2,1,1537968820,47,"manager"
+?/meshest
+|2,1,1537968611,47,"meshest"
+? \<send\>
+|2,1,1537968395,,"\\<send\\>"
+? \<meshest_announce_msg_init\>
+|2,1,1537968259,,"\\<meshest_announce_msg_init\\>"
+? \<fill_header_bcast\>
+|2,1,1537968252,,"\\<fill_header_bcast\\>"
+?/meshest_init
+|2,1,1537964392,47,"meshest_init"
 ?/json
 |2,1,1539179476,47,"json"
 ?/-Wno
@@ -324,8 +406,6 @@ $
 |2,1,1539174538,47,"CLOUD"
 ?/TITAN
 |2,1,1539174125,47,"TITAN"
-? \s\+$
-|2,1,1539089969,,"\\s\\+$"
 ?/CONFIG_MANAGER_AIR_STEER
 |2,1,1539072688,47,"CONFIG_MANAGER_AIR_STEER"
 ?/AIR_STEER
@@ -340,8 +420,6 @@ $
 |2,1,1537965397,47,"PROXY"
 ?/7380
 |2,1,1537964183,47,"7380"
-?/manager
-|2,1,1537964115,47,"manager"
 ?/rebuild
 |2,1,1537883806,47,"rebuild"
 ?/bak
@@ -639,9 +717,9 @@ $
 "0	LINE	0
 	override CFLAGS += -Wall -Wextra -Werror -Wno-deprecated-declarations -pipe -g3 -O2 -fPIC -fsigned-char -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE
 |3,0,0,1,1,0,1539179187,"override CFLAGS += -Wall -Wextra -Werror -Wno-deprecated-declarations -pipe -g3 -O2 -fPIC -fsigned-char -fno-strict-aliasing -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE"
-"1	LINE	0
+""1	LINE	0
 		exit
-|3,0,1,1,1,0,1539089495,"	exit"
+|3,1,1,1,1,0,1539089495,"	exit"
 "2	LINE	0
 	
 |3,0,2,1,1,0,1539089438,""
@@ -660,52 +738,105 @@ $
 	
 |3,0,5,1,1,0,1539089391,""
 "6	LINE	0
-			get_bridge_mac = 0;
-|3,0,6,1,1,0,1538643008,"		get_bridge_mac = 0;"
+	
+|3,0,6,1,1,0,1538663756,""
 "7	LINE	0
-				if(ether_aton_r(token, &mac))
-|3,0,7,1,1,0,1538642676,"			if(ether_aton_r(token, &mac))"
+	
+	/* static int ucast_announcements_to_mesh_neighs(meshest_t* ct, int incompatible) */
+	/* { */
+	/* 	char *token; */
+	/* 	char *saveptr; */
+	/* 	FILE *fds = NULL; */
+	/* 	int ret = 0, get_bridge_mac = 0; */
+	/* 	char *line = NULL; */
+	/* 	char buf[128] = {0}; */
+	/* 	const unsigned char zero_mac[ETH_ALEN] = {0}; */
+	/* 	struct ether_addr dst_mac; */
+	/* 	meshest_announce_msg_t msg; */
+	/*  */
+	/* 	memset(&msg, 0, sizeof(msg)); */
+	/*  */
+	/* 	fds = fopen(PEER_MAC_FILE, "r"); */
+	/* 	if (fds == NULL) { */
+	/* 		printf("Cannot find the file...\n"); */
+	/* 		ret = -1; */
+	/* 		goto out; */
+	/* 	} */
+	/*  */
+	/* 	while ((line = fgets(buf, sizeof(buf), fds)) != NULL) { */
+	/* 		if (strstr(line, "Name")) */
+	/* 			continue; */
+	/*  */
+	/* 		if (strstr(line, "====")) */
+	/* 			continue; */
+	/*  */
+	/* 		for (token = strtok_r(line, " ", &saveptr); token != NULL; token = strtok_r(NULL, " ", &saveptr)) { */
+	/* 			if (strstr(token, ":") && !strstr(token, ".")) */
+	/* 				if (ether_aton_r(token, &dst_mac)) */
+	/* 					if (memcmp(dst_mac.ether_addr_octet, zero_mac, ETH_ALEN)) { */
+	/* 						if (get_bridge_mac == 0) { */
+	/* 							get_bridge_mac = 1; */
+	/* 							continue; */
+	/* 						} */
+	/* 						get_bridge_mac = 0; */
+	/* 						meshest_announce_u_cast_msg_init(&msg, ct->mac, dst_mac.ether_addr_octet, */
+	/* 										ct->uuid.dat, ct->score, incompatible, is_bc_mode(ct)); */
+	/* 						printf("1 - Sending from "MACSTR" to MAC_str"MACSTR"\n", MAC2STR(ct->mac), MAC2STR(dst_mac.ether_addr_octet)); */
+	/* 						send(ct->sock, &msg, sizeof(msg), 0); */
+	/* 					} */
+	/* 		} */
+	/* 	} */
+	/* out: */
+	/* 	if (fds != NULL) */
+	/* 		fclose(fds); */
+	/* 	return ret; */
+	/* } */
+|3,0,7,1,50,0,1538663755,"","/* static int ucast_announcements_to_mesh_neighs(meshest_t* ct, int incompatible) */","/* { */","/* 	char *token; */","/* 	char *saveptr; */","/* 	FILE *fds = NULL; */","/* 	int ret = 0, get_bridge_mac = 0; */","/* 	char *line = NULL; */","/* 	char buf[128] = {0}; */","/* 	const unsigned char zero_mac[ETH_ALEN] = {0}; */","/* 	struct ether_addr dst_mac; */","/* 	meshest_announce_msg_t msg; */","/*  */",>38
+|<"/* 	memset(&msg, 0, sizeof(msg)); */","/*  */","/* 	fds = fopen(PEER_MAC_FILE, \"r\"); */","/* 	if (fds == NULL) { */","/* 		printf(\"Cannot find the file...\\n\"); */","/* 		ret = -1; */","/* 		goto out; */","/* 	} */","/*  */","/* 	while ((line = fgets(buf, sizeof(buf), fds)) != NULL) { */","/* 		if (strstr(line, \"Name\")) */","/* 			continue; */","/*  */","/* 		if (strstr(line, \"====\")) */","/* 			continue; */","/*  */",>113
+|<"/* 		for (token = strtok_r(line, \" \", &saveptr); token != NULL; token = strtok_r(NULL, \" \", &saveptr)) { */","/* 			if (strstr(token, \":\") && !strstr(token, \".\")) */","/* 				if (ether_aton_r(token, &dst_mac)) */","/* 					if (memcmp(dst_mac.ether_addr_octet, zero_mac, ETH_ALEN)) { */","/* 						if (get_bridge_mac == 0) { */","/* 							get_bridge_mac = 1; */","/* 							continue; */","/* 						} */","/* 						get_bridge_mac = 0; */",>87
+|<"/* 						meshest_announce_u_cast_msg_init(&msg, ct->mac, dst_mac.ether_addr_octet, */","/* 										ct->uuid.dat, ct->score, incompatible, is_bc_mode(ct)); */","/* 						printf(\"1 - Sending from \"MACSTR\" to MAC_str\"MACSTR\"\\n\", MAC2STR(ct->mac), MAC2STR(dst_mac.ether_addr_octet)); */","/* 						send(ct->sock, &msg, sizeof(msg), 0); */","/* 					} */","/* 		} */","/* 	} */","/* out: */","/* 	if (fds != NULL) */","/* 		fclose(fds); */","/* 	return ret; */","/* } */"
 "8	LINE	0
-	    /* } */
-|3,0,8,1,1,0,1538641993,"    /* } */"
+						VPRINT(ct->verbose,"Neighbor added to valid neigbors list " ETHER_STR " with a uuid:%s \n", ETHER_ADDR(neighbor->mac), debug_uuid);
+|3,0,8,1,1,0,1538663736,"					VPRINT(ct->verbose,\"Neighbor added to valid neigbors list \" ETHER_STR \" with a uuid:%s \\n\", ETHER_ADDR(neighbor->mac), debug_uuid);"
 "9	LINE	0
-	    /*     printf("token:%s\n", token); */
-|3,0,9,1,1,0,1538641992,"    /*     printf(\"token:%s\\n\", token); */"
+						printf("1 - Sending from "MACSTR" to MAC_str"MACSTR"\n", MAC2STR(ct->mac), MAC2STR(neighbor->mac));
+|3,0,9,1,1,0,1538663541,"					printf(\"1 - Sending from \"MACSTR\" to MAC_str\"MACSTR\"\\n\", MAC2STR(ct->mac), MAC2STR(neighbor->mac));"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1539179193," "
+|3,0,36,0,1,0,1539179193," "
 
 # global variables:
-!ST_WIN_CMD	NUM	0
-!ST_WIN_SH	NUM	1
-!ST_UNIX	NUM	2
 
 # File marks:
-'0  77  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,48,77,0,1539180152,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'1  1238  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
-|4,49,1238,7,1539179478,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config"
-'2  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
-|4,50,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
-'3  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
-|4,51,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
-'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
-|4,52,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
-'5  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,53,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'6  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,54,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'7  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
-|4,55,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
-'8  1524  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,56,1524,7,1539174840,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
-'9  1367  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config
-|4,57,1367,42,1539174829,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/configs/configs_head/bskyb-viper.config"
+'0  212  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1
+|4,48,212,2,1539180434,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1"
+'1  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1
+|4,49,6,0,1539180424,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1"
+'2  77  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,50,77,0,1539180152,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'3  1238  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config
+|4,51,1238,7,1539179478,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.config"
+'4  173  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,52,173,41,1539179194,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+'5  173  68  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib
+|4,53,173,68,1539177354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/cdf-libxml2/Makefile.lib"
+'6  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile
+|4,54,1,0,1539177337,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/air-cdf/Makefile"
+'7  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,55,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'8  68  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,56,68,9,1539174968,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
+|4,57,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
 
 # Jumplist (newest first):
+-'  212  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1
+|4,39,212,2,1539180434,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1"
+-'  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1
+|4,39,6,0,1539180424,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1"
 -'  77  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,77,0,1539180152,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -902,12 +1033,14 @@ $
 |4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
 |4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
-|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh
-|4,39,1,0,1539174894,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/sky.sh"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1
+	*	1539180422	0
+	"	6	0
+	.	1	0
+	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 	*	1539180151	0
@@ -1135,6 +1268,14 @@ $
 	*	1539007175	0
 	"	5	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/neighbor_list.h
+	*	1539007045	0
+	"	14	12
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/net.c
+	*	1539006976	0
+	"	49	0
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/strtok_r.c
 	*	1538997518	0
 	"	64	39
@@ -1231,12 +1372,218 @@ $
 	+	50	0
 	+	51	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1
+	*	1538751401	0
+	"	212	2
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.c
+	*	1538751382	0
+	"	939	1
+	^	36	0
+	.	162	0
+	+	211	0
+	+	214	0
+	+	209	105
+	+	207	40
+	+	209	105
+	+	210	0
+	+	209	105
+	+	210	0
+	+	209	105
+	+	210	0
+	+	209	224
+	+	189	0
+	+	209	148
+	+	212	0
+	+	203	0
+	+	85	0
+	+	185	0
+	+	85	4
+	+	85	0
+	+	203	0
+	+	204	64
+	+	85	105
+	+	85	80
+	+	85	0
+	+	85	77
+	+	85	9
+	+	204	0
+	+	85	3
+	+	85	0
+	+	85	5
+	+	85	0
+	+	85	6
+	+	85	62
+	+	85	0
+	+	85	37
+	+	85	6
+	+	85	37
+	+	85	0
+	+	85	17
+	+	204	0
+	+	204	14
+	+	204	0
+	+	204	4
+	+	204	0
+	+	204	16
+	+	203	0
+	+	85	0
+	+	203	0
+	+	85	33
+	+	189	0
+	+	204	42
+	+	85	0
+	+	85	60
+	+	85	28
+	+	85	22
+	+	85	26
+	+	85	27
+	+	85	60
+	+	85	39
+	+	85	21
+	+	85	0
+	+	204	0
+	+	212	0
+	+	205	0
+	+	185	0
+	+	187	33
+	+	190	39
+	+	187	34
+	+	188	0
+	+	209	219
+	+	210	44
+	+	209	0
+	+	209	105
+	+	209	103
+	+	85	0
+	+	35	0
+	+	204	22
+	+	214	0
+	+	204	0
+	+	214	0
+	+	204	0
+	+	208	0
+	+	209	0
+	+	208	84
+	+	209	0
+	+	85	0
+	+	35	0
+	+	162	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.h
+	*	1538751366	0
+	"	95	11
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/bridge/br_input.c
+	*	1538750905	0
+	"	114	2
+	^	131	44
+	.	120	0
+	+	39	0
+	+	23	0
+	+	39	0
+	+	38	5
+	+	35	0
+	+	119	145
+	+	120	160
+	+	120	0
+	+	119	13
+	+	126	4
+	+	124	6
+	+	40	55
+	+	124	52
+	+	125	29
+	+	131	28
+	+	133	0
+	+	132	0
+	+	131	52
+	+	134	3
+	+	131	52
+	+	133	0
+	+	120	41
+	+	132	39
+	+	125	39
+	+	132	21
+	+	131	0
+	+	133	0
+	+	126	0
+	+	106	93
+	+	119	0
+	+	120	0
+	+	106	98
+	+	119	25
+	+	133	0
+	+	126	0
+	+	121	0
+	+	119	2
+	+	122	69
+	+	123	0
+	+	122	59
+	+	124	44
+	+	131	43
+	+	122	0
+	+	124	0
+	+	125	0
+	+	131	0
+	+	132	0
+	+	134	0
+	+	119	0
+	+	120	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest_msg.c
+	*	1538663904	0
+	"	59	0
+	.	55	0
+	+	68	0
+	+	68	1
+	+	68	28
+	+	68	66
+	+	68	38
+	+	68	0
+	+	48	0
+	+	68	0
+	+	48	0
+	+	48	6
+	+	57	30
+	+	58	0
+	+	55	10
+	+	48	0
+	+	55	0
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 	*	1538655050	0
 	"	201	0
 	.	230	0
 	+	25	0
 	+	230	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/neighbor_list.c
+	*	1538651434	0
+	"	51	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/peer_list.c
+	*	1538651433	0
+	"	53	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/peer_list.h
+	*	1538651432	0
+	"	12	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/cd_timer.h
+	*	1538651432	0
+	"	10	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/-MiniBufExplorer-
+	*	1538646024	0
+	"	1	193
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi/src/modules/main.h
+	*	1538643404	0
+	"	96	10
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/txt/air_mesh_peers.txt
 	*	1538642864	0
@@ -1261,6 +1608,10 @@ $
 	.	2	0
 	+	2	0
 
+> /usr/include/netinet/ether.h
+	*	1538642426	0
+	"	36	40
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/binary/strtok_r.c
 	*	1538573549	0
 	"	17	0
@@ -1272,6 +1623,35 @@ $
 	+	20	56
 	+	17	0
 	+	20	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest_msg.h
+	*	1538572063	0
+	"	47	0
+	^	46	0
+	.	46	0
+	+	47	145
+	+	48	0
+	+	48	109
+	+	48	0
+	+	42	0
+	+	46	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/uuid.c
+	*	1538570117	0
+	"	54	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/__Tagbar__
+	*	1538569154	0
+	"	15	4
+	.	46	0
+	+	46	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/__Tag_List__
+	*	1538569153	0
+	"	32	4
+	.	104	0
+	+	105	0
+	+	104	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
 	*	1538565641	0
@@ -1302,39 +1682,19 @@ $
 	+	4	56
 	+	1	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/hostapd/hostapd-0.8-2.0-devel-Sky-Hybrid/src/radius/radius.h
+	*	1537968365	0
+	"	181	8
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/.config
 	*	1537965791	0
 	"	2165	30
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/net.c
-	*	1537964281	0
-	"	26	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/NERD_tree_1
-	*	1537964280	0
-	"	213	2
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest_msg.h
-	*	1537964274	0
-	"	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/ControlP
 	*	1537964244	0
 	"	10	0
 	.	2	0
 	+	1	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/src/meshestd/meshest.c
-	*	1537964150	0
-	"	33	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/-MiniBufExplorer-
-	*	1537964146	0
-	"	1	66
-	.	2	0
 	+	2	0
 
 > ~/Downloads/meshdiag-runner(1).sh
@@ -1356,6 +1716,19 @@ $
 	"	45	0
 	.	1	0
 	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/__Tagbar__
+	*	1537881252	0
+	"	11	4
+	.	14	0
+	+	350	0
+	+	14	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/-MiniBufExplorer-
+	*	1537881204	0
+	"	1	0
+	.	2	0
+	+	2	0
 
 > ~/.vimrc
 	*	1537881163	0
@@ -1464,27 +1837,9 @@ $
 	+	408	0
 	m	1	0
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/-MiniBufExplorer-
-	*	1537881065	0
-	"	1	10
-	.	2	0
-	+	2	0
-
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
 	*	1537881051	0
 	"	3448	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/__Tagbar__
-	*	1537879842	0
-	"	170	4
-	.	345	0
-	+	345	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/NERD_tree_1
-	*	1537879837	0
-	"	23	0
-	.	1	0
-	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
 	*	1537879778	0
@@ -1789,91 +2144,3 @@ $
 > ~/airwall
 	*	1536668197	0
 	"	18	0
-
-> ~/ControlP
-	*	1536668190	0
-	"	10	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/a.patch
-	*	1536663565	0
-	"	62	27
-	.	13	0
-	+	13	0
-
-> ~/.vim/clewn.vim
-	*	1536663525	0
-	"	54	0
-
-> ~/.vim/NERD_tree_1
-	*	1536663523	0
-	"	15	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/noe.c
-	*	1536331974	0
-	"	12	0
-	^	12	1
-	.	10	0
-	+	1	18
-	+	4	12
-	+	11	0
-	+	6	25
-	+	10	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/NERD_tree_1
-	*	1536331697	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/[Lookup File]
-	*	1536331531	0
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	2
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/manager/-MiniBufExplorer-
-	*	1536331520	0
-	"	1	26
-	.	2	0
-	+	2	0
-
-> ~/[Lookup File]
-	*	1536331466	0
-	"	1	0
-	^	1	0
-
-> ~/Downloads/NERD_tree_1
-	*	1536331353	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim81/doc/usr_05.txt
-	*	1536331132	0
-	"	355	0
-
-> ~/Downloads/-MiniBufExplorer-
-	*	1536331117	0
-	"	1	26
-	.	2	0
-	+	2	0
-
-> ~/TreeExplorer
-	*	1536314410	0
-	"	45	0
-	.	55	0
-	+	117	0
-	+	94	0
-	+	46	0
-	+	78	0
-	+	55	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/ghupload
-	*	1536313312	0
-	"	3	0
