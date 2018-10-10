@@ -21,13 +21,17 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1539174260,,"q!"
+|2,0,1539174455,,"q!"
 :wq!
-|2,0,1539098377,,"wq!"
+|2,0,1539174442,,"wq!"
+:w!
+|2,0,1539174417,,"w!"
+:W
+|2,0,1539174413,,"W"
+:w
+|2,0,1539174394,,"w"
 :Wq!
 |2,0,1539089974,,"Wq!"
-:w
-|2,0,1539089970,,"w"
 :EraseBadWhitespace
 |2,0,1539089969,,"EraseBadWhitespace"
 :qa
@@ -62,8 +66,6 @@ $
 |2,0,1534236463,,"Rg -tc routing_get_mesh_peers"
 :Rg get_mesh_peers
 |2,0,1534174568,,"Rg get_mesh_peers"
-:W
-|2,0,1537190357,,"W"
 :ew
 |2,0,1536667999,,"ew"
 :ToggleBadWhitespace
@@ -232,8 +234,6 @@ $
 |2,0,1533467163,,"Rg -c netdev_alloc"
 :Rg netdev_alloc
 |2,0,1533467154,,"Rg netdev_alloc"
-:w!
-|2,0,1533306753,,"w!"
 :876
 |2,0,1533137982,,"876"
 :Rg -rn productId
@@ -672,36 +672,82 @@ $
 !ST_UNIX	NUM	2
 
 # File marks:
-'0  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
-|4,48,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
-'1  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
-|4,49,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
-'2  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
-|4,50,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
-'3  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
-|4,51,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
-'4  39  0  ~/steeringfootpring.txt
-|4,52,39,0,1539097502,"~/steeringfootpring.txt"
-'5  316  68  ~/steeringfootpring.txt
-|4,53,316,68,1539089976,"~/steeringfootpring.txt"
-'6  315  68  ~/steeringfootpring.txt
-|4,54,315,68,1539089976,"~/steeringfootpring.txt"
-'7  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,55,15,0,1539089497,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'8  18  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,56,18,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
-'9  19  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-|4,57,19,1,1539089463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'0  70  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,48,70,0,1539174455,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'1  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,49,42,2,1539174442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'2  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,50,42,2,1539174442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'3  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,51,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+'4  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,52,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+'5  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,53,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+'6  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,54,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+'7  39  0  ~/steeringfootpring.txt
+|4,55,39,0,1539097502,"~/steeringfootpring.txt"
+'8  316  68  ~/steeringfootpring.txt
+|4,56,316,68,1539089976,"~/steeringfootpring.txt"
+'9  315  68  ~/steeringfootpring.txt
+|4,57,315,68,1539089976,"~/steeringfootpring.txt"
 
 # Jumplist (newest first):
+-'  70  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,70,0,1539174455,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174444,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,42,2,1539174442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  42  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,42,2,1539174442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539174366,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
 |4,39,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,2,0,1539174260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,1,0,1539174142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,1,0,1539174142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
+|4,39,1,0,1539174142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
 |4,39,1,0,1539174142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh"
 -'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
 |4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
 -'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
 |4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  133  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,133,37,1539174140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
+|4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
 |4,39,1,0,1539174125,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/Makefile
@@ -714,6 +760,54 @@ $
 |4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
 -'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
 |4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  25  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,25,0,1539173869,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
+|4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
 |4,39,1,0,1539173841,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/patches/SPK/sky-one-box/patches/airties_mesh.conf
@@ -738,6 +832,54 @@ $
 |4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
 -'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
 |4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
+-'  3  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
+|4,39,3,31,1539098377,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
 |4,39,1,0,1539098188,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
@@ -752,150 +894,68 @@ $
 |4,39,1,0,1539098188,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
 |4,39,1,0,1539098188,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG
-|4,39,1,0,1539098188,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid/.git/COMMIT_EDITMSG"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  39  0  ~/steeringfootpring.txt
-|4,39,39,0,1539097502,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539097493,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  316  68  ~/steeringfootpring.txt
-|4,39,316,68,1539089976,"~/steeringfootpring.txt"
--'  315  68  ~/steeringfootpring.txt
-|4,39,315,68,1539089976,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
--'  1  0  ~/steeringfootpring.txt
-|4,39,1,0,1539089939,"~/steeringfootpring.txt"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+	*	1539174454	0
+	"	70	0
+	^	73	1
+	.	77	0
+	+	77	5
+	+	76	0
+	+	6	93
+	+	6	153
+	+	6	231
+	+	6	319
+	+	7	0
+	+	27	8
+	+	33	0
+	+	29	105
+	+	30	102
+	+	29	0
+	+	21	3
+	+	26	3
+	+	26	0
+	+	21	4
+	+	26	0
+	+	25	0
+	+	54	0
+	+	52	0
+	+	72	0
+	+	74	0
+	+	75	0
+	+	78	0
+	+	77	13
+	+	27	22
+	+	80	29
+	+	81	0
+	+	86	30
+	+	80	28
+	+	1	0
+	+	6	93
+	+	6	153
+	+	6	231
+	+	6	320
+	+	6	92
+	+	6	152
+	+	6	127
+	+	6	230
+	+	6	319
+	+	6	318
+	+	53	0
+	+	52	36
+	+	53	26
+	+	52	24
+	+	53	0
+	+	30	0
+	+	72	0
+	+	74	0
+	+	75	0
+	+	78	0
+	+	73	0
+	+	78	0
+	+	77	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/revision-export.sh
 	*	1539174252	0
@@ -979,65 +1039,6 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
 	*	1539089418	0
 	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-	*	1539085575	0
-	"	69	15
-	^	73	1
-	.	78	0
-	+	77	5
-	+	76	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	319
-	+	7	0
-	+	27	8
-	+	33	0
-	+	29	105
-	+	30	102
-	+	29	0
-	+	21	3
-	+	26	3
-	+	26	0
-	+	21	4
-	+	26	0
-	+	25	0
-	+	54	0
-	+	52	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	78	0
-	+	77	13
-	+	27	22
-	+	80	29
-	+	81	0
-	+	86	30
-	+	80	28
-	+	1	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	320
-	+	6	92
-	+	6	152
-	+	6	127
-	+	6	230
-	+	6	319
-	+	6	318
-	+	53	0
-	+	52	36
-	+	53	26
-	+	52	24
-	+	53	0
-	+	30	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	78	0
-	+	73	0
-	+	78	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
 	*	1539085422	0
