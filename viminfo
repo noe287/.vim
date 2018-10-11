@@ -21,19 +21,23 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1539243252,,"q!"
+|2,0,1539245680,,"q!"
 :wq!
-|2,0,1539243214,,"wq!"
+|2,0,1539245661,,"wq!"
 :w
-|2,0,1539243202,,"w"
+|2,0,1539245653,,"w"
+:ww
+|2,0,1539245627,,"ww"
+:W
+|2,0,1539245458,,"W"
+:d
+|2,0,1539244163,,"d"
+:EraseBadWhitespace
+|2,0,1539244162,,"EraseBadWhitespace"
 :Erase
 |2,0,1538658754,,"Erase"
-:W
-|2,0,1538655405,,"W"
 :Rg -tc request_tpin
 |2,0,1538654694,,"Rg -tc request_tpin"
-:EraseBadWhitespace
-|2,0,1538654582,,"EraseBadWhitespace"
 :235
 |2,0,1538653458,,"235"
 :Rg -tc incomaptible
@@ -354,14 +358,14 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1539244162,,"\\s\\+$"
 ?/TOOLCHAIN
 |2,1,1539180846,47,"TOOLCHAIN"
 ?/viper
 |2,1,1539180840,47,"viper"
 ? \<meshest_announce_u_cast_msg_init\>
 |2,1,1538661711,,"\\<meshest_announce_u_cast_msg_init\\>"
-? \s\+$
-|2,1,1538658754,,"\\s\\+$"
 ? \<ucast_announcements_to_mesh_neighs\>
 |2,1,1538658557,,"\\<ucast_announcements_to_mesh_neighs\\>"
 ? \<fill_header\>
@@ -670,6 +674,8 @@ $
 |2,1,1533208542,47,"xupnd"
 
 # Expression History (newest to oldest):
+=acp#onPopupPost()
+|2,2,1539245484,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
 @2
@@ -718,136 +724,117 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	if [ "$1" == "release" ]
-	then
-|3,1,0,1,2,0,1539243150,"if [ \"$1\" == \"release\" ]","then"
-"1	LINE	0
+"0	LINE	0
 		exit
-|3,0,1,1,1,0,1539089495,"	exit"
+|3,0,0,1,1,0,1539245231,"	exit"
+"1	LINE	0
+	
+|3,0,1,1,1,0,1539245437,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1539089438,""
+		if [ ! $3 ]
+		then
+			type = build
+		fi
+|3,0,2,1,4,0,1539245436,"	if [ ! $3 ]","	then","		type = build","	fi"
 "3	LINE	0
-	# if [ "$1" == "qtn" ]
-	# then
-	#     fwrecover_ver="fwrecover-2.0"
-	# else
-	#     fwrecover_ver="fwrecover-2.1"
-	# fi
-|3,0,3,1,6,0,1539089424,"# if [ \"$1\" == \"qtn\" ]","# then","#     fwrecover_ver=\"fwrecover-2.0\"","# else","#     fwrecover_ver=\"fwrecover-2.1\"","# fi"
+		fi
+|3,0,3,1,1,0,1539245399,"	fi"
 "4	LINE	0
-	fwrecover_ver="./fwrecover/fwrecover-latest/fwrecover"
-|3,0,4,1,1,0,1539089394,"fwrecover_ver=\"./fwrecover/fwrecover-latest/fwrecover\""
+		fi
+|3,0,4,1,1,0,1539245392,"	fi"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1539089391,""
+		else
+|3,0,5,1,1,0,1539245329,"	else"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1538663756,""
+			exit
+|3,0,6,1,1,0,1539245328,"		exit"
 "7	LINE	0
-	
-	/* static int ucast_announcements_to_mesh_neighs(meshest_t* ct, int incompatible) */
-	/* { */
-	/* 	char *token; */
-	/* 	char *saveptr; */
-	/* 	FILE *fds = NULL; */
-	/* 	int ret = 0, get_bridge_mac = 0; */
-	/* 	char *line = NULL; */
-	/* 	char buf[128] = {0}; */
-	/* 	const unsigned char zero_mac[ETH_ALEN] = {0}; */
-	/* 	struct ether_addr dst_mac; */
-	/* 	meshest_announce_msg_t msg; */
-	/*  */
-	/* 	memset(&msg, 0, sizeof(msg)); */
-	/*  */
-	/* 	fds = fopen(PEER_MAC_FILE, "r"); */
-	/* 	if (fds == NULL) { */
-	/* 		printf("Cannot find the file...\n"); */
-	/* 		ret = -1; */
-	/* 		goto out; */
-	/* 	} */
-	/*  */
-	/* 	while ((line = fgets(buf, sizeof(buf), fds)) != NULL) { */
-	/* 		if (strstr(line, "Name")) */
-	/* 			continue; */
-	/*  */
-	/* 		if (strstr(line, "====")) */
-	/* 			continue; */
-	/*  */
-	/* 		for (token = strtok_r(line, " ", &saveptr); token != NULL; token = strtok_r(NULL, " ", &saveptr)) { */
-	/* 			if (strstr(token, ":") && !strstr(token, ".")) */
-	/* 				if (ether_aton_r(token, &dst_mac)) */
-	/* 					if (memcmp(dst_mac.ether_addr_octet, zero_mac, ETH_ALEN)) { */
-	/* 						if (get_bridge_mac == 0) { */
-	/* 							get_bridge_mac = 1; */
-	/* 							continue; */
-	/* 						} */
-	/* 						get_bridge_mac = 0; */
-	/* 						meshest_announce_u_cast_msg_init(&msg, ct->mac, dst_mac.ether_addr_octet, */
-	/* 										ct->uuid.dat, ct->score, incompatible, is_bc_mode(ct)); */
-	/* 						printf("1 - Sending from "MACSTR" to MAC_str"MACSTR"\n", MAC2STR(ct->mac), MAC2STR(dst_mac.ether_addr_octet)); */
-	/* 						send(ct->sock, &msg, sizeof(msg), 0); */
-	/* 					} */
-	/* 		} */
-	/* 	} */
-	/* out: */
-	/* 	if (fds != NULL) */
-	/* 		fclose(fds); */
-	/* 	return ret; */
-	/* } */
-|3,0,7,1,50,0,1538663755,"","/* static int ucast_announcements_to_mesh_neighs(meshest_t* ct, int incompatible) */","/* { */","/* 	char *token; */","/* 	char *saveptr; */","/* 	FILE *fds = NULL; */","/* 	int ret = 0, get_bridge_mac = 0; */","/* 	char *line = NULL; */","/* 	char buf[128] = {0}; */","/* 	const unsigned char zero_mac[ETH_ALEN] = {0}; */","/* 	struct ether_addr dst_mac; */","/* 	meshest_announce_msg_t msg; */","/*  */",>38
-|<"/* 	memset(&msg, 0, sizeof(msg)); */","/*  */","/* 	fds = fopen(PEER_MAC_FILE, \"r\"); */","/* 	if (fds == NULL) { */","/* 		printf(\"Cannot find the file...\\n\"); */","/* 		ret = -1; */","/* 		goto out; */","/* 	} */","/*  */","/* 	while ((line = fgets(buf, sizeof(buf), fds)) != NULL) { */","/* 		if (strstr(line, \"Name\")) */","/* 			continue; */","/*  */","/* 		if (strstr(line, \"====\")) */","/* 			continue; */","/*  */",>113
-|<"/* 		for (token = strtok_r(line, \" \", &saveptr); token != NULL; token = strtok_r(NULL, \" \", &saveptr)) { */","/* 			if (strstr(token, \":\") && !strstr(token, \".\")) */","/* 				if (ether_aton_r(token, &dst_mac)) */","/* 					if (memcmp(dst_mac.ether_addr_octet, zero_mac, ETH_ALEN)) { */","/* 						if (get_bridge_mac == 0) { */","/* 							get_bridge_mac = 1; */","/* 							continue; */","/* 						} */","/* 						get_bridge_mac = 0; */",>87
-|<"/* 						meshest_announce_u_cast_msg_init(&msg, ct->mac, dst_mac.ether_addr_octet, */","/* 										ct->uuid.dat, ct->score, incompatible, is_bc_mode(ct)); */","/* 						printf(\"1 - Sending from \"MACSTR\" to MAC_str\"MACSTR\"\\n\", MAC2STR(ct->mac), MAC2STR(dst_mac.ether_addr_octet)); */","/* 						send(ct->sock, &msg, sizeof(msg), 0); */","/* 					} */","/* 		} */","/* 	} */","/* out: */","/* 	if (fds != NULL) */","/* 		fclose(fds); */","/* 	return ret; */","/* } */"
+			echo "Lacking buildt type."
+|3,0,7,1,1,0,1539245327,"		echo \"Lacking buildt type.\""
 "8	LINE	0
-						VPRINT(ct->verbose,"Neighbor added to valid neigbors list " ETHER_STR " with a uuid:%s \n", ETHER_ADDR(neighbor->mac), debug_uuid);
-|3,0,8,1,1,0,1538663736,"					VPRINT(ct->verbose,\"Neighbor added to valid neigbors list \" ETHER_STR \" with a uuid:%s \\n\", ETHER_ADDR(neighbor->mac), debug_uuid);"
+	
+|3,0,8,1,1,0,1539245281,""
 "9	LINE	0
-						printf("1 - Sending from "MACSTR" to MAC_str"MACSTR"\n", MAC2STR(ct->mac), MAC2STR(neighbor->mac));
-|3,0,9,1,1,0,1538663541,"					printf(\"1 - Sending from \"MACSTR\" to MAC_str\"MACSTR\"\\n\", MAC2STR(ct->mac), MAC2STR(neighbor->mac));"
+	
+|3,0,9,1,1,0,1539245274,""
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1539179193," "
+""-	CHAR	0
+	2
+|3,1,36,0,1,0,1539245581,"2"
 
 # global variables:
 
 # File marks:
-'0  50  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,48,50,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'1  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,49,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'2  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,50,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'3  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,51,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'4  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,52,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'5  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,53,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'6  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,54,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'7  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,55,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
-'8  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,56,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
-'9  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,57,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
+'0  55  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,48,55,0,1539245681,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'1  25  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,49,25,8,1539245661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'2  25  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,50,25,8,1539245661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'3  57  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,51,57,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'4  50  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,52,50,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'5  57  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,53,57,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'6  50  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,54,50,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'7  72  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,55,72,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'8  72  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,56,72,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'9  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,57,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 
 # Jumplist (newest first):
+-'  55  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,55,0,1539245681,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539245672,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  25  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,25,8,1539245661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  25  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,25,8,1539245661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  103  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,103,0,1539244955,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  103  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,103,0,1539244955,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  104  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,104,0,1539244954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  104  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,104,0,1539244954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  61  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,61,1,1539244163,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  61  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,61,1,1539244163,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1539243276,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  57  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,57,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  50  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,50,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  57  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,57,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  50  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,50,8,1539243252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1539243228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  72  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,72,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  72  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,72,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  81  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,81,1,1539243214,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1539243108,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,53,0,1539182174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
@@ -872,6 +859,102 @@ $
 |4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 -'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 |4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  2  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,2,47,1539182080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 |4,39,1,0,1539181965,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
@@ -906,206 +989,106 @@ $
 |4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
 -'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
 |4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  36  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,36,19,1539181176,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  35  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,35,0,1539181116,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile
-|4,39,1,0,1539181107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/json-c/Makefile"
 
 # History of marks within files (newest to oldest):
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-	*	1539243247	0
-	"	50	8
-	^	77	0
-	.	77	0
-	+	80	5
-	+	76	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	319
+	*	1539245677	0
+	"	55	0
+	^	17	79
+	.	17	78
+	+	32	11
+	+	47	18
+	+	57	9
+	+	37	4
+	+	39	13
+	+	57	10
+	+	58	4
+	+	61	0
+	+	60	18
+	+	61	5
+	+	61	45
+	+	57	0
+	+	61	41
+	+	62	0
+	+	57	0
+	+	61	0
+	+	57	0
+	+	1	9
+	+	2	3
+	+	6	1
+	+	3	0
+	+	8	0
+	+	6	0
 	+	7	0
-	+	27	8
-	+	33	0
-	+	29	105
-	+	30	102
-	+	29	0
-	+	21	3
-	+	26	3
-	+	26	0
-	+	21	4
-	+	26	0
-	+	25	0
-	+	54	0
-	+	52	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	81	0
-	+	80	13
-	+	27	22
-	+	83	29
-	+	84	0
-	+	89	30
-	+	83	28
+	+	8	6
+	+	8	4
+	+	57	11
+	+	60	20
+	+	5	13
+	+	8	0
+	+	39	0
+	+	5	10
+	+	32	0
+	+	38	5
+	+	44	0
+	+	42	25
+	+	45	0
+	+	42	24
+	+	57	0
+	+	58	0
+	+	61	0
+	+	60	1
+	+	117	3
+	+	118	1
+	+	118	0
+	+	121	0
 	+	1	0
-	+	6	93
-	+	6	153
-	+	6	231
-	+	6	320
-	+	6	92
-	+	6	152
-	+	6	127
-	+	6	230
-	+	6	319
-	+	6	318
-	+	53	0
-	+	52	36
-	+	53	26
-	+	52	24
-	+	53	0
-	+	30	0
-	+	72	0
-	+	74	0
-	+	75	0
-	+	81	0
+	+	17	7
+	+	61	10
+	+	64	0
 	+	73	0
-	+	81	0
-	+	80	0
-	+	78	0
-	+	79	0
-	+	81	1
-	+	78	19
-	+	76	39
-	+	77	0
+	+	69	0
+	+	68	0
+	+	102	0
+	+	69	9
+	+	38	11
+	+	5	6
+	+	1	5
+	+	5	1
+	+	118	46
+	+	119	4
+	+	57	6
+	+	58	4
+	+	59	7
+	+	74	0
+	+	74	8
+	+	78	10
+	+	74	4
+	+	85	0
+	+	117	6
+	+	118	0
+	+	117	0
+	+	117	1
+	+	117	0
+	+	117	47
+	+	117	5
+	+	117	0
+	+	85	0
+	+	74	0
+	+	117	0
+	+	74	5
+	+	74	0
+	+	74	4
+	+	117	2
+	+	117	0
+	+	74	3
+	+	74	0
+	+	17	48
+	+	69	7
+	+	74	8
+	+	78	10
+	+	17	78
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-10_Çrş-15_36_13__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 	*	1539182078	0
