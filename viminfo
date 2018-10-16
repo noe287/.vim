@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/CONFIG_BUILDSYS_BRANCH_CHECKOUT_PATH
+~MSle0~/air-wall
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1539699471,,"wq!"
+:w
+|2,0,1539699468,,"w"
 :q!
 |2,0,1539698446,,"q!"
 :Q!
 |2,0,1539698048,,"Q!"
-:wq!
-|2,0,1539695940,,"wq!"
-:w
-|2,0,1539695937,,"w"
 :w!:w
 |2,0,1539695860,,"w!:w"
 :q
@@ -366,6 +366,10 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/air-wall
+|2,1,1539699426,47,"air-wall"
+?/manager
+|2,1,1539699423,47,"manager"
 ?/mesh
 |2,1,1539698047,47,"mesh"
 ?/CONFIG_BUILDSYS_BRANCH_CHECKOUT_PATH
@@ -376,8 +380,6 @@ $
 |2,1,1539695135,47,"CONFIG_MANAGER_MODULE_CLOUD_AGENT"
 ?/air-wa
 |2,1,1539689731,47,"air-wa"
-?/air-wall
-|2,1,1539689672,47,"air-wall"
 ?/air-wal
 |2,1,1539682765,47,"air-wal"
 ?/cloud
@@ -434,8 +436,6 @@ $
 |2,1,1538569106,,"\\<zero_mac\\>"
 ?/is_bc
 |2,1,1538567822,47,"is_bc"
-?/manager
-|2,1,1537968820,47,"manager"
 ?/meshest
 |2,1,1537968611,47,"meshest"
 ? \<send\>
@@ -767,35 +767,35 @@ $
 
 # Registers:
 "0	LINE	0
-		ehnd->smartscan.is_gw = 1;
-|3,0,0,1,1,0,1539588689,"	ehnd->smartscan.is_gw = 1;"
+	subdir-y				+= airlibs
+|3,0,0,1,1,0,1539699448,"subdir-y				+= airlibs"
 ""1	LINE	0
-					}
-|3,1,1,1,1,0,1539595048,"				}"
+	subdir-y				+= airlibs
+|3,1,1,1,1,0,1539699461,"subdir-y				+= airlibs"
 "2	LINE	0
-					{
-|3,0,2,1,1,0,1539595047,"				{"
+					}
+|3,0,2,1,1,0,1539595048,"				}"
 "3	LINE	0
-				awf_cancel_timer(bcm_common_send_target_ap_rssi);
-|3,0,3,1,1,0,1539589169,"			awf_cancel_timer(bcm_common_send_target_ap_rssi);"
+					{
+|3,0,3,1,1,0,1539595047,"				{"
 "4	LINE	0
-	  #endif /* SMART_CONNECTION */
-|3,0,4,1,1,0,1539589166,"  #endif /* SMART_CONNECTION */"
-"5	LINE	0
-				  #ifdef SMART_CONNECTION
-|3,0,5,1,1,0,1539589165,"			  #ifdef SMART_CONNECTION"
-"6	LINE	0
-	
-|3,0,6,1,1,0,1539588721,""
-"7	LINE	0
 				awf_cancel_timer(bcm_common_send_target_ap_rssi);
-|3,0,7,1,1,0,1539588627,"			awf_cancel_timer(bcm_common_send_target_ap_rssi);"
-"8	LINE	0
+|3,0,4,1,1,0,1539589169,"			awf_cancel_timer(bcm_common_send_target_ap_rssi);"
+"5	LINE	0
+	  #endif /* SMART_CONNECTION */
+|3,0,5,1,1,0,1539589166,"  #endif /* SMART_CONNECTION */"
+"6	LINE	0
+				  #ifdef SMART_CONNECTION
+|3,0,6,1,1,0,1539589165,"			  #ifdef SMART_CONNECTION"
+"7	LINE	0
 	
-|3,0,8,1,1,0,1539260550,""
+|3,0,7,1,1,0,1539588721,""
+"8	LINE	0
+				awf_cancel_timer(bcm_common_send_target_ap_rssi);
+|3,0,8,1,1,0,1539588627,"			awf_cancel_timer(bcm_common_send_target_ap_rssi);"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1539245437,""
+|3,0,9,1,1,0,1539260550,""
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
@@ -806,36 +806,54 @@ $
 # global variables:
 
 # File marks:
-'0  68  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
-|4,48,68,0,1539698447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
-'1  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,49,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
-'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
-|4,50,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'0  399  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile
+|4,48,399,0,1539699471,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile"
+'1  68  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
+|4,49,68,0,1539698447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
+'2  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,50,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 '3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
-|4,51,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
-'4  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,52,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
-'5  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,53,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+|4,51,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,52,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'5  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,53,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 '6  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,54,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
-'7  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,55,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+'7  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,55,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 '8  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,56,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 '9  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,57,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 
 # Jumplist (newest first):
+-'  399  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile
+|4,39,399,0,1539699471,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile"
+-'  127  75  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile
+|4,39,127,75,1539699426,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile
+|4,39,1,0,1539699423,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile"
 -'  68  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
 |4,39,68,0,1539698447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
+-'  68  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
+|4,39,68,0,1539698447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
+|4,39,1,0,1539698442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
 |4,39,1,0,1539698442,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config"
 -'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,39,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 -'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,39,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,39,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,39,51,0,1539698402,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,39,1,0,1539698396,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
+|4,39,1,0,1539698396,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
 |4,39,1,0,1539698396,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
@@ -849,6 +867,18 @@ $
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
@@ -856,6 +886,42 @@ $
 |4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539696033,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
 |4,39,473,46,1539695940,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  473  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
@@ -920,6 +986,38 @@ $
 |4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
 |4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
+|4,39,4,0,1539695897,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
 |4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
@@ -930,106 +1028,15 @@ $
 |4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
 |4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1,0,1539695884,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  49  53  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,49,53,1539695863,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,1,0,1539695847,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
--'  14  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config
-|4,39,14,27,1539695800,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/viper.config"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/Makefile
+	*	1539699470	0
+	"	399	0
+	.	399	0
+	+	425	0
+	+	399	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/.config
 	*	1539698446	0
@@ -2108,88 +2115,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/mrbox_Eyl-19_Çrş-16_44_34__18/2.1.382/Obj/debug/project_build_arm/bskyb-mr412/linux-3.10.27/net/core/dev.c
 	*	1537881051	0
 	"	3448	6
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvim.sh
-	*	1537879778	0
-	"	87	1
-	^	85	73
-	.	10	0
-	+	64	0
-	+	59	9
-	+	63	0
-	+	57	1
-	+	63	0
-	+	59	22
-	+	20	29
-	+	43	0
-	+	26	0
-	+	63	1
-	+	57	0
-	+	56	16
-	+	58	0
-	+	21	461
-	+	21	87
-	+	22	1
-	+	21	1
-	+	22	125
-	+	23	0
-	+	24	0
-	+	23	1
-	+	24	133
-	+	12	7
-	+	13	0
-	+	8	0
-	+	10	17
-	+	10	0
-	+	10	1
-	+	10	12
-	+	10	6
-	+	10	7
-	+	12	0
-	+	6	15
-	+	10	0
-	+	15	0
-	+	18	2
-	+	43	0
-	+	58	0
-	+	7	32
-	+	10	0
-	+	25	11
-	+	6	13
-	+	7	18
-	+	25	9
-	+	15	11
-	+	12	8
-	+	17	12
-	+	42	0
-	+	30	11
-	+	37	21
-	+	41	0
-	+	40	0
-	+	39	7
-	+	37	14
-	+	2	27
-	+	37	16
-	+	2	0
-	+	37	7
-	+	87	11
-	+	74	20
-	+	59	1
-	+	66	0
-	+	65	9
-	+	60	14
-	+	32	33
-	+	83	28
-	+	86	0
-	+	83	28
-	+	84	5
-	+	85	41
-	+	86	5
-	+	87	14
-	+	85	22
-	+	83	29
-	+	87	89
-	+	85	72
-	+	2	0
-	+	88	0
-	+	10	0
