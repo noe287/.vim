@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/air-rm
+~MSle0~/Bad
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1539782244,,"q!"
+:w
+|2,0,1539089546,,"w"
 :wq!
 |2,0,1539781546,,"wq!"
-:q!
-|2,0,1539781530,,"q!"
 :F vital_monitor.c
 |2,0,1539780771,,"F vital_monitor.c"
-:w
-|2,0,1539779054,,"w"
 :wqa!
 |2,0,1539775115,,"wqa!"
 :w remoteinteg.tct
@@ -805,9 +805,9 @@ $
 "0	LINE	0
 	CONFIG_air-rm_CHECKOUT_REVISION="bce952ddef218b3d215e5c8799ceaa000b93933c"
 |3,0,0,1,1,0,1539764559,"CONFIG_air-rm_CHECKOUT_REVISION=\"bce952ddef218b3d215e5c8799ceaa000b93933c\""
-"1	LINE	0
+""1	LINE	0
 	CONFIG_air-rm_WEBS_DIR="/var/www"
-|3,0,1,1,1,0,1539765066,"CONFIG_air-rm_WEBS_DIR=\"/var/www\""
+|3,1,1,1,1,0,1539765066,"CONFIG_air-rm_WEBS_DIR=\"/var/www\""
 "2	LINE	0
 	subdir-y				+= airlibs
 |3,0,2,1,1,0,1539699461,"subdir-y				+= airlibs"
@@ -835,27 +835,30 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	]
-|3,1,36,0,1,0,1539779049,"]"
+|3,0,36,0,1,0,1539779049,"]"
 
 # global variables:
+!ST_WIN_CMD	NUM	0
+!ST_WIN_SH	NUM	1
+!ST_UNIX	NUM	2
 
 # File marks:
-'0  4145  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt
-|4,48,4145,0,1539781546,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt"
-'1  457  40  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
-|4,49,457,40,1539781530,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
-'2  1793  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
-|4,50,1793,41,1539781128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'0  26  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,48,26,0,1539782244,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
+'1  4145  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt
+|4,49,4145,0,1539781546,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt"
+'2  457  40  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,50,457,40,1539781530,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 '3  1793  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,51,1793,41,1539781128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
-'4  41  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/vital_monitor.c
-|4,52,41,47,1539781106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/vital_monitor.c"
-'5  2678  44  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/.config
-|4,53,2678,44,1539780616,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/.config"
-'6  1794  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
-|4,54,1794,36,1539780588,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'4  1793  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
+|4,52,1793,41,1539781128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
+'5  41  47  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/vital_monitor.c
+|4,53,41,47,1539781106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/vital_monitor.c"
+'6  2678  44  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/.config
+|4,54,2678,44,1539780616,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/.config"
 '7  1794  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
 |4,55,1794,36,1539780588,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 '8  1794  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config
@@ -864,6 +867,8 @@ $
 |4,57,1794,36,1539780588,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/.config"
 
 # Jumplist (newest first):
+-'  26  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+|4,39,26,0,1539782244,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh"
 -'  4145  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt
 |4,39,4145,0,1539781546,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt
@@ -1062,10 +1067,61 @@ $
 |4,39,1771,36,1539780568,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 -'  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
 |4,39,1771,36,1539780568,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
--'  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config
-|4,39,1771,36,1539780568,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/configs/configs_head/bskyb-viper.config"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
+	*	1539782243	0
+	"	26	0
+	.	23	0
+	+	2	10
+	+	26	6
+	+	28	16
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	23	16
+	+	10	0
+	+	23	18
+	+	23	0
+	+	11	50
+	+	22	0
+	+	13	0
+	+	23	0
+	+	13	55
+	+	14	14
+	+	15	4
+	+	10	0
+	+	15	5
+	+	16	0
+	+	21	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	0
+	+	15	0
+	+	26	6
+	+	28	16
+	+	2	10
+	+	23	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/config_4920.txt
 	*	1539781545	0
@@ -1585,55 +1641,6 @@ $
 	+	316	78
 	+	3	0
 	+	38	71
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.sh
-	*	1539089496	0
-	"	15	0
-	.	15	0
-	+	2	10
-	+	29	6
-	+	31	16
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	23	16
-	+	10	0
-	+	23	18
-	+	25	0
-	+	11	50
-	+	22	0
-	+	13	0
-	+	23	0
-	+	13	55
-	+	14	14
-	+	15	4
-	+	10	0
-	+	15	5
-	+	16	0
-	+	21	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	21	0
-	+	15	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
 	*	1539089418	0
