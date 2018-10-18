@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1539879837,,"qa!"
+|2,0,1539879943,,"qa!"
 :w
 |2,0,1539879576,,"w"
 :Rg -tc routing_get_routes
@@ -403,13 +403,13 @@ $
 
 # Search String History (newest to oldest):
 ?/get_mesh_peers
-|2,1,1539879676,47,"get_mesh_peers"
+|2,1,1539879603,47,"get_mesh_peers"
+?/get_routes
+|2,1,1539879532,47,"get_routes"
 ? \<platform_get_mesh_peers\>
 |2,1,1539879615,,"\\<platform_get_mesh_peers\\>"
 ? \<platform_get_routes\>
 |2,1,1539879567,,"\\<platform_get_routes\\>"
-?/get_routes
-|2,1,1539879313,47,"get_routes"
 ?/generic_platform_get_routes
 |2,1,1539879194,47,"generic_platform_get_routes"
 ? \s\+$
@@ -840,16 +840,16 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
+""0	LINE	0
 		RADIO_MODE_AP,
-|3,0,0,1,1,0,1539878919,"	RADIO_MODE_AP,"
-""1	LINE	0
+|3,1,0,1,1,0,1539878919,"	RADIO_MODE_AP,"
+"1	LINE	0
 	int platform_get_routes(route_list_t *route_list)
 	{
 		return generic_platform_get_routes(route_list);
 	}
 	
-|3,1,1,1,5,0,1539879574,"int platform_get_routes(route_list_t *route_list)","{","	return generic_platform_get_routes(route_list);","}",""
+|3,0,1,1,5,0,1539879574,"int platform_get_routes(route_list_t *route_list)","{","	return generic_platform_get_routes(route_list);","}",""
 "2	LINE	0
 	int platform_get_mesh_peers(const char *bridge_ifname, mesh_peer_list_t *mesh_peers)
 	{
@@ -893,38 +893,52 @@ $
 # global variables:
 
 # File marks:
-'0  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c
-|4,48,68,11,1539879837,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c"
-'1  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c
-|4,49,68,11,1539879831,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c"
-'2  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
-|4,50,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+'0  386  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c
+|4,48,386,0,1539879943,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c"
+'1  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c
+|4,49,68,11,1539879837,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c"
+'2  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c
+|4,50,68,11,1539879831,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c"
 '3  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
 |4,51,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
-'4  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,52,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
-'5  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,53,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
-'6  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,54,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
-'7  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,55,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+'4  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,52,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+'5  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,53,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+'6  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,54,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+'7  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,55,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 '8  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,56,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 '9  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,57,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 
 # Jumplist (newest first):
+-'  386  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c
+|4,39,386,0,1539879943,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c"
 -'  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c
 |4,39,68,11,1539879837,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/platform_common.c"
 -'  68  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c
 |4,39,68,11,1539879831,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c
 |4,39,1,0,1539879794,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c"
+-'  1694  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1694,24,1539879655,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  1616  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/sky/sky.c
 |4,39,1616,4,1539879647,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/sky/sky.c"
+-'  1692  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1692,13,1539879610,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+-'  1599  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1599,0,1539879603,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  3184  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/sky/sky.c
 |4,39,3184,4,1539879570,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/sky/sky.c"
+-'  1598  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1598,13,1539879532,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,2,0,1539879522,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1,0,1539879519,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  1706  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/airties/airties.c
 |4,39,1706,0,1539879486,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/airties/airties.c"
 -'  588  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/air_wall.c
@@ -985,6 +999,10 @@ $
 |4,39,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
 |4,39,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+-'  1475  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1475,10,1539878867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
+-'  1456  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+|4,39,1456,1,1539878711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  1456  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
 |4,39,1456,1,1539878711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c"
 -'  1456  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
@@ -1023,6 +1041,14 @@ $
 |4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1556  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1556,52,1539873845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
@@ -1041,82 +1067,60 @@ $
 |4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+|4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+|4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+|4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1,0,1539873788,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
--'  1514  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,39,1514,38,1539873045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+|4,39,1,0,1539873832,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1554  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1554,39,1539873811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/platform_common.c
+	*	1539879942	0
+	"	386	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master_4930rev/lib/platform_common.c
 	*	1539879829	0
@@ -1135,6 +1139,22 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/NERD_tree_1
 	*	1539879671	0
 	"	36	2
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/-MiniBufExplorer-
+	*	1539879655	0
+	"	1	9
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
+	*	1539879654	0
+	"	1694	24
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/NERD_tree_1
+	*	1539879650	0
+	"	50	0
 	.	1	0
 	+	1	0
 
@@ -1181,10 +1201,6 @@ $
 	"	4	0
 	.	1	0
 	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-sky-cloud/lib/sky/sky.c
-	*	1539878865	0
-	"	1475	10
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 	*	1539873844	0
@@ -1837,19 +1853,3 @@ $
 	+	316	78
 	+	3	0
 	+	38	71
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/fw_write.s
-	*	1539089418	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-	*	1539085422	0
-	"	83	0
-	.	5	0
-	+	5	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/08_10_18-14.20.34_Air4920-Bison-lm/NERD_tree_1
-	*	1539084348	0
-	"	4	0
-	.	1	0
-	+	1	0
