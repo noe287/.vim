@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/air-rm
+~MSle0~/air-rm-devel
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,6 +20,8 @@
 $
 
 # Command Line History (newest to oldest):
+:wqa!
+|2,0,1539870140,,"wqa!"
 :wq!
 |2,0,1539870040,,"wq!"
 :q!
@@ -42,8 +44,6 @@ $
 |2,0,1539785583,,"qa!"
 :F vital_monitor.c
 |2,0,1539785511,,"F vital_monitor.c"
-:wqa!
-|2,0,1539775115,,"wqa!"
 :w remoteinteg.tct
 |2,0,1539775109,,"w remoteinteg.tct"
 :w integration.txt
@@ -396,8 +396,10 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/air-rm-devel
+|2,1,1539870131,47,"air-rm-devel"
 ?/air-rm
-|2,1,1539869955,47,"air-rm"
+|2,1,1539870127,47,"air-rm"
 ?/Cehcking file
 |2,1,1539866227,47,"Cehcking file"
 ? \s\+$
@@ -771,7 +773,7 @@ $
 
 # Expression History (newest to oldest):
 =acp#onPopupPost()
-|2,2,1539870036,,"acp#onPopupPost()"
+|2,2,1539870134,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
 @2
@@ -823,10 +825,10 @@ $
 "0	LINE	0
 					echo "${BINLIC} $f [Checking file & symbol dependencies (static) ]" 1>&2
 |3,0,0,1,1,0,1539866390,"				echo \"${BINLIC} $f [Checking file & symbol dependencies (static) ]\" 1>&2"
-""1	CHAR	0
+"1	CHAR	0
 	" `git log -1 | grep -E ^commit.{41} | sed -e 's/^commit //'`"
 	
-|3,1,1,0,2,0,1539866101,"\" `git log -1 | grep -E ^commit.{41} | sed -e 's/^commit //'`\"",""
+|3,0,1,0,2,0,1539866101,"\" `git log -1 | grep -E ^commit.{41} | sed -e 's/^commit //'`\"",""
 "2	LINE	0
 	CONFIG_air-rm_WEBS_DIR="/var/www"
 |3,0,2,1,1,0,1539765066,"CONFIG_air-rm_WEBS_DIR=\"/var/www\""
@@ -854,47 +856,63 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1539855787,"#"
+""-	CHAR	0
+	U
+|3,1,36,0,1,0,1539870132,"U"
 
 # global variables:
 
 # File marks:
-'0  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
-|4,48,1771,36,1539870040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
-'1  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-|4,49,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
-'2  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
-|4,50,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
-'3  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
-|4,51,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
-'4  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
-|4,52,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
-'5  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
-|4,53,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
-'6  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,54,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
-'7  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,55,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
-'8  602  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_content.sh
-|4,56,602,29,1539866075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_content.sh"
-'9  123  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,57,123,0,1539856811,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'0  1794  35  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,48,1794,35,1539870140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+'1  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
+|4,49,1771,36,1539870040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
+'2  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,50,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+'3  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,51,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+'4  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,52,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+'5  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,53,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+'6  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,54,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+'7  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,55,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+'8  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
+|4,56,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
+'9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
+|4,57,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
 
 # Jumplist (newest first):
+-'  1794  35  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1794,35,1539870140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,3,0,1539870131,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1,0,1539870123,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
+|4,39,1771,36,1539870040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
 -'  1771  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
 |4,39,1771,36,1539870040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
 -'  90  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
 |4,39,90,0,1539869955,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
+-'  90  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
+|4,39,90,0,1539869955,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
 -'  34  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
 |4,39,34,33,1539869948,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
+-'  34  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
+|4,39,34,33,1539869948,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
+|4,39,1,0,1539869936,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
 |4,39,1,0,1539869936,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config"
 -'  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
+-'  1788  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+|4,39,1788,0,1539869926,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 |4,39,1,0,1539869921,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
@@ -907,6 +925,22 @@ $
 |4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  137  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,137,7,1539868324,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,99,3,1539866447,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  99  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
@@ -923,6 +957,22 @@ $
 |4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866284,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,1,0,1539866202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
@@ -955,6 +1005,46 @@ $
 |4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  84  145  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,84,145,1539866199,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
+|4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 |4,39,1,0,1539866148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
@@ -995,96 +1085,15 @@ $
 |4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
 -'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
 |4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  54  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,54,32,1539866142,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh
-|4,39,1,0,1539866086,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/fosslib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh
-|4,39,1,0,1539866080,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/tools/fosstools/foss_lib.sh"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
+	*	1539870137	0
+	"	1794	35
+	^	1794	36
+	.	1794	35
+	+	1794	35
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/configs/configs_head/bskyb-viper.config
 	*	1539870039	0
@@ -1092,10 +1101,6 @@ $
 	^	1771	37
 	.	1771	36
 	+	1771	36
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
-	*	1539869923	0
-	"	1788	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/tools/fosstools/print_static_lib_deps.sh
 	*	1539868323	0
