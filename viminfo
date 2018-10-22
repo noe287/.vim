@@ -21,7 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1540214615,,"q!"
+|2,0,1540214681,,"q!"
+:EraseBadWhitespace
+|2,0,1540214672,,"EraseBadWhitespace"
+:q1
+|2,0,1540214651,,"q1"
 :qa!
 |2,0,1540213661,,"qa!"
 :Rg -tc aes_cmac_calc
@@ -48,8 +52,6 @@ $
 |2,0,1539957159,,"s"
 :Rg -tc routing_get_routes
 |2,0,1539879465,,"Rg -tc routing_get_routes"
-:EraseBadWhitespace
-|2,0,1539879125,,"EraseBadWhitespace"
 :1460
 |2,0,1539878896,,"1460"
 :F sky.c
@@ -62,8 +64,6 @@ $
 |2,0,1539866088,,"69"
 :598
 |2,0,1539866018,,"598"
-:q1
-|2,0,1539855857,,"q1"
 :F vital_monitor.c
 |2,0,1539785511,,"F vital_monitor.c"
 :w remoteinteg.tct
@@ -416,6 +416,8 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1540214672,,"\\s\\+$"
 ?/wf_chspec_ctlchan
 |2,1,1539961238,47,"wf_chspec_ctlchan"
 ?/WIRELESS_DRIVER_DIR
@@ -450,8 +452,6 @@ $
 |2,1,1539879567,,"\\<platform_get_routes\\>"
 ?/generic_platform_get_routes
 |2,1,1539879194,47,"generic_platform_get_routes"
-? \s\+$
-|2,1,1539879125,,"\\s\\+$"
 ?/radio_state
 |2,1,1539878711,47,"radio_state"
 ?/statis
@@ -923,36 +923,86 @@ $
 # global variables:
 
 # File marks:
-'0  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
-|4,48,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
-'1  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
-|4,49,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
-'2  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
-|4,50,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
-'3  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,51,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
-'4  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,52,3,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+'0  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib
+|4,48,202,0,1540214681,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib"
+'1  30  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,49,30,4,1540214651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+'2  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,50,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+'3  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,51,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+'4  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,52,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
 '5  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,53,4,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
-'6  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,54,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'7  41  0  ~/buildsys_merge.p
-|4,55,41,0,1540027012,"~/buildsys_merge.p"
-'8  119  0  ~/buildsys_merge.p
-|4,56,119,0,1540026982,"~/buildsys_merge.p"
-'9  119  0  ~/buildsys_merge.p
-|4,57,119,0,1540026982,"~/buildsys_merge.p"
+|4,53,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+'6  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,54,3,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+'7  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,55,4,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+'8  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,56,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'9  41  0  ~/buildsys_merge.p
+|4,57,41,0,1540027012,"~/buildsys_merge.p"
 
 # Jumplist (newest first):
+-'  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib
+|4,39,202,0,1540214681,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib"
+-'  53  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib
+|4,39,53,0,1540214672,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib
+|4,39,1,0,1540214660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib"
+-'  30  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,30,4,1540214651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  30  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,30,4,1540214651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214636,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214636,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
 -'  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
 |4,39,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  202  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,202,0,1540214615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,1,0,1540214606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,1,0,1540214606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
+|4,39,1,0,1540214606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
 |4,39,1,0,1540214606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch"
 -'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
 |4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
 -'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
 |4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  281  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,281,0,1540214604,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+|4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
 |4,39,1,0,1540214596,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
@@ -965,6 +1015,30 @@ $
 |4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
 -'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
 |4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
+-'  168  33  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h
+|4,39,168,33,1540213661,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/include/bcmcrypto/aes.h"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
 |4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
@@ -973,6 +1047,78 @@ $
 |4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
 |4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,4,0,1540211311,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
+|4,39,1,0,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
 -'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
 |4,39,11,2,1540211308,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
@@ -999,154 +1145,18 @@ $
 |4,39,4,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
 -'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
 |4,39,3,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,4,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,3,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,4,0,1540211266,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  10  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,10,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,11,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,1,0,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  10  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,10,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,11,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,1,0,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  10  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,10,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,11,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,1,0,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  10  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,10,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  11  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,11,2,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1
-|4,39,1,0,1540211206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/NERD_tree_1"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  52  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,52,3,1540206537,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,39,1,0,1540206510,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
--'  41  0  ~/buildsys_merge.p
-|4,39,41,0,1540027012,"~/buildsys_merge.p"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/Makefile.lib
+	*	1540214680	0
+	"	202	0
+	.	41	0
+	+	41	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-22_Pzt-14_09_18__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/wireless.patch
+	*	1540214650	0
+	"	30	4
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eyl-05_Çrş-12_04_36__18/airties-bskyb-viper-debug/air-steer/air-steer-master/patch/manager.patch
 	*	1540214614	0
@@ -1870,19 +1880,3 @@ $
 	"	15	0
 	.	1	0
 	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/airties-bskyb-viper-debug/awf-ng/__Tagbar__
-	*	1539588439	0
-	"	5	0
-	.	6	0
-	+	6	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Eyl-19_Çrş-16_44_42__18/airties-bskyb-viper-debug/awf-ng/__Tag_List__
-	*	1539588401	0
-	"	132	4
-	.	198	0
-	+	71	0
-	+	70	0
-	+	69	0
-	+	102	0
-	+	198	0
