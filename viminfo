@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/air-bus
+~MSle0~/generic_platform_get_interface_ip_address
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,9 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1540307755,,"qa!"
+|2,0,1540309128,,"qa!"
 :q!
-|2,0,1540307753,,"q!"
+|2,0,1540309127,,"q!"
+:Rg -tc wf_chspec_ctlchan
+|2,0,1539957466,,"Rg -tc wf_chspec_ctlchan"
 :Rg AIRBUS
 |2,0,1540307738,,"Rg AIRBUS"
 :Rg air-bus
@@ -44,8 +46,6 @@ $
 |2,0,1539962524,,"Rg -tc aes_cmac_calc"
 :Rg -tc GETBEACONREPORT
 |2,0,1540211215,,"Rg -tc GETBEACONREPORT"
-:Rg -tc wf_chspec_ctlchan
-|2,0,1539960152,,"Rg -tc wf_chspec_ctlchan"
 :Rg libshared.so
 |2,0,1539960074,,"Rg libshared.so"
 :Rg libshare.so
@@ -422,6 +422,8 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/wf_chspec_ctl
+|2,1,1539954516,47,"wf_chspec_ctl"
 ?/air-bus
 |2,1,1540307661,47,"air-bus"
 ? \s\+$
@@ -888,11 +890,11 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
+""0	LINE	0
 	if [ $2 ]
 	then
 		arg2=$2
-|3,0,0,1,3,0,1540296147,"if [ $2 ]","then","	arg2=$2"
+|3,1,0,1,3,0,1540296147,"if [ $2 ]","then","	arg2=$2"
 "1	LINE	0
 	int platform_get_routes(route_list_t *route_list)
 	{
@@ -936,35 +938,39 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	_
-|3,1,36,0,1,0,1540296255,"_"
+|3,0,36,0,1,0,1540296255,"_"
 
 # global variables:
 
 # File marks:
-'0  1  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile
-|4,48,1,1,1540307755,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile"
-'1  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/air-bus-master/Makefile
-|4,49,8,0,1540307638,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/air-bus-master/Makefile"
-'2  52  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/Makefile
-|4,50,52,1,1540307616,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/Makefile"
-'3  169  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/Makefile
-|4,51,169,0,1540304107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/Makefile"
-'4  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/NERD_tree_1
-|4,52,5,0,1540302040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/NERD_tree_1"
-'5  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk
-|4,53,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
-'6  24  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/user/Makefile
-|4,54,24,22,1540301796,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/user/Makefile"
-'7  70  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/.config
-|4,55,70,0,1540301260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/.config"
-'8  78  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/airties-bskyb-mrbox-412-debug/.config
-|4,56,78,32,1540301237,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/airties-bskyb-mrbox-412-debug/.config"
-'9  209  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs
-|4,57,209,0,1540301202,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs"
+'0  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1
+|4,48,10,0,1540309128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1"
+'1  53  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1
+|4,49,53,6,1540309121,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1"
+'2  1  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile
+|4,50,1,1,1540307755,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile"
+'3  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/air-bus-master/Makefile
+|4,51,8,0,1540307638,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/air-bus-master/Makefile"
+'4  52  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/Makefile
+|4,52,52,1,1540307616,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/Makefile"
+'5  169  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/Makefile
+|4,53,169,0,1540304107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/Makefile"
+'6  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/NERD_tree_1
+|4,54,5,0,1540302040,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/NERD_tree_1"
+'7  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk
+|4,55,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
+'8  24  22  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/user/Makefile
+|4,56,24,22,1540301796,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/dhcpcap-mesh2.0/dhcpcap-mesh2.0-cloud/user/Makefile"
+'9  70  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/.config
+|4,57,70,0,1540301260,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/.config"
 
 # Jumplist (newest first):
+-'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1
+|4,39,10,0,1540309128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1"
+-'  53  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1
+|4,39,53,6,1540309121,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1"
 -'  1  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile
 |4,39,1,1,1540307755,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile"
 -'  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-bus/air-bus-master/Makefile
@@ -1161,12 +1167,22 @@ $
 |4,39,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
 -'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk
 |4,39,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
--'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk
-|4,39,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
--'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk
-|4,39,9,0,1540302022,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_generic_Eki-23_Sal-15_05_53__18/2.1.382/target/makedevs/makedevs.mk"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1
+	*	1540309127	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/shared/bcmwifi/include/bcmwifi_channels.h
+	*	1540309126	0
+	"	404	26
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/topogen-bcm.c
+	*	1540309117	0
+	"	249	9
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/Makefile
 	*	1540307754	0
@@ -1471,22 +1487,6 @@ $
 	*	1539962516	0
 	"	810	1
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/-MiniBufExplorer-
-	*	1539962508	0
-	"	1	46
-	.	2	0
-	+	2	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/NERD_tree_1
-	*	1539962486	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/shared/bcmwifi/include/bcmwifi_channels.h
-	*	1539961613	0
-	"	412	1
-
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-17-15_51_23_Cum/airties-bskyb-viper-debug/air-rm/NERD_tree_1
 	*	1539960060	0
 	"	5	0
@@ -1530,6 +1530,14 @@ $
 	.	2	0
 	+	2	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/shared/bcmwifi/src/bcmwifi_channels.c
+	*	1539957693	0
+	"	254	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid_steer_devel/src/impl16/wl/sys/wlc_channel.h
+	*	1539957479	0
+	"	63	61
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/.config
 	*	1539957385	0
 	"	988	0
@@ -1557,6 +1565,28 @@ $
 	.	1	0
 	+	1	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/wireless/-MiniBufExplorer-
+	*	1539954984	0
+	"	1	25
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1
+	*	1539954502	0
+	"	53	6
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/__Tagbar__
+	*	1539954499	0
+	"	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/-MiniBufExplorer-
+	*	1539954499	0
+	"	1	18
+	.	2	0
+	+	2	0
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/cvip
 	*	1539954463	0
 	"	1	0
@@ -1564,12 +1594,6 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/scr
 	*	1539954455	0
 	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-rm/air-rm-devel/NERD_tree_1
-	*	1539954425	0
-	"	4	0
-	.	1	0
-	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/_skybuilder_/airties-bskyb-viper-debug/air-wall/air-wall-master/lib/airties/airties.c
 	*	1539954388	0
@@ -1835,27 +1859,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/air-rm/Makefile
 	*	1539779174	0
 	"	47	39
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-16_Sal-12_39_38__18/airties-bskyb-viper-debug/air-rm/air-rm-devel/rmd/src/Makefile
-	*	1539778698	0
-	"	35	7
-
-> ~/-MiniBufExplorer-
-	*	1539775109	0
-	"	1	19
-	.	2	0
-	+	2	0
-
-> ~/integration.txt
-	*	1539775086	0
-	"	1	0
-
-> ~/NERD_tree_1
-	*	1539774336	0
-	"	5	0
-	.	1	0
-	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ağu-15-15_25_17_Çrş/airties-bskyb-viper-debug/.config
-	*	1539703794	0
-	"	1448	7
