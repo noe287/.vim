@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<track_dhcp\>
+~Msle0~/\<acIFace\>
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,15 +21,17 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1540830458,,"qa!"
+|2,0,1540830879,,"qa!"
+:Rg -tc EVT_IP_ASSIGNED
+|2,0,1540830527,,"Rg -tc EVT_IP_ASSIGNED"
+:F wireless_mngr.c
+|2,0,1540830512,,"F wireless_mngr.c"
 :wq!
 |2,0,1540830157,,"wq!"
 :s
 |2,0,1540829975,,"s"
 :w
 |2,0,1540819820,,"w"
-:F wireless_mngr.c
-|2,0,1540817954,,"F wireless_mngr.c"
 :EraseBadWhitespace
 |2,0,1540546525,,"EraseBadWhitespace"
 :F broadcom_wllib.c
@@ -608,6 +610,12 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \<acIFace\>
+|2,1,1540830733,,"\\<acIFace\\>"
+? \<bGotIP\>
+|2,1,1540830605,,"\\<bGotIP\\>"
+?/dhcp
+|2,1,1540830514,47,"dhcp"
 ? \<track_dhcp\>
 |2,1,1540830419,,"\\<track_dhcp\\>"
 ? \<eth_dhcp_ack\>
@@ -1427,42 +1435,86 @@ $
 # global variables:
 
 # File marks:
-'0  260  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
-|4,48,260,0,1540830458,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
-'1  215  0  ~/.bashrc
-|4,49,215,0,1540830157,"~/.bashrc"
-'2  212  113  ~/.bashrc
-|4,50,212,113,1540830114,"~/.bashrc"
-'3  212  113  ~/.bashrc
-|4,51,212,113,1540830114,"~/.bashrc"
-'4  213  71  ~/.bashrc
-|4,52,213,71,1540830072,"~/.bashrc"
-'5  213  71  ~/.bashrc
-|4,53,213,71,1540830072,"~/.bashrc"
-'6  213  71  ~/.bashrc
-|4,54,213,71,1540830072,"~/.bashrc"
-'7  213  71  ~/.bashrc
-|4,55,213,71,1540830072,"~/.bashrc"
-'8  199  57  ~/.bashrc
-|4,56,199,57,1540829997,"~/.bashrc"
-'9  199  57  ~/.bashrc
-|4,57,199,57,1540829997,"~/.bashrc"
+'0  645  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,48,645,13,1540830879,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+'1  260  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,49,260,0,1540830458,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+'2  260  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,50,260,0,1540830458,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+'3  215  0  ~/.bashrc
+|4,51,215,0,1540830157,"~/.bashrc"
+'4  215  0  ~/.bashrc
+|4,52,215,0,1540830157,"~/.bashrc"
+'5  212  113  ~/.bashrc
+|4,53,212,113,1540830114,"~/.bashrc"
+'6  212  113  ~/.bashrc
+|4,54,212,113,1540830114,"~/.bashrc"
+'7  212  113  ~/.bashrc
+|4,55,212,113,1540830114,"~/.bashrc"
+'8  212  113  ~/.bashrc
+|4,56,212,113,1540830114,"~/.bashrc"
+'9  213  71  ~/.bashrc
+|4,57,213,71,1540830072,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  645  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,645,13,1540830879,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  315  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/netlib.c
+|4,39,315,0,1540830868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/netlib.c"
+-'  105  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/include/netlib.h
+|4,39,105,46,1540830854,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/include/netlib.h"
+-'  888  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,888,2,1540830845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  713  26  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,713,26,1540830733,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  1042  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/netlib.c
+|4,39,1042,0,1540830674,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/netlib.c"
+-'  673  71  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,673,71,1540830651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  668  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,668,1,1540830647,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  652  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,652,6,1540830606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  877  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+|4,39,877,6,1540830605,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c"
+-'  2414  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c
+|4,39,2414,6,1540830534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c
+|4,39,1,0,1540830514,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c"
+-'  139  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,139,0,1540830512,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,1,0,1540830489,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  260  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,260,0,1540830458,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  260  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,260,0,1540830458,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  176  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,176,8,1540830419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  176  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,176,8,1540830419,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  45  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,45,12,1540830403,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  45  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,45,12,1540830403,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  48  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,48,78,1540830401,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  48  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,48,78,1540830401,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  28  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,28,6,1540830399,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  28  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,28,6,1540830399,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  236  118  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,236,118,1540830397,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  236  118  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,236,118,1540830397,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  226  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,226,3,1540830395,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  226  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,226,3,1540830395,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
+-'  52  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+|4,39,52,9,1540830393,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  52  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
 |4,39,52,9,1540830393,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
@@ -1471,10 +1523,16 @@ $
 |4,39,215,0,1540830157,"~/.bashrc"
 -'  215  0  ~/.bashrc
 |4,39,215,0,1540830157,"~/.bashrc"
+-'  215  0  ~/.bashrc
+|4,39,215,0,1540830157,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1540830146,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1540830146,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1540830146,"~/.bashrc"
+-'  212  113  ~/.bashrc
+|4,39,212,113,1540830114,"~/.bashrc"
 -'  212  113  ~/.bashrc
 |4,39,212,113,1540830114,"~/.bashrc"
 -'  212  113  ~/.bashrc
@@ -1499,10 +1557,14 @@ $
 |4,39,213,71,1540830072,"~/.bashrc"
 -'  213  71  ~/.bashrc
 |4,39,213,71,1540830072,"~/.bashrc"
+-'  213  71  ~/.bashrc
+|4,39,213,71,1540830072,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1540830019,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1540830019,"~/.bashrc"
+-'  199  57  ~/.bashrc
+|4,39,199,57,1540829997,"~/.bashrc"
 -'  199  57  ~/.bashrc
 |4,39,199,57,1540829997,"~/.bashrc"
 -'  199  57  ~/.bashrc
@@ -1587,62 +1649,8 @@ $
 |4,39,1872,7,1540827825,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_mngr.c"
 -'  1872  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_mngr.c
 |4,39,1872,7,1540827825,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_mngr.c"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
--'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
-|4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
+-'  1872  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_mngr.c
+|4,39,1872,7,1540827825,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_mngr.c"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
 |4,39,4,0,1540825269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/statistics-collector/NERD_tree_1
@@ -1652,15 +1660,37 @@ $
 
 # History of marks within files (newest to oldest):
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
-	*	1540830437	0
-	"	260	0
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/dhcpc/dhcpc_mngr.c
+	*	1540830877	0
+	"	645	13
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/netlib.c
+	*	1540830868	0
+	"	1042	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/include/netlib.h
+	*	1540830868	0
+	"	105	46
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/NERD_tree_1
-	*	1540830377	0
-	"	25	0
+	*	1540830548	0
+	"	17	0
 	.	1	0
 	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/manager/modules/physical_devices/wireless/wireless_mngr.c
+	*	1540830521	0
+	"	2414	6
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/-MiniBufExplorer-
+	*	1540830512	0
+	"	1	32
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/manager/src/dhcpcap/dhcpcap.c
+	*	1540830508	0
+	"	139	0
 
 > ~/.bashrc
 	*	1540830156	0
@@ -2509,23 +2539,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Eki-23_Sal-10_29_49__18/airties-bskyb-viper-debug/air-cloud-agent/air-cloud-agent-master/libaca/src/platform/sky/data_adapter.c
 	*	1540458272	0
 	"	4	0
-
-> /usr/include/string.h
-	*	1540458269	0
-	"	337	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/wireless-controller/wireless-controller-Air4920US-AL-AT49/controller/plugins/gw/gw.c
-	*	1540458182	0
-	"	25	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/wireless-controller/wireless-controller-Air4920US-AL-AT49/controller/plugins/gw/scenarios/plugin-gw-scenarios.o
-	*	1540458053	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/wireless-controller/wireless-controller-Air4920US-AL-AT49/controller/plugins/ap-pseudo/ap-pseudo.c
-	*	1540458052	0
-	"	1704	39
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/16_10_18-14.41.06_Air4920US-AL/wireless-controller/wireless-controller-Air4920US-AL-AT49/controller/plugins/gw/scenarios/configuration-poll.c
-	*	1540458051	0
-	"	490	6
