@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<defGwMac\>
+~MSle0~/566
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,12 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
+:566
+|2,0,1540988715,,"566"
+:w
+|2,0,1540986681,,"w"
+::
+|2,0,1540985740,,":"
+:EraseBadWhitespace
+|2,0,1540985377,,"EraseBadWhitespace"
 :Rg -tc airbus_client_fd
 |2,0,1540885684,,"Rg -tc airbus_client_fd"
-:w
-|2,0,1541070230,,"w"
-:EraseBadWhitespace
-|2,0,1541070228,,"EraseBadWhitespace"
 :qa!
 |2,0,1541160182,,"qa!"
 :Qa!
@@ -664,6 +668,36 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/566
+|2,1,1540988712,47,"566"
+? \<sock\>
+|2,1,1540986322,,"\\<sock\\>"
+? \<iface_mac\>
+|2,1,1540985844,,"\\<iface_mac\\>"
+? \<preferred\>
+|2,1,1540985580,,"\\<preferred\\>"
+? \s\+$
+|2,1,1540985377,,"\\s\\+$"
+?/ad
+|2,1,1540985367,47,"ad"
+? \<__hello_received\>
+|2,1,1540985363,,"\\<__hello_received\\>"
+? \<eth_link_speed\>
+|2,1,1540973148,,"\\<eth_link_speed\\>"
+? \<last_hello_received\>
+|2,1,1540973091,,"\\<last_hello_received\\>"
+? \<brname\>
+|2,1,1540972051,,"\\<brname\\>"
+?/main
+|2,1,1540972034,47,"main"
+?/if_name
+|2,1,1540972030,47,"if_name"
+?/send_hello
+|2,1,1540971984,47,"send_hello"
+? \<brctl_delif\>
+|2,1,1540971963,,"\\<brctl_delif\\>"
+? \<ifname\>
+|2,1,1540971946,,"\\<ifname\\>"
 ? \<airbus_client_wait_event\>
 |2,1,1540893570,,"\\<airbus_client_wait_event\\>"
 ? \<airbus_client_get_event\>
@@ -674,8 +708,6 @@ $
 |2,1,1540902252,47,"wait"
 ?/client_get_event
 |2,1,1540902229,47,"client_get_event"
-? \s\+$
-|2,1,1541070228,,"\\s\\+$"
 ?/showmacs
 |2,1,1541090336,47,"showmacs"
 ? \<WlCommonMasterNode\>
@@ -836,8 +868,6 @@ $
 |2,1,1540546631,47,"memcmp"
 ?/root
 |2,1,1540546536,47,"root"
-?/main
-|2,1,1540546527,47,"main"
 ?/evt
 |2,1,1540558015,47,"evt"
 ?/sticky
@@ -1532,9 +1562,9 @@ $
 							pstPriv->uiIsMaster = 0;
 						}
 |3,0,0,1,10,0,1541113319,"					if (strcmp(pstPriv->acDefaulGwIface, \"eth0\")  == 0 || strcmp(pstPriv->acDefaulGwIface, \"wl0\") == 0)","					{","						MNGR_PRINT(\"This is the Master Node\\n\");","						pstPriv->uiIsMaster = 1;","					}","					else","					{","						MNGR_PRINT(\"This is not the Master Node\\n\");","						pstPriv->uiIsMaster = 0;","					}"
-"1	LINE	0
+""1	LINE	0
 	
-|3,0,1,1,1,0,1541152483,""
+|3,1,1,1,1,0,1541152483,""
 "2	LINE	0
 	#ifdef AIR_BUS_SUPPORT
 	#include "user/user.h"
@@ -1643,35 +1673,37 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	u
-|3,1,36,0,1,0,1541159501,"u"
+|3,0,36,0,1,0,1541159501,"u"
 
 # global variables:
 
 # File marks:
-'0  45  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
-|4,48,45,3,1541168918,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
-'1  507  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c
-|4,49,507,14,1541168916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c"
-'2  291  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c
-|4,50,291,27,1541168916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c"
-'3  25  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air_eoe/NERD_tree_1
-|4,51,25,3,1541168915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air_eoe/NERD_tree_1"
-'4  41  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c
-|4,52,41,21,1541168898,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c"
-'5  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_product/NERD_tree_1
-|4,53,4,0,1541160182,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_product/NERD_tree_1"
-'6  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
-|4,54,15,0,1541160166,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
+'0  585  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/alethd/main.c
+|4,48,585,2,1541174528,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/alethd/main.c"
+'1  45  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
+|4,49,45,3,1541168918,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
+'2  507  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c
+|4,50,507,14,1541168916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c"
+'3  291  27  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c
+|4,51,291,27,1541168916,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c"
+'4  25  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air_eoe/NERD_tree_1
+|4,52,25,3,1541168915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air_eoe/NERD_tree_1"
+'5  41  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c
+|4,53,41,21,1541168898,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c"
+'6  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_product/NERD_tree_1
+|4,54,4,0,1541160182,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_product/NERD_tree_1"
 '7  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
 |4,55,15,0,1541160166,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
-'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid
-|4,56,1,0,1541159984,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid"
+'8  15  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
+|4,56,15,0,1541160166,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
 '9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid
 |4,57,1,0,1541159984,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid"
 
 # Jumplist (newest first):
+-'  585  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/alethd/main.c
+|4,39,585,2,1541174528,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/alethd/main.c"
 -'  45  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus
 |4,39,45,3,1541168918,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.airbus"
 -'  507  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/air-bus/air-bus-master/user/user.c
@@ -1870,8 +1902,6 @@ $
 |4,39,1,0,1541159984,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid
 |4,39,1,0,1541159984,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid
-|4,39,1,0,1541159984,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/filesystem_platform/filesystem_platform-1.2-Mesh-1.1/filesystem-SkyHybridRouting/etc/rc.d/rc.bootid"
 
 # History of marks within files (newest to oldest):
 
@@ -1884,6 +1914,51 @@ $
 	"	25	3
 	.	1	0
 	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/alethd/main.c
+	*	1541168759	0
+	"	585	2
+	^	687	71
+	.	687	71
+	+	370	0
+	+	659	0
+	+	657	0
+	+	662	0
+	+	666	0
+	+	667	0
+	+	674	0
+	+	668	33
+	+	669	0
+	+	672	6
+	+	670	6
+	+	675	33
+	+	676	6
+	+	679	6
+	+	677	6
+	+	674	1
+	+	667	3
+	+	646	4
+	+	645	3
+	+	648	3
+	+	687	0
+	+	686	3
+	+	689	3
+	+	687	94
+	+	695	77
+	+	696	0
+	+	695	55
+	+	576	0
+	+	577	76
+	+	566	59
+	+	522	38
+	+	646	58
+	+	658	44
+	+	662	28
+	+	666	0
+	+	667	49
+	+	670	42
+	+	677	51
+	+	687	71
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c
 	*	1541164144	0
@@ -2631,6 +2706,16 @@ $
 	*	1540988682	0
 	"	1015	15
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/main.h
+	*	1540985852	0
+	"	82	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/automesh/-MiniBufExplorer-
+	*	1540985849	0
+	"	1	0
+	.	2	0
+	+	2	0
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/lib/xmlparser/source/tree.c
 	*	1540985297	0
 	"	311	0
@@ -2655,17 +2740,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c
 	*	1540985289	0
 	"	344	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/cloud_agent/cloud_agent_mngr.o
-	*	1540984905	0
-	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/json-c/json-c-0.12-20140410/json_object.c
-	*	1540902204	0
-	"	157	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/json-c/-MiniBufExplorer-
-	*	1540900622	0
-	"	1	25
-	.	2	0
-	+	2	0
