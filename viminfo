@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/routin
+~Msle0~/\<UpdateMasterNodeState\>
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,11 +21,15 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1542097479,,"qa!"
+|2,0,1542097614,,"qa!"
 :q!
-|2,0,1542097477,,"q!"
+|2,0,1542097611,,"q!"
+:Agit --dir=manager-1.27_sky-hybrid-Mesh-1.1/
+|2,0,1542097590,,"Agit --dir=manager-1.27_sky-hybrid-Mesh-1.1/"
 :Agit
-|2,0,1542092015,,"Agit"
+|2,0,1542097583,,"Agit"
+:F stats_mngr.c
+|2,0,1542024006,,"F stats_mngr.c"
 :Rg mesh_peer_list
 |2,0,1542023320,,"Rg mesh_peer_list"
 :Rg -tc mesh_peer_list_t
@@ -166,8 +170,6 @@ $
 |2,0,1541584253,,"Rg -tc MANAGER_STATS"
 :Rg -tc EVT_WL_AWF_CONN_INFO
 |2,0,1541584136,,"Rg -tc EVT_WL_AWF_CONN_INFO"
-:F stats_mngr.c
-|2,0,1541584106,,"F stats_mngr.c"
 :Agit 
 |2,0,1541584071,,"Agit "
 :Agit .
@@ -866,10 +868,22 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \r$
+|2,1,1542097607,,"\\r$"
+? \<UpdateMasterNodeState\>
+|2,1,1542024305,,"\\<UpdateMasterNodeState\\>"
+?/Received
+|2,1,1542024288,47,"Received"
+? \<iStatsDebug\>
+|2,1,1542024215,,"\\<iStatsDebug\\>"
+?/debug
+|2,1,1542024157,47,"debug"
+? \<LOG_WARNING\>
+|2,1,1542024129,,"\\<LOG_WARNING\\>"
+?/master
+|2,1,1542024009,47,"master"
 ?/routin
 |2,1,1542097438,47,"routin"
-? \r$
-|2,1,1542097476,,"\\r$"
 ?/asfafasd
 |2,1,1542013291,47,"asfafasd"
 ?/apply
@@ -954,16 +968,12 @@ $
 |2,1,1541505992,47,"CONFIG_air-wall_RPC_DAEMON_SUPPORT"
 ?/CONFIG_PRODUCT_BOARD_TYPE
 |2,1,1541505837,47,"CONFIG_PRODUCT_BOARD_TYPE"
-?/master
-|2,1,1541429219,47,"master"
 ?/isMaster
 |2,1,1541429191,47,"isMaster"
 ? \<gw_mac\>
 |2,1,1541421428,,"\\<gw_mac\\>"
 ? \<mac\>
 |2,1,1541421394,,"\\<mac\\>"
-? \<UpdateMasterNodeState\>
-|2,1,1541421201,,"\\<UpdateMasterNodeState\\>"
 ? \<eAWFConnectionType\>
 |2,1,1541421195,,"\\<eAWFConnectionType\\>"
 ? \<__copy_fdb\>
@@ -1889,9 +1899,9 @@ $
 "0	LINE	0
 		printk("[%s:%d]",__func__, __LINE__);
 |3,0,0,1,1,0,1541747738,"	printk(\"[%s:%d]\",__func__, __LINE__);"
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1542013638,""
+|3,0,1,1,1,0,1542013638,""
 "2	LINE	0
 	
 |3,0,2,1,1,0,1541764790,""
@@ -1919,35 +1929,37 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
-	[%s:%d] 
-|3,0,36,0,1,0,1541752925,"[%s:%d] "
+""-	CHAR	0
+	:
+|3,1,36,0,1,0,1542097611,":"
 
 # global variables:
 
 # File marks:
-'0  461  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c
-|4,48,461,0,1542097548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c"
-'1  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1
-|4,49,1,0,1542097429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1"
-'2  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1
-|4,50,4,0,1542097429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1"
-'3  689  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch
-|4,51,689,4,1542097392,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch"
-'4  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch
-|4,52,27,0,1542097235,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch"
+'0  966  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c
+|4,48,966,10,1542097614,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c"
+'1  461  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c
+|4,49,461,0,1542097548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c"
+'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1
+|4,50,1,0,1542097429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1"
+'3  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1
+|4,51,4,0,1542097429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/NERD_tree_1"
+'4  689  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch
+|4,52,689,4,1542097392,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch"
 '5  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch
 |4,53,27,0,1542097235,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch"
-'6  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p
-|4,54,1,0,1542097181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p"
+'6  27  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch
+|4,54,27,0,1542097235,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/0001-get_routes-function.patch"
 '7  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p
-|4,55,1,0,1542097174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p"
-'8  767  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p
-|4,56,767,0,1542097143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p"
-'9  84  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/Patches/awf-ng_master_node_Kas-03-01_27_14_Cts.p
-|4,57,84,0,1542095230,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/Patches/awf-ng_master_node_Kas-03-01_27_14_Cts.p"
+|4,55,1,0,1542097181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p"
+'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p
+|4,56,1,0,1542097174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/nejat.p"
+'9  767  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p
+|4,57,767,0,1542097143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p"
 
 # Jumplist (newest first):
+-'  966  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c
+|4,39,966,10,1542097614,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c"
 -'  461  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c
 |4,39,461,0,1542097548,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c
@@ -2146,10 +2158,15 @@ $
 |4,39,767,0,1542097143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p"
 -'  767  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p
 |4,39,767,0,1542097143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p"
--'  767  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p
-|4,39,767,0,1542097143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/get_routes_automesh_nejkab.p"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c
+	*	1542097613	0
+	"	966	10
+	^	966	11
+	.	966	10
+	+	966	10
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.c
 	*	1542097458	0
@@ -2305,6 +2322,12 @@ $
 	+	1475	0
 	+	1477	0
 	+	1854	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/NERD_tree_1
+	*	1542024002	0
+	"	7	0
+	.	1	0
+	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/NERD_tree_1
 	*	1542021671	0
@@ -2517,10 +2540,6 @@ $
 	*	1541749630	0
 	"	25	18
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/stats_mngr.c
-	*	1541747794	0
-	"	1231	36
-
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/wireless/Makefile
 	*	1541747792	0
 	"	28	30
@@ -2624,12 +2643,6 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
 	*	1541592116	0
 	"	4735	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/manager/NERD_tree_1
-	*	1541591112	0
-	"	70	10
-	.	1	0
-	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/aci/lib/aci.h
 	*	1541584597	0
