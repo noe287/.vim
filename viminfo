@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/SMAR
+~MSle0~/asfafasd
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,7 +21,17 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1542036032,,"qa!"
+|2,0,1542090874,,"qa!"
+:Agit
+|2,0,1542089789,,"Agit"
+:Rg mesh_peer_list
+|2,0,1542023320,,"Rg mesh_peer_list"
+:Rg -tc mesh_peer_list_t
+|2,0,1542021372,,"Rg -tc mesh_peer_list_t"
+:w
+|2,0,1542021232,,"w"
+:Rg -tc bcm_common_apply_config
+|2,0,1542013268,,"Rg -tc bcm_common_apply_config"
 :Rg AWF_CONN_INFO
 |2,0,1542035545,,"Rg AWF_CONN_INFO"
 :Rg AWF_CONN_EVENT
@@ -32,8 +42,6 @@ $
 |2,0,1542035505,,"F wireless_mngr.c"
 :wqa!
 |2,0,1542034367,,"wqa!"
-:w
-|2,0,1542034364,,"w"
 :Rg -tc bcm_common_send_target_ap_rssi
 |2,0,1542033380,,"Rg -tc bcm_common_send_target_ap_rssi"
 :Rg -tc ioctl
@@ -152,8 +160,6 @@ $
 |2,0,1541584430,,"agit-log"
 :Agit-log
 |2,0,1541584427,,"Agit-log"
-:Agit
-|2,0,1541584423,,"Agit"
 :Rg  MANAGER_STATS
 |2,0,1541584259,,"Rg  MANAGER_STATS"
 :Rg -tc MANAGER_STATS
@@ -860,12 +866,16 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+? \r$
+|2,1,1542089794,,"\\r$"
+?/asfafasd
+|2,1,1542013291,47,"asfafasd"
+?/apply
+|2,1,1542013257,47,"apply"
 ?/SMAR
 |2,1,1542033355,47,"SMAR"
 ?/rssi
 |2,1,1542026878,47,"rssi"
-?/apply
-|2,1,1542026829,47,"apply"
 ? \<AUTOMESH_IOCTL_GET_ROUTES\>
 |2,1,1541766489,,"\\<AUTOMESH_IOCTL_GET_ROUTES\\>"
 ? \<MESH_IOCTL_PATH_STR\>
@@ -918,8 +928,6 @@ $
 |2,1,1541601068,47,"ifeq"
 ?/USE_CHARACTER
 |2,1,1541605321,47,"USE_CHARACTER"
-? \r$
-|2,1,1541584549,,"\\r$"
 ?/Agit
 |2,1,1541584338,47,"Agit"
 ?/AWF_CO
@@ -1879,13 +1887,9 @@ $
 "0	LINE	0
 		printk("[%s:%d]",__func__, __LINE__);
 |3,0,0,1,1,0,1541747738,"	printk(\"[%s:%d]\",__func__, __LINE__);"
-"1	LINE	0
-		/* dev         id     hwaddr          metric    seq      age     idle [ seq0 / metric0 /devid0][ seq1 / metric1 /devid1][ seq2 / metric2 /devid2] flags */
-		/* eth1         6  00:50:56:a7:eb:a0       0    247      0.7      0.7 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */
-		/* eth1         6  ac:e2:d3:a1:53:33       0    247    235.7    235.7 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */
-		/* eth1         6  18:28:61:b0:d2:21       0    247    253.9    253.9 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */
-|3,0,1,1,4,0,1541775973,"	/* dev         id     hwaddr          metric    seq      age     idle [ seq0 / metric0 /devid0][ seq1 / metric1 /devid1][ seq2 / metric2 /devid2] flags */","	/* eth1         6  00:50:56:a7:eb:a0       0    247      0.7      0.7 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */",>157
-|<"	/* eth1         6  ac:e2:d3:a1:53:33       0    247    235.7    235.7 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */","	/* eth1         6  18:28:61:b0:d2:21       0    247    253.9    253.9 [   247/        0/     6][   247/        0/     6][   247/        0/     6] 0 0 0 */"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1542013638,""
 "2	LINE	0
 	
 |3,0,2,1,1,0,1541764790,""
@@ -1913,35 +1917,37 @@ $
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	[%s:%d] 
-|3,1,36,0,1,0,1541752925,"[%s:%d] "
+|3,0,36,0,1,0,1541752925,"[%s:%d] "
 
 # global variables:
 
 # File marks:
-'0  4721  26  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
-|4,48,4721,26,1542036032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c"
-'1  1468  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
-|4,49,1468,0,1542034367,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
-'2  1854  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
-|4,50,1854,0,1542026930,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
-'3  387  76  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/platform_common.c
-|4,51,387,76,1542025890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/platform_common.c"
-'4  85  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/statistics-collector/statistics-collector-bskyb-Mesh-1.1/src/routes/routes.c
-|4,52,85,42,1542025889,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/statistics-collector/statistics-collector-bskyb-Mesh-1.1/src/routes/routes.c"
-'5  244  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
-|4,53,244,3,1542025886,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
-'6  4  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid-Mesh-1.1/NERD_tree_1
-|4,54,4,1,1542021640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid-Mesh-1.1/NERD_tree_1"
-'7  4  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG
-|4,55,4,23,1542009964,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG"
-'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/a.p
-|4,56,1,0,1542009432,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/a.p"
-'9  30  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/my_new_patch.p
-|4,57,30,28,1542009420,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/my_new_patch.p"
+'0  1127  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,48,1127,0,1542090874,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+'1  4721  26  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
+|4,49,4721,26,1542036032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c"
+'2  1468  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
+|4,50,1468,0,1542034367,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
+'3  1854  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
+|4,51,1854,0,1542026930,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
+'4  387  76  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/platform_common.c
+|4,52,387,76,1542025890,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/platform_common.c"
+'5  85  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/statistics-collector/statistics-collector-bskyb-Mesh-1.1/src/routes/routes.c
+|4,53,85,42,1542025889,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/statistics-collector/statistics-collector-bskyb-Mesh-1.1/src/routes/routes.c"
+'6  244  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,54,244,3,1542025886,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
+'7  4  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid-Mesh-1.1/NERD_tree_1
+|4,55,4,1,1542021640,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/wl-6.37.14.4803-sky-hybrid-Mesh-1.1/NERD_tree_1"
+'8  4  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG
+|4,56,4,23,1542009964,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG"
+'9  4  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG
+|4,57,4,23,1542009964,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  1127  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,1127,0,1542090874,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
 -'  4721  26  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
 |4,39,4721,26,1542036032,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c"
 -'  4678  19  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
@@ -2140,10 +2146,12 @@ $
 |4,39,558,10,1542026845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
 -'  543  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
 |4,39,543,10,1542026845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
--'  536  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
-|4,39,536,10,1542026845,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+	*	1542090872	0
+	"	1127	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-12_Pzt-17_02_43__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/physical_devices/wireless/wireless_common.c
 	*	1542036031	0
@@ -2215,6 +2223,24 @@ $
 	.	1	0
 	+	1	0
 
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/common/awf_common.h
+	*	1542026570	0
+	"	69	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/libawf/awf_types.h
+	*	1542024360	0
+	"	598	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm_common.c
+	*	1542024321	0
+	"	1855	31
+	.	1854	0
+	+	1462	0
+	+	1474	0
+	+	1475	0
+	+	1477	0
+	+	1854	0
+
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/wireless/NERD_tree_1
 	*	1542021671	0
 	"	9	0
@@ -2232,6 +2258,31 @@ $
 	"	4	1
 	.	1	0
 	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/engine_bcm.c
+	*	1542013272	0
+	"	294	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/NERD_tree_1
+	*	1542013253	0
+	"	20	0
+	.	1	0
+	+	1	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/engine_wl_common_lib.c
+	*	1542013246	0
+	"	521	113
+	n	521	113
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/-MiniBufExplorer-
+	*	1542013240	0
+	"	1	84
+	.	2	0
+	+	2	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/engine_common.c
+	*	1542013237	0
+	"	3365	13
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/.git/COMMIT_EDITMSG
 	*	1542009963	0
@@ -2651,12 +2702,6 @@ $
 	*	1541507546	0
 	"	50	1
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/-MiniBufExplorer-
-	*	1541507543	0
-	"	1	0
-	.	2	0
-	+	2	0
-
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/Makefile
 	*	1541506337	0
 	"	1	0
@@ -2692,86 +2737,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/0001-Issue-dassak.patch
 	*	1541496964	0
 	"	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/popenshowmacs.c
-	*	1541496615	0
-	"	80	22
-	^	82	35
-	.	82	35
-	+	8	0
-	+	10	0
-	+	41	14
-	+	60	10
-	+	88	16
-	+	92	16
-	+	5	31
-	+	6	25
-	+	24	24
-	+	86	26
-	+	83	29
-	+	60	0
-	+	39	0
-	+	83	0
-	+	85	0
-	+	82	35
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/readshowmacs.c
-	*	1541496615	0
-	"	18	27
-	^	18	28
-	.	18	27
-	+	4	33
-	+	6	0
-	+	11	18
-	+	26	43
-	+	18	75
-	+	22	0
-	+	18	41
-	+	23	0
-	+	19	31
-	+	20	4
-	+	22	0
-	+	21	16
-	+	18	27
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/br.c
-	*	1541429183	0
-	"	33	13
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/br.h
-	*	1541422624	0
-	"	20	5
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/include/events.h
-	*	1541421107	0
-	"	205	1
-
-> /usr/include/linux/if_bridge.h
-	*	1541421010	0
-	"	37	8
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-05_Pzt-14_05_04__18/airties-bskyb-mrbox-412-debug/manager/manager-1.27_sky-hybrid-Mesh-1.1/src/manager/modules/stats/Makefile
-	*	1541420162	0
-	"	11	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Eki-26_Cum-18_00_58__18/airties-bskyb-mrbox-412-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
-	*	1541419523	0
-	"	1270	4
-	^	1258	10
-	.	1260	56
-	+	1252	38
-	+	1251	0
-	+	1258	4
-	+	1260	4
-	+	1261	4
-	+	1258	4
-	+	1258	3
-	+	1252	21
-	+	1258	0
-	+	1260	1
-	+	1252	21
-	+	1260	48
-	+	1258	43
-	+	1257	0
-	+	1258	9
-	+	1260	56
