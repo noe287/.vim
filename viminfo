@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<br_find_port_no\>
+~MSle0~/find
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -21,9 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :qa!
-|2,0,1542203744,,"qa!"
+|2,0,1542206354,,"qa!"
 :w
-|2,0,1542202744,,"w"
+|2,0,1542204461,,"w"
+:Ww
+|2,0,1542204337,,"Ww"
+:we
+|2,0,1542204336,,"we"
 :ww
 |2,0,1542202096,,"ww"
 :149
@@ -64,8 +68,6 @@ $
 |2,0,1542189202,,"s '/count/n/'"
 :s '/count/n/ g'
 |2,0,1542189198,,"s '/count/n/ g'"
-:we
-|2,0,1542189172,,"we"
 :Agit --dir=wl-6.37.14.4803-sky-hybrid-Mesh-1.1/
 |2,0,1542025956,,"Agit --dir=wl-6.37.14.4803-sky-hybrid-Mesh-1.1/"
 :Agit
@@ -898,6 +900,8 @@ $
 |2,0,1533125023,,"hi"
 
 # Search String History (newest to oldest):
+?/find
+|2,1,1542203913,47,"find"
 ? \<br_find_port_no\>
 |2,1,1542203174,,"\\<br_find_port_no\\>"
 ? \<br_find_port_name\>
@@ -1951,116 +1955,183 @@ $
 
 # Registers:
 "0	LINE	0
-		printf("%s:%d\n",__func__,__LINE__ );
-|3,0,0,1,1,0,1542202151,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
+					printf("GW Mac address("ETHER_STR") is found in bridge's fdb with port_no:%d\n",ETHER_ADDR(f->mac_addr),f->port_no);
+|3,0,0,1,1,0,1542204429,"				printf(\"GW Mac address(\"ETHER_STR\") is found in bridge's fdb with port_no:%d\\n\",ETHER_ADDR(f->mac_addr),f->port_no);"
 "1	LINE	0
-		printf("")
-|3,0,1,1,1,0,1542202442,"	printf(\"\")"
+			printf("%s:%d\n",__func__,__LINE__ );
+|3,0,1,1,1,0,1542203860,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1542202163,""
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,0,2,1,1,0,1542203856,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "3	LINE	0
-	 closedir(d);
-|3,0,3,1,1,0,1542202162," closedir(d);"
+			printf("%s:%d\n",__func__,__LINE__ );
+|3,0,3,1,1,0,1542203855,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "4	LINE	0
-		printf("2 %s:%d\n",__func__,__LINE__ );
-|3,0,4,1,1,0,1542202118,"	printf(\"2 %s:%d\\n\",__func__,__LINE__ );"
+			printf("%s:%d port:%s\n",__func__,__LINE__, namelist[i]->d_name);
+|3,0,4,1,1,0,1542203854,"		printf(\"%s:%d port:%s\\n\",__func__,__LINE__, namelist[i]->d_name);"
 "5	LINE	0
-					printf("%s:%d\n",__func__,__LINE__ );
-|3,0,5,1,1,0,1542202026,"				printf(\"%s:%d\\n\",__func__,__LINE__ );"
-"6	CHAR	0
-	"%.2x:%.2x:%.2x:%.2x:%.2x:%.2x"
-	
-|3,0,6,0,2,0,1542200937,"\"%.2x:%.2x:%.2x:%.2x:%.2x:%.2x\"",""
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,0,5,1,1,0,1542203810,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
+"6	LINE	0
+		printf("Mac address:"ETHER_STR"\n",ETHER_ADDR(ent->mac_addr));
+|3,0,6,1,1,0,1542203806,"	printf(\"Mac address:\"ETHER_STR\"\\n\",ETHER_ADDR(ent->mac_addr));"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1542200421,""
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,0,7,1,1,0,1542203767,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1542200328,""
+		printf("")
+|3,0,8,1,1,0,1542202442,"	printf(\"\")"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1542200325,""
+|3,0,9,1,1,0,1542202163,""
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
 ""-	CHAR	0
-	i
-|3,1,36,0,1,0,1542202722,"i"
+	,
+|3,1,36,0,1,0,1542204458,","
 
 # global variables:
 
 # File marks:
-'0  191  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,48,191,15,1542203744,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'1  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,49,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'0  218  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,48,218,4,1542206354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+'1  191  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,49,191,15,1542203744,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 '2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,50,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'3  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
-|4,51,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,51,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 '4  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
 |4,52,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
-'5  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,53,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'5  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,53,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
 '6  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,54,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'7  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,55,1,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'7  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,55,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 '8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,56,1,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'9  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,57,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,57,1,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 
 # Jumplist (newest first):
+-'  218  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,218,4,1542206354,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  217  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,217,13,1542204330,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  233  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,233,0,1542204180,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  114  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,114,0,1542204179,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  59  32  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,59,32,1542203915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  58  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,58,21,1542203915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  219  89  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,219,89,1542203913,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  163  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,163,16,1542203834,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+|4,39,1,0,1542203757,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c"
+-'  191  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,191,15,1542203744,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  191  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,191,15,1542203744,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  223  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,223,37,1542203109,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  223  37  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,223,37,1542203109,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  170  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,170,8,1542202949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  170  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,170,8,1542202949,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  98  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,98,11,1542202942,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  98  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,98,11,1542202942,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  135  20  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,135,20,1542202941,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  135  20  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,135,20,1542202941,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  192  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,192,12,1542202938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  192  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,192,12,1542202938,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  217  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,217,36,1542202873,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  217  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,217,36,1542202873,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  79  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,79,11,1542202850,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  79  11  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,79,11,1542202850,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  165  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,165,9,1542202488,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  146  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,146,16,1542202488,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  165  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,165,9,1542202488,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  146  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,146,16,1542202488,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  85  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,85,8,1542202443,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  85  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,85,8,1542202443,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  164  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,164,23,1542202423,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  164  23  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,164,23,1542202423,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  166  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,166,8,1542202192,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  166  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,166,8,1542202192,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  122  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,122,8,1542201972,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  122  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,122,8,1542201972,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  143  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,143,24,1542201097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  143  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,143,24,1542201097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  63  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,63,8,1542201094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  63  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,63,8,1542201094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  232  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,232,16,1542201075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  232  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,232,16,1542201075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  206  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,206,8,1542201065,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  205  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,205,16,1542201065,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  206  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,206,8,1542201065,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  205  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,205,16,1542201065,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  142  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,142,24,1542201063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  142  24  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,142,24,1542201063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  112  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,112,15,1542201062,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  112  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,112,15,1542201062,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  85  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
+|4,39,85,15,1542200931,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
 -'  85  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c
 |4,39,85,15,1542200931,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/routes.c"
 -'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,3,0,1542200922,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,3,0,1542200922,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,1,0,1542200915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,1,0,1542200915,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
@@ -2069,6 +2140,16 @@ $
 |4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
 -'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
 |4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+-'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+-'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+-'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+-'  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
@@ -2081,10 +2162,24 @@ $
 |4,39,174,4,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  24  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,24,18,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  173  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,173,4,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  24  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,24,18,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  174  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,174,4,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  24  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,24,18,1542200361,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  28  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,28,78,1542199625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  28  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,28,78,1542199625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  28  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,28,78,1542199625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  28  78  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,28,78,1542199625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,1,0,1542198076,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,1,0,1542198076,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
@@ -2093,6 +2188,22 @@ $
 |4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
 -'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
 |4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
 -'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
@@ -2105,116 +2216,40 @@ $
 |4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
 -'  13  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,13,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,1,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  13  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,13,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,1,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  13  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,13,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,1,0,1542198045,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,21,0,1542198043,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,21,0,1542198043,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
-|4,39,21,0,1542198043,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
--'  16  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,16,8,1542197999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  16  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,16,8,1542197999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  16  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,16,8,1542197999,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,39,1,0,1542197891,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189277,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189259,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189259,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189259,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,1,0,1542189259,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,23,0,1542189255,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/br.c
+	*	1542206353	0
+	"	218	4
+	^	218	65
+	.	218	64
+	+	56	0
+	+	55	68
+	+	93	0
+	+	148	0
+	+	163	23
+	+	188	0
+	+	192	0
+	+	199	0
+	+	228	0
+	+	217	62
+	+	222	53
+	+	62	23
+	+	163	0
+	+	217	14
+	+	222	51
+	+	217	13
+	+	62	0
+	+	61	0
+	+	217	41
+	+	218	64
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/NERD_tree_1
+	*	1542203757	0
+	"	9	0
+	.	1	0
+	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 	*	1542203743	0
@@ -2271,12 +2306,6 @@ $
 	+	235	154
 	+	235	0
 	+	226	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/NERD_tree_1
-	*	1542200922	0
-	"	33	0
-	.	1	0
-	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/-MiniBufExplorer-
 	*	1542200922	0
@@ -2896,7 +2925,3 @@ $
 	"	12	0
 	.	1	0
 	+	1	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/airwall.p
-	*	1541520027	0
-	"	220	1
