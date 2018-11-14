@@ -20,8 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1542200592,,"q!"
 :w
-|2,0,1542188527,,"w"
+|2,0,1542200543,,"w"
+:y
+|2,0,1542200448,,"y"
 :W
 |2,0,1542188525,,"W"
 :EraseBadWhitespace
@@ -42,8 +46,6 @@ $
 |2,0,1542198075,,"wqa!"
 :e br.h
 |2,0,1542198029,,"e br.h"
-:q!
-|2,0,1542189268,,"q!"
 :%s /count/n/g
 |2,0,1542189243,,"%s /count/n/g"
 :%s /count/n/g'
@@ -304,8 +306,6 @@ $
 |2,0,1541087450,,"w,"
 :6535
 |2,0,1541087405,,"6535"
-:y
-|2,0,1541087347,,"y"
 :6362
 |2,0,1541087307,,"6362"
 :6488
@@ -1936,68 +1936,72 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	#include <dirent.h>
-|3,0,0,1,1,0,1542188967,"#include <dirent.h>"
+""0	LINE	0
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,1,0,1,1,0,1542200518,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "1	LINE	0
 	
-|3,0,1,1,1,0,1542200328,""
+|3,0,1,1,1,0,1542200421,""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1542200325,""
+|3,0,2,1,1,0,1542200328,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1542200324,""
+|3,0,3,1,1,0,1542200325,""
 "4	LINE	0
 	
 |3,0,4,1,1,0,1542200324,""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1542200323,""
+|3,0,5,1,1,0,1542200324,""
 "6	LINE	0
-	                pstPriv->connection.eConnectionMedium = ConnectionMedium_Unknown;
-|3,0,6,1,1,0,1542200237,"                pstPriv->connection.eConnectionMedium = ConnectionMedium_Unknown;"
+	
+|3,0,6,1,1,0,1542200323,""
 "7	LINE	0
-	        snprintf(pstPriv->connection.acDefaulGwIface, sizeof(pstPriv->connection.acDefaulGwIface), port_name);
-|3,0,7,1,1,0,1542198115,"        snprintf(pstPriv->connection.acDefaulGwIface, sizeof(pstPriv->connection.acDefaulGwIface), port_name);"
+	                pstPriv->connection.eConnectionMedium = ConnectionMedium_Unknown;
+|3,0,7,1,1,0,1542200237,"                pstPriv->connection.eConnectionMedium = ConnectionMedium_Unknown;"
 "8	LINE	0
-	        SetConnectionMedium(pstInst, pstPriv->connection.acDefaulGwIface);
-|3,0,8,1,1,0,1542198113,"        SetConnectionMedium(pstInst, pstPriv->connection.acDefaulGwIface);"
+	        snprintf(pstPriv->connection.acDefaulGwIface, sizeof(pstPriv->connection.acDefaulGwIface), port_name);
+|3,0,8,1,1,0,1542198115,"        snprintf(pstPriv->connection.acDefaulGwIface, sizeof(pstPriv->connection.acDefaulGwIface), port_name);"
 "9	LINE	0
-	        StatsPriv_s *pstPriv = (StatsPriv_s *) pstInst->pvData;
-|3,0,9,1,1,0,1542198099,"        StatsPriv_s *pstPriv = (StatsPriv_s *) pstInst->pvData;"
+	        SetConnectionMedium(pstInst, pstPriv->connection.acDefaulGwIface);
+|3,0,9,1,1,0,1542198113,"        SetConnectionMedium(pstInst, pstPriv->connection.acDefaulGwIface);"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1542189158," "
+|3,0,36,0,1,0,1542200502," "
 
 # global variables:
 
 # File marks:
-'0  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
-|4,48,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
-'1  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,49,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'2  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,50,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'3  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-|4,51,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
-'4  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,52,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
-'5  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,53,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
-'6  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,54,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
-'7  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,55,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
-'8  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,56,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
-'9  8  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,57,8,10,1542189265,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
+'0  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,48,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'1  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,49,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
+'2  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,50,26,18,1542200364,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,51,1,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,52,1,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'5  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,53,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'6  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,54,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+'7  23  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
+|4,55,23,0,1542189303,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
+'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
+|4,56,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
+'9  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
+|4,57,1,0,1542189268,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
 
 # Jumplist (newest first):
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+|4,39,1,0,1542200592,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
+|4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
 -'  217  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
 |4,39,217,8,1542200378,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c"
 -'  26  18  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
@@ -2014,6 +2018,10 @@ $
 |4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
 -'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
 |4,39,10,0,1542198075,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
+-'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
+|4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
 -'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
 |4,39,9,0,1542198063,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h"
 -'  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
@@ -2190,51 +2198,41 @@ $
 |4,39,30,12,1542189174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
 -'  30  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
 |4,39,30,12,1542189174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  30  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,30,12,1542189174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  30  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,30,12,1542189174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  30  12  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,30,12,1542189174,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
--'  31  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c
-|4,39,31,3,1542189151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/dirent.c"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
+	*	1542200589	0
+	"	1	0
+	.	1	0
+	+	1	18
+	+	1	0
+	+	1	54
+	+	1	1
+	+	1	9
+	+	1	0
+	+	1	25
+	+	1	0
+	+	1	23
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	64
+	+	1	192
+	+	1	32
+	+	1	26
+	+	1	0
+	+	1	21
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/libbridge/libbridge_init.c
 	*	1542200378	0
 	"	217	8
 	.	59	0
 	+	59	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.c
-	*	1542200364	0
-	"	26	18
-	^	24	50
-	.	33	0
-	+	197	18
-	+	198	0
-	+	16	54
-	+	32	1
-	+	16	9
-	+	1	0
-	+	12	25
-	+	18	0
-	+	25	23
-	+	29	0
-	+	28	15
-	+	28	0
-	+	24	64
-	+	22	192
-	+	22	32
-	+	20	26
-	+	25	0
-	+	20	21
-	+	24	49
-	+	29	0
-	+	30	0
-	+	28	0
-	+	33	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/br.h
 	*	1542198062	0
