@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1542286258,,"wq!"
+|2,0,1542290931,,"wq!"
 :w
-|2,0,1542286232,,"w"
+|2,0,1542290929,,"w"
 :wq
 |2,0,1542286131,,"wq"
 :Rg -tc __LINE__
@@ -2016,32 +2016,32 @@ $
 					printf("GW Mac address("ETHER_STR") is found in bridge's fdb with port_no:%d\n",ETHER_ADDR(f->mac_addr),f->port_no);
 |3,0,0,1,1,0,1542204429,"				printf(\"GW Mac address(\"ETHER_STR\") is found in bridge's fdb with port_no:%d\\n\",ETHER_ADDR(f->mac_addr),f->port_no);"
 ""1	LINE	0
-			printf("%s:%d\n",__func__,__LINE__ );
-|3,1,1,1,1,0,1542203860,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
+	gcc -c br.c
+|3,1,1,1,1,0,1542290889,"gcc -c br.c"
 "2	LINE	0
-		printf("%s:%d\n",__func__,__LINE__ );
-|3,0,2,1,1,0,1542203856,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
-"3	LINE	0
 			printf("%s:%d\n",__func__,__LINE__ );
-|3,0,3,1,1,0,1542203855,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
+|3,0,2,1,1,0,1542203860,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
+"3	LINE	0
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,0,3,1,1,0,1542203856,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "4	LINE	0
-			printf("%s:%d port:%s\n",__func__,__LINE__, namelist[i]->d_name);
-|3,0,4,1,1,0,1542203854,"		printf(\"%s:%d port:%s\\n\",__func__,__LINE__, namelist[i]->d_name);"
+			printf("%s:%d\n",__func__,__LINE__ );
+|3,0,4,1,1,0,1542203855,"		printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "5	LINE	0
-		printf("%s:%d\n",__func__,__LINE__ );
-|3,0,5,1,1,0,1542203810,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
+			printf("%s:%d port:%s\n",__func__,__LINE__, namelist[i]->d_name);
+|3,0,5,1,1,0,1542203854,"		printf(\"%s:%d port:%s\\n\",__func__,__LINE__, namelist[i]->d_name);"
 "6	LINE	0
-		printf("Mac address:"ETHER_STR"\n",ETHER_ADDR(ent->mac_addr));
-|3,0,6,1,1,0,1542203806,"	printf(\"Mac address:\"ETHER_STR\"\\n\",ETHER_ADDR(ent->mac_addr));"
-"7	LINE	0
 		printf("%s:%d\n",__func__,__LINE__ );
-|3,0,7,1,1,0,1542203767,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
+|3,0,6,1,1,0,1542203810,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
+"7	LINE	0
+		printf("Mac address:"ETHER_STR"\n",ETHER_ADDR(ent->mac_addr));
+|3,0,7,1,1,0,1542203806,"	printf(\"Mac address:\"ETHER_STR\"\\n\",ETHER_ADDR(ent->mac_addr));"
 "8	LINE	0
-		printf("")
-|3,0,8,1,1,0,1542202442,"	printf(\"\")"
+		printf("%s:%d\n",__func__,__LINE__ );
+|3,0,8,1,1,0,1542203767,"	printf(\"%s:%d\\n\",__func__,__LINE__ );"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1542202163,""
+		printf("")
+|3,0,9,1,1,0,1542202442,"	printf(\"\")"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
@@ -2052,28 +2052,34 @@ $
 # global variables:
 
 # File marks:
-'0  8  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,48,8,6,1542286258,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'1  4  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,49,4,14,1542286224,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'2  4  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,50,4,14,1542286224,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'3  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,51,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'4  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,52,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'5  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,53,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'0  6  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,48,6,9,1542290931,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'1  10  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,49,10,6,1542286258,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'2  8  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,50,8,6,1542286258,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'3  6  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,51,6,14,1542286224,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'4  4  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,52,4,14,1542286224,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'5  4  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,53,4,14,1542286224,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 '6  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,54,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'7  2  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,55,2,14,1542286026,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'8  2  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,56,2,14,1542286026,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'9  2  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,57,2,14,1542286026,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'7  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,55,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'8  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,56,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'9  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,57,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 
 # Jumplist (newest first):
+-'  6  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,6,9,1542290931,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542286263,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,6,1542286258,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  8  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,8,6,1542286258,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
@@ -2086,6 +2092,8 @@ $
 |4,39,1,0,1542286148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  1  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,1,8,1542286138,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  4  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,4,14,1542286026,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  2  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,2,14,1542286026,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  2  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
@@ -2224,72 +2232,72 @@ $
 |4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
 -'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
 |4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  12  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
-|4,39,12,52,1542282459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib
-|4,39,1,0,1542282429,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/air-rm-bskyb-Mesh-1.1/Makefile.lib"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
+-'  43  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,43,0,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+-'  1600  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c
+|4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
+-'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
+|4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
+-'  43  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,43,0,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+-'  1600  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c
+|4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
+-'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
+|4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
+-'  43  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,43,0,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+-'  1600  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c
+|4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
+-'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
+|4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
+-'  43  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,43,0,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+-'  1600  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c
+|4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
+-'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
+|4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
+-'  43  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c
+|4,39,43,0,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/awf-ng/awf-ng-1.1-devel-0.0.14-Mesh-1.1/src/engine/broadcom/broadcom_wllib.c"
+-'  1600  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c
+|4,39,1600,9,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/air-wall-bskyb-Mesh-1.1/lib/sky/sky.c"
+-'  230  14  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile
+|4,39,230,14,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-rm/Makefile"
+-'  213  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
+|4,39,213,1,1542284534,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c"
 
 # History of marks within files (newest to oldest):
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-	*	1542286257	0
-	"	8	6
-	^	8	7
-	.	8	6
-	+	3	0
+	*	1542290931	0
+	"	6	9
+	^	3	14
+	.	3	13
+	+	5	0
 	+	1	7
-	+	2	14
+	+	4	14
 	+	1	7
-	+	5	1
+	+	7	1
 	+	1	9
-	+	2	10
-	+	8	6
+	+	4	10
+	+	10	6
+	+	6	5
+	+	7	0
+	+	8	13
+	+	1	0
+	+	3	9
+	+	1	13
+	+	10	12
+	+	3	13
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/uhelper.c
 	*	1542284534	0
