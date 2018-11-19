@@ -21,9 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1542638651,,"q!"
+|2,0,1542638829,,"q!"
 :w
-|2,0,1542638527,,"w"
+|2,0,1542638682,,"w"
+:EraseBadWhitespace
+|2,0,1542638679,,"EraseBadWhitespace"
 :wq!
 |2,0,1542638227,,"wq!"
 :wqa!
@@ -98,8 +100,6 @@ $
 |2,0,1542201997,,"149"
 :y
 |2,0,1542200448,,"y"
-:EraseBadWhitespace
-|2,0,1542188515,,"EraseBadWhitespace"
 :Rg -tc alphasort
 |2,0,1542188497,,"Rg -tc alphasort"
 :Rg -tc find_port_name
@@ -124,6 +124,8 @@ $
 |2,0,1542189202,,"s '/count/n/'"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1542638679,,"\\s\\+$"
 ? \<include\>
 |2,1,1542291686,,"\\<include\\>"
 ?/wdfsgfsd
@@ -184,8 +186,6 @@ $
 |2,1,1542202029,47,"Mac"
 ?/free
 |2,1,1542201062,47,"free"
-? \s\+$
-|2,1,1542188515,,"\\s\\+$"
 ?/showma
 |2,1,1542187200,47,"showma"
 ? \<br_find_mac_port_name\>
@@ -318,34 +318,50 @@ $
 # global variables:
 
 # File marks:
-'0  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
-|4,48,1,0,1542638651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in"
-'1  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
-|4,49,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
-'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
-|4,50,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
-'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,51,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'4  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,52,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'5  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
-|4,53,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
-'6  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,54,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
-'7  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,55,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+'0  27  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh
+|4,48,27,41,1542638830,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh"
+'1  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
+|4,49,1,0,1542638651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in"
+'2  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
+|4,50,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
+'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
+|4,51,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
+'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,52,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'5  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,53,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'6  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,54,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+'7  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,55,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
 '8  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
 |4,56,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
-'9  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/manager/NERD_tree_1
-|4,57,4,0,1542638047,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/manager/NERD_tree_1"
+'9  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,57,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
 
 # Jumplist (newest first):
+-'  27  41  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh
+|4,39,27,41,1542638830,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh"
+-'  155  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh
+|4,39,155,1,1542638679,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh
+|4,39,1,0,1542638665,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
+|4,39,1,0,1542638651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
 |4,39,1,0,1542638651,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in"
 -'  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
 |4,39,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
 -'  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
 |4,39,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
+-'  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
+|4,39,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
+-'  24  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
+|4,39,24,0,1542638637,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
+|4,39,1,0,1542638625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
+|4,39,1,0,1542638625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
 |4,39,1,0,1542638625,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/README
@@ -358,6 +374,14 @@ $
 |4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
 |4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
+|4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
+|4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
+|4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in
+|4,39,1,0,1542638615,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/Makefile.in"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
@@ -374,6 +398,54 @@ $
 |4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,1,0,1542638581,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
+-'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
+|4,39,9,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  10  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
 |4,39,10,5,1542638228,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile"
 -'  9  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge_info_read/Makefile
@@ -438,110 +510,44 @@ $
 |4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
 -'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
 |4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,1,0,1542638148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  52  17  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
-|4,39,52,17,1542638143,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
--'  27  0  /usr/include/linux/if.h
-|4,39,27,0,1542638141,"/usr/include/linux/if.h"
--'  27  0  /usr/include/linux/if.h
-|4,39,27,0,1542638141,"/usr/include/linux/if.h"
--'  27  0  /usr/include/linux/if.h
-|4,39,27,0,1542638141,"/usr/include/linux/if.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
+-'  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h
+|4,39,2,0,1542638151,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-19_Pzt-16_14_52__18/airties-bskyb-mrbox-412-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/amioctl.h"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/install-sh
+	*	1542638829	0
+	"	27	41
+	.	118	0
+	+	118	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
 	*	1542638649	0
@@ -1311,9 +1317,3 @@ $
 	.	211	0
 	+	2	0
 	+	211	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/-MiniBufExplorer-
-	*	1541752504	0
-	"	1	24
-	.	2	0
-	+	2	0
