@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/stas
+~Msle0~/\<CONFIG_libxml2_EXTERNAL\>
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1542706482,,"q!"
 :wq!
 |2,0,1542699094,,"wq!"
 :w
 |2,0,1542697708,,"w"
-:q!
-|2,0,1542698149,,"q!"
 :EraseBadWhitespace
 |2,0,1542697607,,"EraseBadWhitespace"
 :wqa!
@@ -134,6 +134,10 @@ $
 |2,0,1542189202,,"s '/count/n/'"
 
 # Search String History (newest to oldest):
+? \<CONFIG_libxml2_EXTERNAL\>
+|2,1,1542706452,,"\\<CONFIG_libxml2_EXTERNAL\\>"
+?/external
+|2,1,1542706449,47,"external"
 ?/all
 |2,1,1542698107,47,"all"
 ?/clean
@@ -338,32 +342,48 @@ $
 # global variables:
 
 # File marks:
-'0  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-|4,48,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
-'1  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
-|4,49,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
-'2  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
-|4,50,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
-'3  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
-|4,51,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
-'4  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,52,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
-'5  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,53,4,0,1542697697,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
-'6  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-|4,54,8,0,1542697660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'0  52  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+|4,48,52,1,1542706482,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile"
+'1  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,49,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'2  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,50,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+'3  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,51,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+'4  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,52,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+'5  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,53,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+'6  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,54,4,0,1542697697,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 '7  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-|4,55,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+|4,55,8,0,1542697660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
 '8  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
 |4,56,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
-'9  7  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,57,7,42,1542697583,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+'9  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,57,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
 
 # Jumplist (newest first):
+-'  52  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+|4,39,52,1,1542706482,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile"
+-'  8  21  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+|4,39,8,21,1542706461,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile"
+-'  43  8  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+|4,39,43,8,1542706459,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+|4,39,1,0,1542706449,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile"
+-'  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,39,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
 -'  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
 |4,39,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
 -'  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  75  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,75,39,1542698129,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  163  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,163,52,1542698129,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  75  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,75,39,1542698129,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  163  52  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
@@ -380,14 +400,40 @@ $
 |4,39,130,38,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  129  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,129,29,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  156  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,156,4,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  154  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,154,29,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  134  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,134,4,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  132  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,132,29,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  130  38  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,130,38,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  129  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,129,29,1542698128,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  110  51  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,110,51,1542698127,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  106  63  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,106,63,1542698127,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  110  51  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,110,51,1542698127,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  106  63  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,106,63,1542698127,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  80  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,80,4,1542698126,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  80  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,80,4,1542698126,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  167  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,167,6,1542698107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  167  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,167,6,1542698107,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  166  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,166,6,1542698106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  165  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,165,0,1542698106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  162  46  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,162,46,1542698106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  166  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,166,6,1542698106,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  165  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
@@ -400,16 +446,36 @@ $
 |4,39,169,6,1542698105,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  168  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,168,6,1542698105,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  161  15  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,161,15,1542698105,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  169  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,169,6,1542698105,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  168  6  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,168,6,1542698105,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  159  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,159,5,1542698097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  159  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,159,5,1542698097,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,41,0,1542698088,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  41  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,41,0,1542698088,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,39,1,0,1542698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,1,0,1542698050,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
 |4,39,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
 -'  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
 |4,39,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+-'  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,39,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+-'  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,39,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,39,1,0,1542698031,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,39,1,0,1542698031,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
 |4,39,1,0,1542698031,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
@@ -422,6 +488,22 @@ $
 |4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
 -'  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
 |4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,1,0,1542697978,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,1,0,1542697978,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,1,0,1542697978,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,39,1,0,1542697978,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
 |4,39,1,0,1542697978,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
@@ -446,6 +528,22 @@ $
 |4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 -'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
 |4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+-'  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,39,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 -'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
 |4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 -'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
@@ -466,102 +564,12 @@ $
 |4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 -'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
 |4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,299,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  298  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,299,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  298  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,299,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  298  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,299,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  298  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  300  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,300,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  299  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,299,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  298  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,298,0,1542697954,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  913  9  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,913,9,1542697953,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  304  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,304,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  305  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/libxml2/Makefile
+	*	1542706477	0
+	"	52	1
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
 	*	1542699093	0
@@ -1387,7 +1395,3 @@ $
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing-prv.h
 	*	1542007741	0
 	"	103	11
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/automesh/automesh-2.0-sky-hybrid-rssi-Mesh-1.1/src/modules/routing.h
-	*	1541777238	0
-	"	43	0
