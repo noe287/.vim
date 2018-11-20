@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/all
+~MSle0~/stas
 
 # Last Substitute Search Pattern:
 ~MSle0&nejat
@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1542699094,,"wq!"
+:w
+|2,0,1542697708,,"w"
 :q!
 |2,0,1542698149,,"q!"
-:wq!
-|2,0,1542697618,,"wq!"
-:w
-|2,0,1542697617,,"w"
 :EraseBadWhitespace
 |2,0,1542697607,,"EraseBadWhitespace"
 :wqa!
@@ -338,28 +338,30 @@ $
 # global variables:
 
 # File marks:
-'0  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
-|4,48,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
-'1  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
-|4,49,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
-'2  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
-|4,50,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
-'3  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,51,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
-'4  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,52,4,0,1542697697,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
-'5  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-|4,53,8,0,1542697660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'0  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,48,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'1  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+|4,49,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
+'2  27  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+|4,50,27,1,1542698034,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys"
+'3  359  1  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+|4,51,359,1,1542698027,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build"
+'4  301  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+|4,52,301,0,1542697956,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
+'5  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,53,4,0,1542697697,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 '6  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-|4,54,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
-'7  7  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,55,7,42,1542697583,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
-'8  7  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,56,7,42,1542697583,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
-'9  9  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/makefile
-|4,57,9,0,1542697520,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/makefile"
+|4,54,8,0,1542697660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'7  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,55,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'8  8  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,56,8,0,1542697618,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
+'9  7  42  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,57,7,42,1542697583,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 
 # Jumplist (newest first):
+-'  8  29  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
+|4,39,8,29,1542699094,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile"
 -'  151  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
 |4,39,151,0,1542698149,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile"
 -'  75  39  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
@@ -558,45 +560,14 @@ $
 |4,39,305,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 -'  302  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
 |4,39,302,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
--'  303  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-|4,39,303,0,1542697950,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile"
 
 # History of marks within files (newest to oldest):
 
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
-	*	1542698147	0
-	"	151	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
-	*	1542698034	0
-	"	27	1
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
-	*	1542698026	0
-	"	359	1
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
-	*	1542697955	0
-	"	301	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-	*	1542697696	0
-	"	4	0
-	^	7	43
-	.	7	42
-	+	3	0
-	+	1	0
-	+	6	0
-	+	3	0
-	+	5	10
-	+	10	6
-	+	7	42
-
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/Makefile
-	*	1542697659	0
-	"	8	0
-	^	8	1
-	.	8	0
+	*	1542699093	0
+	"	8	29
+	^	8	30
+	.	8	30
 	+	3	0
 	+	1	10
 	+	20	0
@@ -629,7 +600,36 @@ $
 	+	8	0
 	+	9	11
 	+	10	13
-	+	8	0
+	+	8	30
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/manager/Makefile
+	*	1542698147	0
+	"	151	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.bsys
+	*	1542698034	0
+	"	27	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile.build
+	*	1542698026	0
+	"	359	1
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Kas-19_Pzt-17_33_11__18/airties-bskyb-viper-debug/Makefile
+	*	1542697955	0
+	"	301	0
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+	*	1542697696	0
+	"	4	0
+	^	7	43
+	.	7	42
+	+	3	0
+	+	1	0
+	+	6	0
+	+	3	0
+	+	5	10
+	+	10	6
+	+	7	42
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/makefile
 	*	1542697518	0
