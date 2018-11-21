@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1542813650,,"wq!"
+:w
+|2,0,1542813627,,"w"
 :q!
 |2,0,1542813491,,"q!"
-:wq!
-|2,0,1542813469,,"wq!"
-:w
-|2,0,1542813308,,"w"
 :Q!
 |2,0,1542813323,,"Q!"
 :wqa!
@@ -307,67 +307,71 @@ $
 	clean:
 		rm $(objects)
 |3,0,0,1,3,0,1542638985,".PHONY : clean","clean:","	rm $(objects)"
-"1	LINE	0
+""1	LINE	0
 	
-|3,0,1,1,1,0,1542697558,""
+|3,1,1,1,1,0,1542813626,""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1542697554,""
+|3,0,2,1,1,0,1542813625,""
 "3	LINE	0
-		$(MAKE) -C $@
-|3,0,3,1,1,0,1542697551,"	$(MAKE) -C $@"
+	files = foo.elc bar.o lose.o
+|3,0,3,1,1,0,1542813602,"files = foo.elc bar.o lose.o"
 "4	LINE	0
-	$(SUBDIRS):
-|3,0,4,1,1,0,1542697551,"$(SUBDIRS):"
+		emacs -f batch-byte-compile $<
+|3,0,4,1,1,0,1542813596,"	emacs -f batch-byte-compile $<"
 "5	LINE	0
-	SUBDIRS = src
-|3,0,5,1,1,0,1542697547,"SUBDIRS = src"
+	$(filter %.elc,$(files)): %.elc: %.el
+|3,0,5,1,1,0,1542813596,"$(filter %.elc,$(files)): %.elc: %.el"
 "6	LINE	0
-	# foo: baz
-|3,0,6,1,1,0,1542697487,"# foo: baz"
+	
+|3,0,6,1,1,0,1542697558,""
 "7	LINE	0
 	
-|3,0,7,1,1,0,1542639149,""
+|3,0,7,1,1,0,1542697554,""
 "8	LINE	0
-	.PHONY : clean
-	clean:
-		rm $(objects)
-|3,0,8,1,3,0,1542291250,".PHONY : clean","clean:","	rm $(objects)"
+		$(MAKE) -C $@
+|3,0,8,1,1,0,1542697551,"	$(MAKE) -C $@"
 "9	LINE	0
-	gcc -c br.c
-|3,0,9,1,1,0,1542290889,"gcc -c br.c"
+	$(SUBDIRS):
+|3,0,9,1,1,0,1542697551,"$(SUBDIRS):"
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-""-	CHAR	0
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1542813467," "
+|3,0,36,0,1,0,1542813588," "
 
 # global variables:
 
 # File marks:
-'0  6  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,48,6,5,1542813491,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'1  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,49,6,0,1542813469,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'2  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,50,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'3  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,51,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'4  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,52,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'5  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-|4,53,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
-'6  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
-|4,54,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
-'7  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
-|4,55,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
-'8  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
-|4,56,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
-'9  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,57,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
+'0  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,48,10,0,1542813650,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'1  7  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,49,7,5,1542813491,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'2  6  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,50,6,5,1542813491,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'3  7  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,51,7,0,1542813469,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'4  6  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,52,6,0,1542813469,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'5  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,53,5,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'6  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,54,5,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'7  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,55,5,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'8  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,56,5,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+'9  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,57,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 
 # Jumplist (newest first):
+-'  10  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,39,10,0,1542813650,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,39,1,0,1542813580,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+-'  7  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,39,7,5,1542813491,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  6  5  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
 |4,39,6,5,1542813491,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
@@ -376,12 +380,22 @@ $
 |4,39,6,0,1542813469,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
 |4,39,1,0,1542813463,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+-'  5  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
+|4,39,5,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
 |4,39,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
 |4,39,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
 |4,39,4,0,1542813373,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
+|4,39,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
+|4,39,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
+|4,39,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
+|4,39,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
 |4,39,1,0,1542813325,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
@@ -416,6 +430,54 @@ $
 |4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 -'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
 |4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  4  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,4,0,1542813285,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
+|4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
 |4,39,1,0,1542813269,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile
@@ -488,97 +550,43 @@ $
 |4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
 |4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
--'  10  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh
-|4,39,10,31,1542721267,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/gh.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock
+|4,39,1,0,1542721611,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/.git/refs/remotes/origin/master.lock"
 
 # History of marks within files (newest to oldest):
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/Makefile.static
-	*	1542813491	0
-	"	6	5
-	^	6	1
-	.	6	0
-	+	6	34
+	*	1542813649	0
+	"	10	0
+	^	2	36
+	.	8	0
+	+	7	34
 	+	1	22
+	+	7	28
+	+	11	37
+	+	10	0
+	+	11	0
+	+	8	0
+	+	2	35
+	+	1	0
+	+	4	0
 	+	6	0
+	+	7	0
+	+	8	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/rc.upnpd
 	*	1542813324	0
