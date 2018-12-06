@@ -20,10 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:wqa!
+|2,0,1544100711,,"wqa!"
+:w
+|2,0,1544100650,,"w"
+:W
+|2,0,1544100649,,"W"
 :q!
 |2,0,1544100660,,"q!"
-:w
-|2,0,1544100448,,"w"
 :wq!
 |2,0,1544099742,,"wq!"
 :qa!
@@ -32,8 +36,6 @@ $
 |2,0,1544099509,,"Q!"
 :Wq!
 |2,0,1544097969,,"Wq!"
-:wqa!
-|2,0,1544097228,,"wqa!"
 :Rg -tc get_routes
 |2,0,1544090349,,"Rg -tc get_routes"
 :Rg -tc loop_fn
@@ -88,8 +90,6 @@ $
 |2,0,1542007841,,"Rg -tc __LINE__"
 :Rg -tc printk
 |2,0,1542007778,,"Rg -tc printk"
-:W
-|2,0,1542007734,,"W"
 :Rg -tc metric0
 |2,0,1541777192,,"Rg -tc metric0"
 :Rg -tc air_mesh_rt
@@ -385,31 +385,31 @@ $
 |3,0,0,1,1,0,1544100436,"	DIFF_NAME=$1_`date +%h-%d-%H_%M_%S_%a`.p"
 ""1	LINE	0
 	
-|3,1,1,1,1,0,1544100446,""
+|3,1,1,1,1,0,1544100639,""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1544100387,""
+|3,0,2,1,1,0,1544100639,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1544100387,""
+|3,0,3,1,1,0,1544100638,""
 "4	LINE	0
-	#DIFF_NAME="$1.p"
-|3,0,4,1,1,0,1544100348,"#DIFF_NAME=\"$1.p\""
+	params-${CONFIG_automesh} += HAS_MESH_1_0=y AUTOMESH_DIR=${BSPROOT}/automesh/${CONFIG_automesh_PATH}
+|3,0,4,1,1,0,1544100635,"params-${CONFIG_automesh} += HAS_MESH_1_0=y AUTOMESH_DIR=${BSPROOT}/automesh/${CONFIG_automesh_PATH}"
 "5	LINE	0
-	alias lsp="ls -CF $HOME/DataDrive/DEVEL/Patches"
-|3,0,5,1,1,0,1544100098,"alias lsp=\"ls -CF $HOME/DataDrive/DEVEL/Patches\""
+	
+|3,0,5,1,1,0,1544100446,""
 "6	LINE	0
 	
-|3,0,6,1,1,0,1544099479,""
+|3,0,6,1,1,0,1544100387,""
 "7	LINE	0
-	Character device config option added
-|3,0,7,1,1,0,1544099425,"Character device config option added"
+	
+|3,0,7,1,1,0,1544100387,""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1542813626,""
+	#DIFF_NAME="$1.p"
+|3,0,8,1,1,0,1544100348,"#DIFF_NAME=\"$1.p\""
 "9	LINE	0
-	
-|3,0,9,1,1,0,1542813625,""
+	alias lsp="ls -CF $HOME/DataDrive/DEVEL/Patches"
+|3,0,9,1,1,0,1544100098,"alias lsp=\"ls -CF $HOME/DataDrive/DEVEL/Patches\""
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
@@ -420,36 +420,46 @@ $
 # global variables:
 
 # File marks:
-'0  11  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile
-|4,48,11,0,1544100660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile"
-'1  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch
-|4,49,1,0,1544100472,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch"
-'2  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
-|4,50,38,28,1544100274,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
-'3  164  13  ~/.bashrc
-|4,51,164,13,1544100154,"~/.bashrc"
-'4  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
-|4,52,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
-'5  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,53,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
-'6  25  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,54,25,16,1544099562,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
-'7  24  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,55,24,16,1544099562,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
-'8  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,56,2,0,1544099511,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+'0  50  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile
+|4,48,50,0,1544100711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile"
+'1  11  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile
+|4,49,11,0,1544100660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile"
+'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch
+|4,50,1,0,1544100472,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch"
+'3  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
+|4,51,38,28,1544100274,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
+'4  164  13  ~/.bashrc
+|4,52,164,13,1544100154,"~/.bashrc"
+'5  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,53,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+'6  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,54,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+'7  25  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,55,25,16,1544099562,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+'8  24  16  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,56,24,16,1544099562,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 '9  2  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 |4,57,2,0,1544099511,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  50  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile
+|4,39,50,0,1544100711,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile"
 -'  11  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile
 |4,39,11,0,1544100660,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile
 |4,39,1,0,1544100619,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile
+|4,39,1,0,1544100573,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch
 |4,39,1,0,1544100472,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch
 |4,39,1,0,1544100472,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch
+|4,39,1,0,1544100472,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/upatch"
+-'  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
+|4,39,38,28,1544100274,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
+-'  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
+|4,39,38,28,1544100274,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
 -'  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
 |4,39,38,28,1544100274,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
 -'  38  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
@@ -466,6 +476,18 @@ $
 |4,39,1,0,1544100252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
 |4,39,1,0,1544100252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
+|4,39,1,0,1544100252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p
+|4,39,1,0,1544100252,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/0001-Conditional-selection-of-character-devices.patch_Ara-06-15_41_04_Prş.p"
+-'  164  13  ~/.bashrc
+|4,39,164,13,1544100154,"~/.bashrc"
+-'  164  13  ~/.bashrc
+|4,39,164,13,1544100154,"~/.bashrc"
+-'  164  13  ~/.bashrc
+|4,39,164,13,1544100154,"~/.bashrc"
+-'  164  13  ~/.bashrc
+|4,39,164,13,1544100154,"~/.bashrc"
 -'  164  13  ~/.bashrc
 |4,39,164,13,1544100154,"~/.bashrc"
 -'  164  13  ~/.bashrc
@@ -498,6 +520,14 @@ $
 |4,39,1,0,1544100088,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1544100088,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1544100088,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1544100088,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1544100088,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1544100088,"~/.bashrc"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
 |4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
@@ -530,6 +560,22 @@ $
 |4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
 |4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch
+|4,39,1,0,1544100055,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/0001-Conditional-selection-of-character-devices.patch"
 -'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 |4,39,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 -'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
@@ -594,56 +640,23 @@ $
 |4,39,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 -'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
 |4,39,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
--'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
-|4,39,1,0,1544099606,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
+-'  3  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG
+|4,39,3,0,1544099742,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Kas-20_Sal-10_43_09__18/airties-bskyb-mrbox-412-debug/air-wall/Makefile
+	*	1544100708	0
+	"	50	0
+	.	47	0
+	+	47	41
+	+	49	6
+	+	47	0
+	+	48	0
+	+	49	0
+	+	47	0
+	+	46	0
+	+	47	0
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/air-wall/Makefile
 	*	1544100660	0
@@ -1240,7 +1253,3 @@ $
 	"	27	41
 	.	118	0
 	+	118	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/playground.c/src/bridge-utils-1.6/brctl/Makefile.in
-	*	1542638649	0
-	"	1	0
