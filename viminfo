@@ -20,12 +20,14 @@
 $is_GW_in_MeshRT_direct
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1544627051,,"wq!"
+:w
+|2,0,1544627042,,"w"
 :q!
 |2,0,1544625516,,"q!"
 :qa!
 |2,0,1544534818,,"qa!"
-:w
-|2,0,1544196891,,"w"
 :%s/is_GW_in_MeshRT_eth/is_GW_in_MeshRT_direct/gc
 |2,0,1544196868,,"%s/is_GW_in_MeshRT_eth/is_GW_in_MeshRT_direct/gc"
 :s/is_GW_in_MeshRT_eth/is_GW_in_MeshRT_direct/gc
@@ -52,8 +54,6 @@ $is_GW_in_MeshRT_direct
 |2,0,1544104559,,"Rg -tc get_is_gateway"
 :Rg -tc get_is_gw
 |2,0,1544104557,,"Rg -tc get_is_gw"
-:wq!
-|2,0,1544104182,,"wq!"
 :Rg -tc get_routes
 |2,0,1544103816,,"Rg -tc get_routes"
 :wqa!
@@ -436,10 +436,10 @@ $is_GW_in_MeshRT_direct
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 			is_GW_in_MeshRT = 1;
 		}
-|3,1,0,1,2,0,1544196890,"		is_GW_in_MeshRT = 1;","	}"
+|3,0,0,1,2,0,1544196890,"		is_GW_in_MeshRT = 1;","	}"
 "1	LINE	0
 	
 |3,0,1,1,1,0,1544100639,""
@@ -470,43 +470,61 @@ $is_GW_in_MeshRT_direct
 "a	CHAR	0
 	Jxj0auu
 |3,0,10,0,1,0,1531496568,"Jxj0auu"
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1544196592," "
+""-	CHAR	0
+	
+|3,1,36,0,1,0,1544627013,""
 
 # global variables:
 
 # File marks:
-'0  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
-|4,48,21,0,1544625516,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
-'1  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
-|4,49,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
-'2  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
-|4,50,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
-'3  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,51,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
-'4  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
-|4,52,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
-'5  205  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs
-|4,53,205,0,1544104902,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs"
-'6  392  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,54,392,10,1544104545,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+'0  43  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml
+|4,48,43,13,1544627051,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml"
+'1  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,49,21,0,1544625516,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+'2  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
+|4,50,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
+'3  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
+|4,51,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+'4  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,52,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+'5  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,53,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+'6  205  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs
+|4,54,205,0,1544104902,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/4.14L.04-SkyHybridRouting-Mesh-1.1/bcm963xx/targets/makeDevs"
 '7  392  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
 |4,55,392,10,1544104545,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
-'8  1  35  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-wall/air-wall-bskyb-Mesh-1.1/.git/COMMIT_EDITMSG
-|4,56,1,35,1544104183,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-wall/air-wall-bskyb-Mesh-1.1/.git/COMMIT_EDITMSG"
+'8  392  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,56,392,10,1544104545,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
 '9  1  35  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-wall/air-wall-bskyb-Mesh-1.1/.git/COMMIT_EDITMSG
 |4,57,1,35,1544104183,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-wall/air-wall-bskyb-Mesh-1.1/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  43  13  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml
+|4,39,43,13,1544627051,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml"
+-'  12  10  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml
+|4,39,12,10,1544627004,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml
+|4,39,1,0,1544626977,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml"
 -'  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,21,0,1544625516,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  21  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,21,0,1544625516,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
+|4,39,1,0,1544625504,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 |4,39,1,0,1544625504,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh"
 -'  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
 |4,39,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
 -'  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
 |4,39,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
+-'  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
+|4,39,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
+-'  1774  7  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
+|4,39,1774,7,1544534875,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
+|4,39,1,0,1544534867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
+|4,39,1,0,1544534867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
 |4,39,1,0,1544534867,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/configs/configs_head/bskyb-mrbox-412.config
@@ -519,6 +537,34 @@ $is_GW_in_MeshRT_direct
 |4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
 |4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
+|4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
+|4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
+|4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG
+|4,39,1,0,1544534818,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/viper_Kas-05_Pzt-14_04_26__18/airties-bskyb-viper-debug/.git/MERGE_MSG"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
 -'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
 |4,39,319,28,1544452597,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
 -'  319  28  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
@@ -559,6 +605,46 @@ $is_GW_in_MeshRT_direct
 |4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
 -'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
 |4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  51  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,51,0,1544452206,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
+-'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
+|4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
 |4,39,1,0,1544452181,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh"
 -'  1  0  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/airgitclone.sh
@@ -599,108 +685,30 @@ $is_GW_in_MeshRT_direct
 |4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
 -'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
 |4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  463  36  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,463,36,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  455  4  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,455,4,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  372  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,372,2,1544197146,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  397  3  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,397,3,1544197140,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
--'  369  2  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
-|4,39,369,2,1544196868,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
+-'  495  31  /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c
+|4,39,495,31,1544197148,"/media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/mrbox_Ara-06_Prş-16_09_56__18/airties-bskyb-mrbox-412-debug/air-rm/air-rm-bskyb-Mesh-1.1/rmd/src/eth_stats_utils.c"
 
 # History of marks within files (newest to oldest):
+
+> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/DEVEL/PROFILES/cloud_stuff/viper_Ara-12_Çrş-17_38_44__18/airties-bskyb-viper-debug/asp_xmls/asp_xmls-1.2-devel-Mesh-1.1/bskyb-viper/data.xml
+	*	1544627043	0
+	"	43	13
+	^	43	14
+	.	43	14
+	+	11	48
+	+	43	14
 
 > /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/sky.sh
 	*	1544625514	0
@@ -1265,10 +1273,3 @@ $is_GW_in_MeshRT_direct
 	"	4	0
 	.	16	0
 	+	16	0
-
-> /media/noe/ca74c799-fe05-4f91-bff5-cdf0e7a1930c/reSystem/scripts/seekin.sh
-	*	1542713872	0
-	"	1	72
-	^	1	73
-	.	1	72
-	+	1	72
